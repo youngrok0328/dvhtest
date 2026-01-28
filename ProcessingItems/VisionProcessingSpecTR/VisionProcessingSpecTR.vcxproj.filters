@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgVisionProcessingSpec.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSetting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingSpec.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingSpecApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingSpecInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingSpecPara.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BodySizeEditor.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BgaGridGeneratorDlg.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLandShapeEditor.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionProcessingSpecTR.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawViewTape.cpp">
+      <Filter>DrawView</Filter>
+    </ClCompile>
+    <ClCompile Include="BodySizeEditorTR.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgVisionProcessingSpec.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSetting.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingSpec.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingSpecApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingSpecPara.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BodySizeEditor.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BgaGridGeneratorDlg.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLandShapeEditor.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionProcessingSpecTR.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawViewTape.h">
+      <Filter>DrawView</Filter>
+    </ClInclude>
+    <ClInclude Include="BodySizeEditorTR.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionProcessingSpec.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\VisionProcessingSpec.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{215f6390-2a27-4997-becc-e96590593086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{3a6ec5e0-a913-4ec5-aadf-5517f2dfe287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{f1c2182a-3cf8-451e-93a4-e3b94373870f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DrawView">
+      <UniqueIdentifier>{4fd1df42-3e4c-4f04-b0e7-2e1132985637}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingSpec.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\TapeLayoutSprocketBoth.bmp" />
+    <Image Include="res\TapeLayoutSprocketLeft.bmp" />
+    <Image Include="res\TapeLayoutSprocketRight.bmp" />
+  </ItemGroup>
+</Project>

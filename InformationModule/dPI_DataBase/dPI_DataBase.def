@@ -1,0 +1,6 @@
+; dPI_DataBase.def : Declares the module parameters for the DLL.
+
+LIBRARY      "dPI_DataBase"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgSetupUI.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingGlobalMaskMaker.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingGlobalMaskMakerApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingGlobalMaskMakerInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecRoi.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultData.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLayerName.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPara.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecLayer.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultLayerPre.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultLayer.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgParaSingle.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingGlobalMaskMakerPara.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecLayerSingle.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCtrlEx.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="MaskListCtrl.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLayer.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgImportLayer.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgSetupUI.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingGlobalMaskMaker.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingGlobalMaskMakerApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingGlobalMaskMakerPara.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecRoi.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultData.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="Predefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLayerName.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPara.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecLayer.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultLayerPre.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultLayer.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgParaSingle.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecLayerSingle.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCtrlEx.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="MaskListCtrl.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLayer.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgImportLayer.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionProcessingGlobalMaskMaker.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionProcessingGlobalMaskMaker.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{72ab5464-553a-4235-935a-25c63c191d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{9d4601b3-ffc5-42c1-95d6-61c29352b9d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{0b1c599c-56a2-4c88-a076-7e576567d2cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spec">
+      <UniqueIdentifier>{c542c5f2-a930-4146-9564-acb2af87f8a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Result">
+      <UniqueIdentifier>{538fd235-faa1-47ab-9f6d-f32da1ebc3ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{4e839dcd-d5f0-400d-abbf-25a6eb7124af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{8d9f7ab5-c943-4191-96b1-287317405a1e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingGlobalMaskMaker.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

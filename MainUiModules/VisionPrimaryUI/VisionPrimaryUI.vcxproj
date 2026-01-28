@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30311915-F405-4EE3-AB76-BCCCDF1F7432}</ProjectGuid>
+    <RootNamespace>VisionPrimaryUI</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseIntelIPP>false</UseIntelIPP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy x3DViewer.ocx C:\intekplus\bin
+regsvr32.exe -s C:\intekplus\bin\x3DViewer.ocx
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy x3DViewer.ocx C:\intekplus\bin
+regsvr32.exe -s C:\intekplus\bin\x3DViewer.ocx
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgMarkTeachTotalResultViewer.cpp" />
+    <ClCompile Include="HostCommand.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VisionPrimaryUI.cpp" />
+    <ClCompile Include="VisionPrimaryUIApp.cpp" />
+    <ClCompile Include="DlgImageVIewer.cpp" />
+    <ClCompile Include="DlgLogin.cpp" />
+    <ClCompile Include="DlgReviewImageViewer.cpp" />
+    <ClCompile Include="DlgSystemSetup.cpp" />
+    <ClCompile Include="DlgVisionPrimaryUI.cpp" />
+    <ClCompile Include="DlgVisionPrimaryUI_SK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionPrimaryUI.def" />
+    <None Include="res\VisionPrimaryUI.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgMarkTeachTotalResultViewer.h" />
+    <ClInclude Include="HostCommand.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VisionPrimaryUI.h" />
+    <ClInclude Include="VisionPrimaryUIApp.h" />
+    <ClInclude Include="DlgImageVIewer.h" />
+    <ClInclude Include="DlgLogin.h" />
+    <ClInclude Include="DlgReviewImageViewer.h" />
+    <ClInclude Include="DlgSystemSetup.h" />
+    <ClInclude Include="DlgVisionPrimaryUI.h" />
+    <ClInclude Include="_buildsetup.h" />
+    <ClInclude Include="_libsetup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BgaBottom.bmp" />
+    <Image Include="res\BgaTop.bmp" />
+    <Image Include="res\Logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionPrimaryUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DefineModules\dA_Base\dA_Base.vcxproj">
+      <Project>{632a3d23-61d4-4e9c-b416-446d6b010d02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HardwareModules\dPI_Framegrabber\dPI_Framegrabber.vcxproj">
+      <Project>{afab912e-aa1f-4dd8-882f-316f106433b4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HardwareModules\dPI_SyncController\dPI_SyncController.vcxproj">
+      <Project>{be4cb4eb-6829-4e4a-9c22-af270ea92ca8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InformationModule\dPI_SystemIni\dPI_SystemIni.vcxproj">
+      <Project>{58ac8a48-308b-459d-9bb1-4aa989bdc0fb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionMark\VisionInspectionMark.vcxproj">
+      <Project>{fc613df1-1a15-43db-9ec8-a4d36fa8155e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionSurface\VisionInspectionSurface.vcxproj">
+      <Project>{6647163e-85b0-4ac8-91e1-7a399393eb80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ManagementModules\VisionUnit\VisionUnit.vcxproj">
+      <Project>{f386165b-8fed-406c-8f7c-88e9ec84d5e1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedCommunicationModules\VisionHostCommon\VisionHostCommon.vcxproj">
+      <Project>{891e342d-d93f-4cb9-a093-fe237a25677a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedComponent\Label\Label.v17.vcxproj">
+      <Project>{9741e042-f69d-4aa9-af44-6428ac30c5a2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserInterfaceModules\ImageLotView\ImageLotView.vcxproj">
+      <Project>{4b3e828e-cd63-4bf3-a727-132425c3f6b5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserInterfaceModules\ImageViewEx\ImageViewEx.vcxproj">
+      <Project>{4b2c7171-833b-413b-88ae-b29152284670}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UserInterfaceModules\VisionCommonDialog\VisionCommonDialog.vcxproj">
+      <Project>{88c39ec1-5714-43c0-a3a2-ccedd2d3ab7e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VisionNeedLibrary\VisionCommon\VisionCommon.vcxproj">
+      <Project>{26aa5039-4b3d-46d5-adb6-f1ff5563d676}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VisionPrimaryUI.rc" _x007B_8AD9E82E-1923-4A61-9DC9-5B130D12C4B2_x007D_="CX3dviewerctrl1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

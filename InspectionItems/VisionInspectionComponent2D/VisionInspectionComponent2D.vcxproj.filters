@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{a75c883d-14f9-41f5-a4a5-a2314566566b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Passive">
+      <UniqueIdentifier>{f22f6f2f-6458-4a1e-9004-246c6de72907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="CollectRois">
+      <UniqueIdentifier>{4d74108d-5ca9-45f4-ae48-57e337e6d442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CustomItems">
+      <UniqueIdentifier>{4666bb33-52ab-414c-8c6d-531bd34db075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Spec Parmaeter">
+      <UniqueIdentifier>{62ce97e5-ace1-44af-aa56-9bd179bdb2b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Result">
+      <UniqueIdentifier>{ed243fcb-dab0-4b39-b7de-684bf88042fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Define">
+      <UniqueIdentifier>{3a230122-54bb-48b2-b103-dea29496949f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionComponent2D.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionComponent2DApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionComponent2DInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgChangeSpecName.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSpecDB.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSpecMSGBox.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionInspectionComponent2D.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPassiveAlgorithm.cpp">
+      <Filter>Passive</Filter>
+    </ClCompile>
+    <ClCompile Include="PassiveAlign.cpp">
+      <Filter>Passive</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgChangeDimension.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectRois.cpp">
+      <Filter>CollectRois</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgChipNameEdit.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomItems.cpp">
+      <Filter>CustomItems</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecBase.cpp">
+      <Filter>[] Spec Parmaeter</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionComponent2DPara.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>[] Result</Filter>
+    </ClCompile>
+    <ClCompile Include="Passive2DAlgorithm.cpp">
+      <Filter>Passive</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionInspectionComponent2D.def">
+      <Filter>소스 파일</Filter>
+    </None>
+    <None Include="res\VisionInspectionComponent2D.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgChangeSpecName.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSpecDB.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSpecMSGBox.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionInspectionComponent2D.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPassiveAlgorithm.h">
+      <Filter>Passive</Filter>
+    </ClInclude>
+    <ClInclude Include="PassiveAlign.h">
+      <Filter>Passive</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgChangeDimension.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionResult.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CollectRois.h">
+      <Filter>CollectRois</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgChipNameEdit.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomItems.h">
+      <Filter>CustomItems</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecTemplate.h">
+      <Filter>[] Spec Parmaeter</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecBase.h">
+      <Filter>[] Spec Parmaeter</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionComponent2D.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionComponent2DApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionComponent2DPara.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>[] Result</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeDefine.h">
+      <Filter>[] Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Passive2DAlgorithm.h">
+      <Filter>Passive</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionInspectionComponent2D.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

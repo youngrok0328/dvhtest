@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionUnit.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionUnitApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionUnitFile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceType.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceType_Impl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionUnitDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuBar.cpp">
+      <Filter>[] MenuBar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionUnit.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionUnitApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceType.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceType_Impl.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionUnitDlg.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuBar.h">
+      <Filter>[] MenuBar</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VisionUnit.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="VisionUnit.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{208afc0a-5f3e-451e-84ab-f80a8629a7f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{28eee244-04b7-4400-a6b5-4fbffa2fd894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] MenuBar">
+      <UniqueIdentifier>{9ba3c0e5-6889-4ee7-b3d2-8f8d38e515ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionUnit.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Rollback.bmp" />
+    <Image Include="res\Rollback_Down.bmp" />
+  </ItemGroup>
+</Project>

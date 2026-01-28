@@ -1,0 +1,43 @@
+[ICF_OVERVIEW]
+REVISION_DATE=2018/2/21/, 23:26:10
+EDITOR=Unknown
+[CAMERA_INFO]
+CAMERA_NAME=Unknown Camera
+[CAMERA_FORMAT]
+Camera mode=0
+Tap size=5
+Image bit=0
+Trigger mode=1
+Trigger type=0
+Page trigger=0
+Camera link=3
+Exposure high count=1031250
+Exposure high time=33.000000
+Exposure low count=31250
+Exposure low time=1.000000
+Trigger division=1
+Horizontal size=5120
+Vertical size=5120
+CCD direction=0
+CCD value=0
+Trigger div enable=0
+Trigger div count=1
+Trigger pulse count=1
+Acq clk sel=0
+[TAP_CONFIG]
+Tap config0=0
+Tap config1=1
+Tap config2=0
+Tap config3=0
+Tap config4=0
+Tap config5=0
+Tap config6=0
+Tap config7=0
+Tap direction0=0
+Tap direction1=0
+Tap direction2=0
+Tap direction3=0
+Tap direction4=0
+Tap direction5=0
+Tap direction6=0
+Tap direction7=0

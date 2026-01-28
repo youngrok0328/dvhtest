@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7076B651-3D6B-49AB-AC10-C81B095B2A2C}</ProjectGuid>
+    <RootNamespace>iPack</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseIntelIPP>false</UseIntelIPP>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <ImportLibrary>
+      </ImportLibrary>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <EnableUAC>true</EnableUAC>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy "..\ReleaseNotes.txt" "$(TargetDir)"
+copy "$(IPVM64Bin)\Ipvm.Algorithm_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.AlgorithmGpu_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.Base_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.BaseGpu_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.Gadget_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.SbtCore_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.Widget_*.dll" "$(TargetDir)" /y
+copy "C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro v22.1.0\Bin\vc170x64\ToolkitPro2210vc170x64UD.dll" "$(TargetDir)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>
+      </ImportLibrary>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <EnableUAC>true</EnableUAC>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0412</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>copy "..\ReleaseNotes.txt" "$(TargetDir)"
+copy "$(IPVM64Bin)\Ipvm.Algorithm_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.AlgorithmGpu_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.Base_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.BaseGpu_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.Gadget_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.SbtCore_*.dll" "$(TargetDir)" /y
+copy "$(IPVM64Bin)\Ipvm.Widget_*.dll" "$(TargetDir)" /y
+copy "C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro v22.1.0\Bin\vc170x64\ToolkitPro2210vc170x64U.dll" "$(TargetDir)" /y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AutomationMsgDef.h" />
+    <ClInclude Include="FileVersion.h" />
+    <ClInclude Include="iPack.h" />
+    <ClInclude Include="iPackDoc.h" />
+    <ClInclude Include="iPackView.h" />
+    <ClInclude Include="LicenseChecker.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimpleRibbonBar.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="_buildsetup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileVersion.cpp" />
+    <ClCompile Include="iPack.cpp" />
+    <ClCompile Include="iPackDoc.cpp" />
+    <ClCompile Include="iPackView.cpp" />
+    <ClCompile Include="LicenseChecker.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MainFrmAutomationSocket.cpp" />
+    <ClCompile Include="MainFrmSocket.cpp" />
+    <ClCompile Include="MainFrmTuningSocket.cpp" />
+    <ClCompile Include="SimpleRibbonBar.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iPack.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\info.bmp" />
+    <Image Include="res\iPack.ico" />
+    <Image Include="res\iPackDoc.ico" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\nav_large.bmp" />
+    <Image Include="res\nav_large_hc.bmp" />
+    <Image Include="res\pages.bmp" />
+    <Image Include="res\pages_hc.bmp" />
+    <Image Include="res\pages_small.bmp" />
+    <Image Include="res\pages_small_hc.bmp" />
+    <Image Include="res\ribbonmain.bmp" />
+    <Image Include="res\ribbonmainlarge.png" />
+    <Image Include="res\ribbonmainsmall.png" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\iPack.rc2" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DefineModules\dA_Base\dA_Base.vcxproj">
+      <Project>{632a3d23-61d4-4e9c-b416-446d6b010d02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\HardwareModules\dPI_Framegrabber\dPI_Framegrabber.vcxproj">
+      <Project>{afab912e-aa1f-4dd8-882f-316f106433b4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\HardwareModules\dPI_SyncController\dPI_SyncController.vcxproj">
+      <Project>{be4cb4eb-6829-4e4a-9c22-af270ea92ca8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\InformationModule\dPI_DataBase\dPI_DataBase.vcxproj">
+      <Project>{95763156-79b7-4d7b-873c-69625c8cc0f3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\InformationModule\dPI_SystemIni\dPI_SystemIni.vcxproj">
+      <Project>{58ac8a48-308b-459d-9bb1-4aa989bdc0fb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\MainUiModules\VisionPrimaryUI\VisionPrimaryUI.vcxproj">
+      <Project>{30311915-f405-4ee3-ab76-bcccdf1f7432}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagementModules\VisionMain\VisionMain.vcxproj">
+      <Project>{08df52d9-2973-409a-bfea-ec2652fcd551}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ManagementModules\VisionUnit\VisionUnit.vcxproj">
+      <Project>{f386165b-8fed-406c-8f7c-88e9ec84d5e1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedCommonUtilityModules\dPI_MsgDialog\dPI_MsgDialog.vcxproj">
+      <Project>{1ceafbd1-64e7-4647-bfc4-9117e7e62de1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedCommunicationModules\VisionHostCommon\VisionHostCommon.vcxproj">
+      <Project>{891e342d-d93f-4cb9-a093-fe237a25677a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedComponent\CrashHandler\CrashHandler.v17.vcxproj">
+      <Project>{1fa78202-85a1-49b1-a06b-ba2e90f892d7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\UserInterfaceModules\ImageLotView\ImageLotView.vcxproj">
+      <Project>{4b3e828e-cd63-4bf3-a727-132425c3f6b5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\VisionNeedLibrary\VisionCommon\VisionCommon.vcxproj">
+      <Project>{26aa5039-4b3d-46d5-adb6-f1ff5563d676}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="iPack.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

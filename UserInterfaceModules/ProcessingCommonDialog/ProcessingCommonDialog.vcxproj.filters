@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ProcCommonDebugInfoDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCommonDetailResultDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCommonLogDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCommonResultDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCommonSpecDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcessingCommonDialogApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCommonGridGroupDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcCommonGridBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProcCommonDebugInfoDlg.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCommonDetailResultDlg.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCommonLogDlg.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCommonResultDlg.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCommonSpecDlg.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessingCommonDialogApp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCommonGridGroupDlg.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcCommonGridBase.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Export">
+      <UniqueIdentifier>{bf1b3b80-75b8-4d26-9079-cb24e5119ad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{3708bcc4-4763-4a89-99f7-63b9be4112bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{dd989969-4ecf-4398-960d-cc0e1e8dc101}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{2edca777-2b77-4c48-92a6-c7ba92fd28dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProcessingCommonDialog.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ProcessingCommonDialog.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

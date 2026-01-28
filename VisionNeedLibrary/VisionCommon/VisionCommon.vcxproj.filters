@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionBaseDef.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionCommon.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionAlignResult.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionDebugInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Coplanarity_Algorithm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="tc_VisionImageLot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionResultGroup.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionOverlayResult.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMainMenuAccess.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DevelopmentLog.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspFrameIndex.cpp">
+      <Filter>Image Frame 관련\Insp Frame Index</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageProcPara.cpp">
+      <Filter>Image Frame 관련</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspection.cpp">
+      <Filter>Vision Processing &amp; Inspection</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessing.cpp">
+      <Filter>Vision Processing &amp; Inspection</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionImageLot.cpp">
+      <Filter>Image Lot</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionImageLotInsp.cpp">
+      <Filter>Image Lot</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMainAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionUnitAgent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitAreaInfo.cpp">
+      <Filter>Unit Area Info</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionBaseDef.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionCommon.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionAlignResult.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionDebugInfo.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Coplanarity_Algorithm.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionResultGroup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionOverlayResult.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionMainMenuAccess.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DevelopmentLog.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspFrameIndex.h">
+      <Filter>Image Frame 관련\Insp Frame Index</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageProcPara.h">
+      <Filter>Image Frame 관련</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspection.h">
+      <Filter>Vision Processing &amp; Inspection</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessing.h">
+      <Filter>Vision Processing &amp; Inspection</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionImageLotInsp.h">
+      <Filter>Image Lot</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionImageLot.h">
+      <Filter>Image Lot</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionMainAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionUnitAgent.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitAreaInfo.h">
+      <Filter>Unit Area Info</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionCommon.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionCommon.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{3b2f1e88-91f8-4574-80a4-3391df09fe98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{e0a399b2-7461-4ad3-bbcd-737b32f1797d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Frame 관련">
+      <UniqueIdentifier>{3ab227b3-859e-41eb-9325-9097f66b309f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Frame 관련\Insp Frame Index">
+      <UniqueIdentifier>{51a2c9f5-6d98-42a1-9703-923614b2ac75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vision Processing &amp; Inspection">
+      <UniqueIdentifier>{ccb19803-63b6-4bc4-aca0-3b1f814a4693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image Lot">
+      <UniqueIdentifier>{50becb13-be5c-4b55-b490-a29633cb50ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Agent">
+      <UniqueIdentifier>{96a955b1-951b-4ccd-9512-51b24ed8ebe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unit Area Info">
+      <UniqueIdentifier>{3ad8c1f9-a86d-4e0a-bcf8-a46d09675d64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionCommon.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

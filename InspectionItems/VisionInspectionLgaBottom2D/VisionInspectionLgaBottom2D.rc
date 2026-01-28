@@ -1,0 +1,192 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionInspectionLgaBottom2D.rc2""  // Microsoft Visual C++ AI¿UAC ´U¸￥ μμ±¸¿¡¼­ ÆiAyCN ¸®¼O½ºAO´I´U.\r\n"
+    "#include ""afxres.rc""     // C￥AØ ±¸¼º ¿a¼OAO´I´U.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_IMAGE_WINDOW,17,15,48,40
+    PUSHBUTTON      "Inspect",IDC_BUTTON_INSPECT,71,129,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_LOG,"SysTabControl32",0x0,71,175,50,30
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,18,129,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Close",IDC_BUTTON_CLOSE,125,130,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+    COMBOBOX        IDC_COMBO_CURRPANE,141,31,205,255,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BUTTON_PREIMAGE,141,57,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      ">>",IDC_BUTTON_NEXTIMAGE,199,55,50,14,NOT WS_VISIBLE
+END
+
+IDD_DLG_HIDDEN_PARAMETER DIALOGEX 0, 0, 186, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hidden Parameter Dlg"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "확인",IDOK,77,153,50,14
+    PUSHBUTTON      "취소",IDCANCEL,129,153,50,14
+    EDITTEXT        IDC_EDIT_WIDTH_RATIO,123,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "Width 계산 시 비율이 입력 값을 넘어가면 비율을 연산하지 않은 값을 출력합니다.",IDC_STATIC,13,12,161,20
+    LTEXT           "Width Spec Ratio :",IDC_STATIC,59,35,60,8
+    LTEXT           "%",IDC_STATIC,164,35,8,8
+END
+
+IDD_DIALOG_HIDDEN_OFFSET_LAND DIALOGEX 0, 0, 160, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hidden Offset"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,53,239,50,14
+    PUSHBUTTON      "CANCEL",IDCANCEL,104,239,50,14
+    CONTROL         "",IDC_GRID_BALL_HIDDEN_OFFSET,"MFCGridCtrl",WS_TABSTOP,7,7,146,229
+END
+
+IDD_DLG_LAND_PARAMETER DIALOGEX 0, 0, 297, 299
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,191,278,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,278,50,14
+    LTEXT           "",IDC_STATIC_PARAM_AREA,0,0,296,251,NOT WS_VISIBLE | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DLG_HIDDEN_PARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_DIALOG_HIDDEN_OFFSET_LAND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_DLG_LAND_PARAMETER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 296
+        BOTTOMMARGIN, 292
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DLG_LAND_PARAMETER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionInspectionLgaBottom2D.rc2"  // Microsoft Visual C++ AI¿UAC ´U¸￥ μμ±¸¿¡¼­ ÆiAyCN ¸®¼O½ºAO´I´U.
+#include "afxres.rc"     // C￥AØ ±¸¼º ¿a¼OAO´I´U.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

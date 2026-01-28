@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dA_Base.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BlobAttribute.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PI_RECT.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FPI_RECT.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="iDataType.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicSystemPath.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionScale.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="TxtRecipeParameter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleFunction.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SprocketHoleInfo.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ConversionEx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="dA_Base.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="semiinfo.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="BlobAttribute.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="FPI_RECT.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="iDataType.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="PI_RECT.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicSystemPath.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionScale.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="TxtRecipeParameter.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleFunction.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineForTR.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugInfoName.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="SprocketHoleInfo.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ConversionEx.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dA_Base.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\dA_Base.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{a720a9c1-8ed3-4dee-b151-95bc215ce965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{a895b150-8ec0-4895-bde0-b08356deb040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Export">
+      <UniqueIdentifier>{980f090f-fd27-4337-9221-99f3ee87cf6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dA_Base.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

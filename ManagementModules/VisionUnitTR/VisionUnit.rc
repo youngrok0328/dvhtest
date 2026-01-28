@@ -1,0 +1,174 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionUnit.rc2""  // Microsoft Visual C++ AI¿UAC ´U¸￥ μμ±¸¿¡¼­ ÆiAyCN ¸®¼O½ºAO´I´U.\r\n"
+    "#include ""afxres.rc""     // C￥AØ ±¸¼º ¿a¼OAO´I´U.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_DEVICE_TYPE DIALOGEX 0, 0, 183, 133
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "z"
+FONT 9, "굴림", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "OK",IDOK,75,113,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,126,113,50,14,NOT WS_TABSTOP
+    GROUPBOX        "1. Select Device Type",IDC_STATIC,7,6,168,63
+    CONTROL         "TSOP1",IDC_RADIO_DEVICE_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,18,18,38,10
+    CONTROL         "TSOP2",IDC_RADIO_DEVICE_TYPE2,"Button",BS_AUTORADIOBUTTON,18,33,38,10
+    CONTROL         "QFP",IDC_RADIO_DEVICE_TYPE3,"Button",BS_AUTORADIOBUTTON,18,48,30,10
+    CONTROL         "BGA",IDC_RADIO_DEVICE_TYPE4,"Button",BS_AUTORADIOBUTTON,75,18,30,10
+    CONTROL         "CIS",IDC_RADIO_DEVICE_TYPE7,"Button",BS_AUTORADIOBUTTON,75,34,27,10
+    CONTROL         "QFN",IDC_RADIO_DEVICE_TYPE5,"Button",BS_AUTORADIOBUTTON,131,18,30,10
+    CONTROL         "CARD",IDC_RADIO_DEVICE_TYPE6,"Button",BS_AUTORADIOBUTTON,131,33,35,10
+    CONTROL         "FC BGA",IDC_RADIO_DEVICE_TYPE8,"Button",BS_AUTORADIOBUTTON,131,48,42,10
+    CONTROL         "S Land",IDC_RADIO_DEVICE_TYPE9,"Button",BS_AUTORADIOBUTTON,75,47,39,10
+    CONTROL         "2. Bottom Package",IDC_CHK_DEADBUG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,74,169,10
+    LTEXT           "3. Job Name :",IDC_STATIC,8,96,51,11
+    EDITTEXT        IDC_EDIT_JOB_NAME,60,93,116,15,ES_AUTOHSCROLL
+END
+
+IDD_VISION_UNIT DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_VISION_PROCESSING_HOLDER DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_DEVICE_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        VERTGUIDE, 18
+        VERTGUIDE, 75
+        VERTGUIDE, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+        HORZGUIDE, 27
+        HORZGUIDE, 43
+        HORZGUIDE, 57
+    END
+
+    IDD_VISION_UNIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_VISION_PROCESSING_HOLDER, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_VISION_UNIT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_VISION_PROCESSING_HOLDER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionUnit.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

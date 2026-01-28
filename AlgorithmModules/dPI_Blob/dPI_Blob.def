@@ -1,0 +1,6 @@
+; dPI_Blob.def : Declares the module parameters for the DLL.
+
+LIBRARY      "dPI_Blob"
+
+EXPORTS
+    ; Explicit exports can go here

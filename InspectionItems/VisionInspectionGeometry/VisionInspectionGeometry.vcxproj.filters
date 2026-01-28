@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgGeometryEditor.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionInspectionGeometry.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionGeometry.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionGeometryApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionGeometryinsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionGeometryPara.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgGeometryEditor.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionInspectionGeometry.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryDefines.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionGeometry.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionGeometryApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionGeometryPara.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionInspectionGeometry.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionInspectionGeometry.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{c7a7fc8d-69e6-4526-95e2-bd9d104b3a0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{3d099a18-5fca-4352-8358-453bbd7da69a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{e0ce2e45-ee0d-4fde-b113-4051e3c7155f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionInspectionGeometry.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

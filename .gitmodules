@@ -1,0 +1,12 @@
+[submodule "SharedComponent"]
+	path = SharedComponent
+	url = https://github.com/IntekPlusSE/sharedcomponent.git
+[submodule "SharedCommunicationModules"]
+	path = SharedCommunicationModules
+	url = https://github.com/IntekPlusSE/ipis-500i-communicationlibrary.git
+[submodule "SharedCommonUtilityModules"]
+	path = SharedCommonUtilityModules
+	url = https://github.com/IntekPlusSE/ipis-500i-commonutility.git
+[submodule "SharedBuildConfiguration"]
+	path = SharedBuildConfiguration
+	url = https://github.com/IntekPlusSE/sharedbuildconfiguration

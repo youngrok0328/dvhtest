@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{95763156-79B7-4D7B-873C-69625C8CC0F3}</ProjectGuid>
+    <RootNamespace>dPI_DataBase</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseIntelIPP>false</UseIntelIPP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug_Host/dPI_DataBase_Host.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug_Host/dPI_DataBase_Host.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release_Host/dPI_DataBase_Host.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Release_Host/dPI_DataBase_Host.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>$(IntDir)$(ProjectName).bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="BallCollection.cpp" />
+    <ClCompile Include="BallCollectionOriginal.cpp" />
+    <ClCompile Include="BallOriginal.cpp" />
+    <ClCompile Include="BallTypeDefinition.cpp" />
+    <ClCompile Include="BodyInfo.cpp" />
+    <ClCompile Include="ChipInfo.cpp" />
+    <ClCompile Include="ChipInfoCollection.cpp" />
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="ComponentCollection.cpp" />
+    <ClCompile Include="ComponentCollectionOriginal.cpp" />
+    <ClCompile Include="CustomFixed.cpp" />
+    <ClCompile Include="CustomFixedCollection.cpp" />
+    <ClCompile Include="CustomFixedCollectionOriginal.cpp" />
+    <ClCompile Include="CustomPolygon.cpp" />
+    <ClCompile Include="CustomPolygonCollection.cpp" />
+    <ClCompile Include="CustomPolygonCollectionOriginal.cpp" />
+    <ClCompile Include="DMSArrayChip.cpp" />
+    <ClCompile Include="DMSBall.cpp" />
+    <ClCompile Include="DMSChip.cpp" />
+    <ClCompile Include="DMSHeatsink.cpp" />
+    <ClCompile Include="DMSInfo.cpp" />
+    <ClCompile Include="DMSPassiveChip.cpp" />
+    <ClCompile Include="DMSPatch.cpp" />
+    <ClCompile Include="IllumInfo2D.cpp" />
+    <ClCompile Include="Land.cpp" />
+    <ClCompile Include="LandCollection.cpp" />
+    <ClCompile Include="LandCollectionOriginal.cpp" />
+    <ClCompile Include="OldScanSpec.cpp" />
+    <ClCompile Include="dPI_DataBase.cpp" />
+    <ClCompile Include="PackageSpec.cpp" />
+    <ClCompile Include="Pad.cpp" />
+    <ClCompile Include="PadCollection.cpp" />
+    <ClCompile Include="PadCollectionOriginal.cpp" />
+    <ClCompile Include="SlitBeam3DParameters.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VisionTapeSpec.cpp" />
+    <ClCompile Include="VisionTrayScanSpec.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dPI_DataBase.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dPI_DataBase.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="BallCollection.h" />
+    <ClInclude Include="BallCollectionOriginal.h" />
+    <ClInclude Include="BallOriginal.h" />
+    <ClInclude Include="BallTypeDefinition.h" />
+    <ClInclude Include="BodyInfo.h" />
+    <ClInclude Include="ChipInfo.h" />
+    <ClInclude Include="ChipInfoCollection.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="ComponentCollection.h" />
+    <ClInclude Include="ComponentCollectionOriginal.h" />
+    <ClInclude Include="CustomFixed.h" />
+    <ClInclude Include="CustomFixedCollection.h" />
+    <ClInclude Include="CustomFixedCollectionOriginal.h" />
+    <ClInclude Include="CustomPolygon.h" />
+    <ClInclude Include="CustomPolygonCollection.h" />
+    <ClInclude Include="CustomPolygonCollectionOriginal.h" />
+    <ClInclude Include="DMSArrayChip.h" />
+    <ClInclude Include="DMSBall.h" />
+    <ClInclude Include="DMSChip.h" />
+    <ClInclude Include="DMSHeatsink.h" />
+    <ClInclude Include="DMSInfo.h" />
+    <ClInclude Include="DMSPassiveChip.h" />
+    <ClInclude Include="DMSPatch.h" />
+    <ClInclude Include="Enum.h" />
+    <ClInclude Include="IllumInfo2D.h" />
+    <ClInclude Include="Land.h" />
+    <ClInclude Include="LandCollection.h" />
+    <ClInclude Include="LandCollectionOriginal.h" />
+    <ClInclude Include="OldScanSpec.h" />
+    <ClInclude Include="PackageSpec.h" />
+    <ClInclude Include="Pad.h" />
+    <ClInclude Include="PadCollection.h" />
+    <ClInclude Include="PadCollectionOriginal.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SlitBeam3DParameters.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="VisionTapeSpec.h" />
+    <ClInclude Include="VisionTrayScanSpec.h" />
+    <ClInclude Include="_buildsetup.h" />
+    <ClInclude Include="_libsetup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AlgorithmModules\dPI_Geometry\dPI_Geometry.vcxproj">
+      <Project>{858eb41b-86db-4e9b-bd18-865bb5b3f7c3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DefineModules\dA_Base\dA_Base.vcxproj">
+      <Project>{632a3d23-61d4-4e9c-b416-446d6b010d02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedCommonUtilityModules\dPI_MsgDialog\dPI_MsgDialog.vcxproj">
+      <Project>{1ceafbd1-64e7-4647-bfc4-9117e7e62de1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedCommunicationModules\VisionHostCommon\VisionHostCommon.vcxproj">
+      <Project>{891e342d-d93f-4cb9-a093-fe237a25677a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\dPI_SystemIni\dPI_SystemIni.vcxproj">
+      <Project>{58ac8a48-308b-459d-9bb1-4aa989bdc0fb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

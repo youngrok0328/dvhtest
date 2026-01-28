@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{7bb87393-75c5-497a-b432-0980370dc02e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{c87689ed-b476-4033-81ab-50ab0b717164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LicenseChecker">
+      <UniqueIdentifier>{32bc9697-1a70-412e-983b-00fe7bfc4b4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileVersion">
+      <UniqueIdentifier>{69e032fb-6cf2-4ba4-9139-67d49ff34503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Component">
+      <UniqueIdentifier>{9196a057-074d-4bfa-be69-998b2d87f62e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI Component\SimpleRibbonBar">
+      <UniqueIdentifier>{8eb1521d-a440-4759-9b78-2bce91385e0a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="iTRV.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewVision.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogITRV.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="LicenseChecker.h">
+      <Filter>LicenseChecker</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleRibbonBar.h">
+      <Filter>UI Component\SimpleRibbonBar</Filter>
+    </ClInclude>
+    <ClInclude Include="AutomationMsgDef.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FileVersion.h">
+      <Filter>FileVersion</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewVisionBody.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewStatus.h">
+      <Filter>View</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iTRV.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewVision.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogITRV.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="LicenseChecker.cpp">
+      <Filter>LicenseChecker</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleRibbonBar.cpp">
+      <Filter>UI Component\SimpleRibbonBar</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewVisionAutomationSocket.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewVisionSocket.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewVisionTuningSocket.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="FileVersion.cpp">
+      <Filter>FileVersion</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewVisionBody.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewStatus.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="iTRV.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\iTRV.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\iTRV.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\ribbonmainlarge.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

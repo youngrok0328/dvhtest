@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ImageViewExApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageViewEx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageViewExImpl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogProfile.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternImage.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImageViewExApp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageViewEx.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageViewExImpl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogProfile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternImage.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Export">
+      <UniqueIdentifier>{aca39657-1ba4-44f1-bd8c-a4a3331318eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{270bd0ec-caed-4651-a719-8e42667d2b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{dbe94b10-fb8a-45ee-af08-d2a15366b003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{bc15ead2-1815-41fb-be8e-072ba1c5862a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImageViewEx.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ImageViewEx.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ColorMap_DOWN.bmp" />
+    <Image Include="res\ColorMap_ING.bmp" />
+    <Image Include="res\ColorMap_UP.bmp" />
+    <Image Include="res\Empty.bmp" />
+    <Image Include="res\Histo_DOWN.bmp" />
+    <Image Include="res\Histo_DOWN_ING.bmp" />
+    <Image Include="res\Histo_UP.bmp" />
+    <Image Include="res\ZoomFit_Down.bmp" />
+    <Image Include="res\ZoomFit_Up.bmp" />
+  </ItemGroup>
+</Project>

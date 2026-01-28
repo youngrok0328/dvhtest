@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Para.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingCarrierTapeAlign.cpp" />
+    <ClCompile Include="VisionProcessingCarrierTapeAlignApp.cpp" />
+    <ClCompile Include="VisionProcessingCarrierTapeAlignInsp.cpp" />
+    <ClCompile Include="DlgVisionProcessingCarrierTapeAlign.cpp" />
+    <ClCompile Include="PropertyGrid.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Inspection.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSearchRoiPara.cpp" />
+    <ClCompile Include="Constants.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultAlign.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaEdgeSearchRoi.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Enum.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaEdgeParameters.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaCarrierTapeAlign.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaPocketAlign.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Para.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingCarrierTapeAlign.h" />
+    <ClInclude Include="VisionProcessingCarrierTapeAlignApp.h" />
+    <ClInclude Include="DlgVisionProcessingCarrierTapeAlign.h" />
+    <ClInclude Include="PropertyGrid.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Inspection.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSearchRoiPara.h" />
+    <ClInclude Include="Constants.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultAlign.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaEdgeSearchRoi.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaEdgeParameters.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaAlignment.hpp">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaCarrierTapeAlign.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaPocketAlign.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionProcessingCarrierTapeAlign.def" />
+    <None Include="res\VisionProcessingCarrierTapeAlign.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{6ac99ffc-a1e2-411d-8662-d5e1677f4fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{1adfead0-9029-44c7-8805-9631091073c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{9ead019a-e6b2-4351-a556-ec7bac1152af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Para">
+      <UniqueIdentifier>{15c3c85d-55f4-4783-9e53-bc6a3a04fe42}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingCarrierTapeAlign.rc" />
+  </ItemGroup>
+</Project>

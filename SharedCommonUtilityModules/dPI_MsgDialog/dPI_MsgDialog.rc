@@ -1,0 +1,116 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\dPI_MsgDialog.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MESSAGE DIALOG DISCARDABLE  0, 0, 176, 81
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Package Inspection"
+FONT 18, "Arial"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,48,65,38,14,NOT WS_VISIBLE
+    DEFPUSHBUTTON   "No",IDNO,135,65,38,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Cancel",IDCANCEL,93,67,38,14,NOT WS_VISIBLE
+    CTEXT           "여기에 메세지를 쓰세요. ",IDC_STATIC_Msg,9,6,158,54,
+                    SS_SUNKEN
+    DEFPUSHBUTTON   "YES",IDYES,3,64,38,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC_ORDER1,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,24,63,14,12
+    CONTROL         "",IDC_STATIC_ORDER2,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,48,63,14,12
+    CONTROL         "",IDC_STATIC_ORDER3,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,70,63,14,12
+    CONTROL         "",IDC_STATIC_ORDER4,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,93,63,14,12
+    CONTROL         "",IDC_STATIC_ORDER5,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,116,63,14,12
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\dPI_MsgDialog.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

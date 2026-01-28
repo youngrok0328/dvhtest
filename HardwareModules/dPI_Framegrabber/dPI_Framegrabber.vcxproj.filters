@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Framegrabber.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber_Base.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber2D_iGrabG.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber2D_Dummy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber3D_Dummy.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameGrabberApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SlitbeamDistortionData.cpp">
+      <Filter>Distortion</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber2D_iGrabXQ.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber3D_iGrabXE.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber2D_iGrabXE.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framegrabber3D_iGrabXQ.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Framegrabber_Base.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber2D_iGrabG.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber2D_Dummy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber3D_Dummy.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameGrabberApp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SlitbeamDistortionData.h">
+      <Filter>Distortion</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber2D_iGrabXQ.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber3D_iGrabXE.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="grabber_info.h">
+      <Filter>Export</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber2D_iGrabXE.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framegrabber3D_iGrabXQ.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dPI_Framegrabber.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\LPMVC-CL025M.icf">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\boA8100_16cm.XCF">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\fxo992MCX.XCF">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\vc_65mx-0.2.1.XCF">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\STC-CMB4MCL.icf">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\DALSA-GENIE-NANO-CXP67M.xcf">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\MIKROTRON_21CXP.xcf">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{2a1b1c1c-f6fa-4939-87d6-965e03f78ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{d37be163-1033-40e8-b957-62ce08d5a756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{6de76505-61c5-45a2-8cdb-50828c7fbff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Export">
+      <UniqueIdentifier>{d482a25c-e6fb-417f-9a3f-08f8d3300647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Distortion">
+      <UniqueIdentifier>{5150acd1-c624-42ad-8532-40e04dcb46c3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dPI_Framegrabber.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\vc_12mx2-0.5.1.xml">
+      <Filter>리소스 파일</Filter>
+    </Xml>
+    <Xml Include="res\boA8100_16cm.xml">
+      <Filter>리소스 파일</Filter>
+    </Xml>
+    <Xml Include="res\vc_65mx-0.2.1.xml">
+      <Filter>리소스 파일</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

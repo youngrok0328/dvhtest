@@ -1,0 +1,398 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionInspectionSurface.rc2""  // Microsoft Visual C++ AI￠®E?UAC ￠®E￠®IU￠®E￠®ⓒ­¡E￠cI ￠®Ii￠®Ii¡E￠c¡§u￠®E￠®ⓒ­￠®E?￠®E¡Ec￠®¡×u¡E￠c¡§I ￠®¡×¡E￠ciAyCN ￠®E￠®ⓒ­￠®Ec￠®¡×uO￠®¡×o￠®¡×￠®ⓒ­AO￠®E￠®II￠®E￠®IU.\r\n"
+    "#include ""afxres.rc""     // C¡E￠cIA￠®¡×¡§¡I ¡E￠c¡§u￠®E￠®ⓒ­￠®¡×u￠®¡×￠®ⓒ­ ￠®E?a￠®¡×uOAO￠®E￠®II￠®E￠®IU.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+    CTEXT           "Static",IDC_STATIC_SIDE_FRONT_SURFACE,24,22,19,8,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "Static",IDC_STATIC_SIDE_REAR_SURFACE,52,22,19,8,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+IDD_SURFACEROIEDITORDLG DIALOGEX 0, 0, 769, 505
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Surface ROI Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Thresholding",IDC_STATIC,453,7,309,72
+    LTEXT           "Custom ROI List",IDC_STATIC,5,315,63,8
+    LISTBOX         IDC_LIST_CustomROI,3,326,149,112,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_BTN_ADD_ADD,153,326,22,13,BS_FLAT
+    PUSHBUTTON      "-",IDC_BTN_ADD_SUB,153,341,22,13,BS_FLAT
+    CONTROL         "IGNORE",IDC_GRID_IGNORE,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,3,441,148,57
+    PUSHBUTTON      "+",IDC_BUTTON_IGNORE_ADD,152,441,22,13,BS_FLAT
+    PUSHBUTTON      "-",IDC_BUTTON_IGNORE_SUB,152,456,22,13,BS_FLAT
+    LTEXT           "Mask Order",IDC_STATIC,182,306,45,8
+    CONTROL         "IGNORE",IDC_GRID_Mask,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,181,314,482,184
+    PUSHBUTTON      "Up",IDC_BTN_MaskOrder_UP,665,324,31,38,NOT WS_TABSTOP
+    PUSHBUTTON      "Down",IDC_BTN_MaskOrder_DOWN,665,365,31,38
+    PUSHBUTTON      "Del",IDC_BTN_MaskOrder_Del,665,445,31,31
+    DEFPUSHBUTTON   "OK",IDOK,703,443,57,27
+    PUSHBUTTON      "CANCEL",IDCANCEL,703,471,59,27
+    RTEXT           "Insp ROI Offset Left :",IDC_STATIC,589,136,93,8
+    EDITTEXT        IDC_EDIT_InspROIOffset_Left,689,134,47,13,ES_AUTOHSCROLL
+    RTEXT           "Insp ROI Offset Right :",IDC_STATIC,589,151,93,8
+    EDITTEXT        IDC_EDIT_InspROIOffset_Right,689,148,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_InspROIOffset_Top,689,162,47,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_InspROIOffset_Bottom,689,175,47,13,ES_AUTOHSCROLL
+    RTEXT           "Insp ROI Offset Top :",IDC_STATIC,589,165,93,8
+    RTEXT           "Insp ROI Offset Bottom :",IDC_STATIC,589,178,93,8
+    CONTROL         "",IDC_STATIC_IMAGE_FRAME,"Static",SS_BLACKFRAME,3,9,440,295
+    GROUPBOX        "Inspection Area Size Offset",IDC_STATIC,453,124,309,72
+    DEFPUSHBUTTON   "View Input Image",IDC_BTN_VIEW_INPUT_IMAGE,695,94,67,31
+    CONTROL         "",IDC_STATIC_PROFILE,"Static",SS_BLACKFRAME,453,212,309,91
+    CONTROL         "Combine Image",IDC_CHECK_COMBINE_IMAGE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,696,83,66,10
+    RTEXT           "Threshold Type :",IDC_STC_ThresholdDarkName2,462,18,91,8,WS_TABSTOP
+    COMBOBOX        IDC_COMBO_THRESHOLD_TYPE,557,16,86,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_ProfileType,453,197,309,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "um",IDC_STATIC,741,136,9,8
+    LTEXT           "um",IDC_STATIC,741,150,9,8
+    LTEXT           "um",IDC_STATIC,741,164,9,8
+    LTEXT           "um",IDC_STATIC,741,177,9,8
+    CONTROL         "",IDC_VIEW_THRESHOLD,"Static",SS_BLACKFRAME,459,33,298,40
+END
+
+IDD_SURFACECRITERIADLG DIALOGEX 0, 0, 723, 533
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "?? ??"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_ROI,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,470,31,231,164
+    PUSHBUTTON      "DEL",IDC_BTN_DEL_ROI,470,202,231,20
+    CONTROL         "Rect",IDC_RADIO_Rect,"Button",BS_AUTORADIOBUTTON | WS_GROUP,477,234,35,9
+    CONTROL         "Ellipse",IDC_RADIO_Ellipse,"Button",BS_AUTORADIOBUTTON,477,247,45,9
+    CONTROL         "Polygon",IDC_RADIO_Polygon,"Button",BS_AUTORADIOBUTTON,477,258,49,9
+    EDITTEXT        IDC_EDIT_POLYGON_NUM,533,257,70,13,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "N",IDC_STATIC,608,258,9,8
+    RTEXT           "ROI Name :",IDC_STATIC,482,276,45,8
+    EDITTEXT        IDC_EDIT_ROI_NAME,533,273,107,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "ADD",IDC_BTN_ADD_ROI,657,229,45,61
+    LTEXT           "Surface Criteria",IDC_STATIC,8,319,70,13,SS_CENTERIMAGE | SS_SUNKEN
+    DEFPUSHBUTTON   "Insert",IDC_BUTTON_SURFACE_INSERT_CRITERIA,530,319,59,13
+    PUSHBUTTON      "Remove",IDC_BUTTON_SURFACE_REMOVE_CRITERIA,594,319,59,13
+    COMBOBOX        IDC_COMBO_UNIT,656,319,59,124,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,594,513,59,13
+    PUSHBUTTON      "Cancel",IDCANCEL,656,513,59,13
+    CONTROL         "Surface Criteria",IDC_GRID_CRITERIA,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,8,334,706,71
+    CONTROL         "Surface Object",IDC_GRID_OBJECTS,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,8,426,706,79
+    LTEXT           "Surface Objects",IDC_STATIC,8,411,70,13,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,407,706,1
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,8,507,706,1
+    GROUPBOX        "",IDC_STATIC,470,225,179,66
+    CTEXT           "Decision Area",IDC_STATIC,455,7,259,14,SS_CENTERIMAGE | SS_SUNKEN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,455,22,259,282
+    CONTROL         "",IDC_STATIC_IMAGE_FRAME,"Static",SS_BLACKFRAME,8,7,440,295
+    PUSHBUTTON      "Inspection",IDC_BUTTON_INSPECTION,478,513,111,13
+    CONTROL         "Show selected defects only",IDC_CHECK_SHOW_SELECTED_DEFECTS_ONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,613,412,103,10
+    CONTROL         "Label Image",IDC_CHECK_SHOW_SELECTED_DEFECTS_LABEL,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,551,412,55,10
+END
+
+IDD_SURFACE_SET_MASK_NAME DIALOGEX 0, 0, 357, 53
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Surface Custom Mask"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Mask Name :",IDC_STATIC,17,18,53,7
+    EDITTEXT        IDC_EDIT_NAME,76,15,255,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,211,32,59,13
+    PUSHBUTTON      "Cancel",IDCANCEL,273,32,59,13
+END
+
+IDD_SURFACE_USER_CUSTOM_MASK DIALOGEX 0, 0, 828, 431
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mask Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Import",IDC_BTN_IMPORT,702,351,119,13,NOT WS_VISIBLE
+    PUSHBUTTON      "Export",IDC_BTN_EXPORT,702,366,119,13,NOT WS_VISIBLE
+    GROUPBOX        "Image Process",IDC_STATIC,703,7,118,33
+    PUSHBUTTON      "Erode",IDC_BTN_Erode,707,20,51,13
+    PUSHBUTTON      "Dilate",IDC_BTN_Dilate,763,20,51,13
+    DEFPUSHBUTTON   "OK",IDOK,700,418,59,13
+    PUSHBUTTON      "Cancel",IDCANCEL,761,418,59,13
+    EDITTEXT        IDC_EDIT_RADIUS,738,399,78,13,ES_CENTER | ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CTEXT           "Radius",IDC_STATIC,702,399,33,12,SS_CENTERIMAGE | NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC_IMAGE_FRAME,"Static",SS_BLACKFRAME,9,0,686,456
+END
+
+IDD_SURFACE_DETECT_RECT_THRESHOLD DIALOGEX 0, 0, 393, 285
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Surface Detect Rect Threshold"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,281,264,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,336,264,50,14
+    LTEXT           "Min Width :",IDC_STATIC,11,9,37,8
+    EDITTEXT        IDC_EDIT_MIN_WIDTH,54,7,40,14,ES_AUTOHSCROLL
+    SCROLLBAR       IDC_SCROLLBAR_THRESHOLD_X,24,29,190,11
+    LTEXT           "X :",IDC_STATIC,7,31,10,8
+    SCROLLBAR       IDC_SCROLLBAR_THRESHOLD_Y,24,45,190,11
+    LTEXT           "Y :",IDC_STATIC,7,47,10,8
+    EDITTEXT        IDC_EDIT_THRESH_X,220,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_THRESH_Y,220,44,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC_GRAPH_X,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,7,63,187,187
+    CONTROL         "",IDC_STATIC_GRAPH_Y,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,199,62,187,187
+    CONTROL         "",IDC_STATIC_VALID_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,337,7,23,16
+    CONTROL         "",IDC_STATIC_INVALID_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,363,7,23,16
+END
+
+IDD_SUB_THRESHOLD_NORMAL DIALOGEX 0, 0, 298, 40
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "Min Bright Contrast :",IDC_STC_ThresholdBrightName,5,22,91,8,NOT WS_GROUP | WS_TABSTOP
+    SCROLLBAR       IDC_SBAR_DARK,99,6,121,11
+    EDITTEXT        IDC_MinDarkContrast,225,6,26,12,ES_RIGHT | ES_AUTOHSCROLL
+    SCROLLBAR       IDC_SBAR_BRIGHT,99,20,121,11
+    EDITTEXT        IDC_MinBrightContrast,225,20,26,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "GV",IDC_STC_ThresholdBrightUnit,259,22,35,8
+    LTEXT           "GV",IDC_STC_ThresholdDarkUnit,259,8,35,8
+    RTEXT           "Min Dark Contrast :",IDC_STC_ThresholdDarkName,5,8,91,8,WS_TABSTOP
+END
+
+IDD_SUB_THRESHOLD_ADAPTIVE DIALOGEX 0, 0, 298, 40
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    RTEXT           "Min Bright Contrast",IDC_STC_ThresholdBrightName,164,7,91,8,NOT WS_GROUP | WS_TABSTOP
+    SCROLLBAR       IDC_SBAR_DARK,56,21,84,11
+    EDITTEXT        IDC_MinDarkContrast,5,21,26,12,ES_RIGHT | ES_AUTOHSCROLL
+    SCROLLBAR       IDC_SBAR_BRIGHT,154,20,84,11
+    EDITTEXT        IDC_MinBrightContrast,242,20,26,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "GV",IDC_STC_ThresholdBrightUnit,276,22,18,8
+    LTEXT           "GV",IDC_STC_ThresholdDarkUnit,34,24,18,8
+    RTEXT           "Min Dark Contrast",IDC_STC_ThresholdDarkName,5,7,91,8,WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT,145,6,2,30
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_SURFACEROIEDITORDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 762
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 498
+    END
+
+    IDD_SURFACECRITERIADLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 716
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 526
+    END
+
+    IDD_SURFACE_SET_MASK_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 350
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 46
+    END
+
+    IDD_SURFACE_USER_CUSTOM_MASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 821
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 424
+    END
+
+    IDD_SURFACE_DETECT_RECT_THRESHOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 386
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+
+    IDD_SUB_THRESHOLD_NORMAL, DIALOG
+    BEGIN
+    END
+
+    IDD_SUB_THRESHOLD_ADAPTIVE, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SURFACECRITERIADLG DLGINIT
+BEGIN
+    IDC_COMBO_UNIT, 0x403, 3, 0
+0x6d6d, "\000" 
+    IDC_COMBO_UNIT, 0x403, 4, 0
+0x696d, 0x006c, 
+    IDC_COMBO_UNIT, 0x403, 3, 0
+0x6d75, "\000" 
+    0
+END
+
+IDD_SURFACEROIEDITORDLG DLGINIT
+BEGIN
+    IDC_COMBO_THRESHOLD_TYPE, 0x403, 9, 0
+0x6441, 0x7061, 0x6974, 0x6576, "\000" 
+    IDC_COMBO_THRESHOLD_TYPE, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SURFACE_DETECT_RECT_THRESHOLD AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SURFACEROIEDITORDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SURFACECRITERIADLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SURFACE_USER_CUSTOM_MASK AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SUB_THRESHOLD_NORMAL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SUB_THRESHOLD_ADAPTIVE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionInspectionSurface.rc2"  // Microsoft Visual C++ AI￠®E?UAC ￠®E￠®IU￠®E￠®ⓒ­¡E￠cI ￠®Ii￠®Ii¡E￠c¡§u￠®E￠®ⓒ­￠®E?￠®E¡Ec￠®¡×u¡E￠c¡§I ￠®¡×¡E￠ciAyCN ￠®E￠®ⓒ­￠®Ec￠®¡×uO￠®¡×o￠®¡×￠®ⓒ­AO￠®E￠®II￠®E￠®IU.
+#include "afxres.rc"     // C¡E￠cIA￠®¡×¡§¡I ¡E￠c¡§u￠®E￠®ⓒ­￠®¡×u￠®¡×￠®ⓒ­ ￠®E?a￠®¡×uOAO￠®E￠®II￠®E￠®IU.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

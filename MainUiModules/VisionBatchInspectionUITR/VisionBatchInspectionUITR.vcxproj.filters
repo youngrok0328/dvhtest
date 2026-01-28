@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="VisionBatchInspectionUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionBatchInspectionUIApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionBatchInspectionUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgPrimaryBatchList.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRnRHelper.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgRnRReport.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgYieldViewer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSaveMomoryLogInterval.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BatchManager.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportData.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportSurfaceData.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BarcodeData.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageFileParser.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectVision.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportLidWarpageData.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportBodyData.cpp">
+      <Filter>BatchManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgVisionBatchInspectionUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionBatchInspectionUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionBatchInspectionUIApp.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgYieldViewer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRnRReport.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgRnRHelper.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgPrimaryBatchList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSaveMomoryLogInterval.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BatchManager.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportData.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportSurfaceData.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="BarcodeData.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFileParser.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectVision.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportLidWarpageData.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportBodyData.h">
+      <Filter>BatchManager</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VisionBatchInspectionUI.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{f838fec3-abcb-4257-a802-416200f44429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{27b83548-9a6e-4be9-beb0-d425cd71d039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{4a1bec46-4653-4ce8-83bc-53e296ed810c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BatchManager">
+      <UniqueIdentifier>{7c58fa9c-ee0e-4a93-ad1f-5c34e5101c1d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionBatchInspectionUI.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,34 @@
+﻿#pragma once
+
+#ifndef __AFXWIN_H__
+#error "PCH에 대해 이 파일을 포함하기 전에 'stdafx.h'를 포함합니다."
+#endif
+
+//HDR_0_________________________________ Configuration header
+//HDR_1_________________________________ This project's headers
+//HDR_2_________________________________ Other projects' headers
+//HDR_3_________________________________ External library headers
+//HDR_4_________________________________ Standard library headers
+//HDR_5_________________________________ Forward declarations
+//HDR_6_________________________________ Header body
+//
+class CiPackApp : public CWinAppEx
+{
+public:
+    CiPackApp();
+    virtual ~CiPackApp();
+
+    // 재정의입니다.
+
+public:
+    virtual BOOL InitInstance();
+    virtual int ExitInstance();
+
+    // 구현입니다.
+    BOOL m_bHiColorIcons;
+
+    DECLARE_MESSAGE_MAP()
+    virtual BOOL PreTranslateMessage(MSG* pMsg);
+};
+
+extern CiPackApp theApp;

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 아래 내용은 회사 VC++ 2022용 프로젝트 공통이므로, 임의로 수정하지 않는다. -->
+<!-- 관련 내용은 "인텍플러스 C++ 개발자 공간"을 참고한다. -->
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!-- 구성 속성 -> 일반 -> 일반 속성 -> 출력 디렉토리 -->
+		<OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+		<!-- 구성 속성 -> 일반 -> 일반 속성 -> 중간 디렉토리 -->
+		<IntDir>$(Platform)\$(Configuration)\</IntDir>
+		<!-- 구성 속성 -> 고급 -> 고급 속성 -> OutDir에 C++ 런타임 복사 -->
+		<CopyCppRuntimeToOutputDir>true</CopyCppRuntimeToOutputDir>
+	</PropertyGroup>
+	<PropertyGroup Label="Globals">
+		<!-- 구성 속성 -> 일반 -> Windows SDK 버전 -->
+		<!-- 윈도우 SDK 버전을 지정. 아래처럼 지정하면 설치된 10 버전에서 가장 높은 버전을 사용한다. -->
+		<WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+		<!-- 특정 윈도우 SDK 버전을 지정하고싶은 경우에 아래처럼 사용한다. -->
+		<!-- <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion> -->
+	</PropertyGroup>
+	<PropertyGroup Label="Configuration">
+		<!-- 구성 속성 -> 일반 -> 플랫폼 도구 집합 -->
+		<!-- VC Toolset version. VS2022는 v143으로 지정한다. -->
+		<PlatformToolset>v143</PlatformToolset>
+		<!-- 구성 속성 -> 고급 -> 문자 집합 -->
+		<!-- Unicode or MultiByte -->
+		<CharacterSet>Unicode</CharacterSet>
+	</PropertyGroup>
+	<PropertyGroup Label="Configuration" Condition="'$(Configuration)'=='Debug'">
+		<!-- 구성 속성 -> 고급 -> 고급 속성 -> 디버그 라이브러리 사용 -->
+		<UseDebugLibraries>true</UseDebugLibraries>
+		<!-- 구성 속성 -> 고급 -> 고급 속성 -> 전체 프로그램 최적화 -->
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<!-- 구성 속성 -> 링커 -> 일반 -> 증분 링크 사용 -->
+		<LinkIncremental>true</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Label="Configuration" Condition="'$(Configuration)'=='Release'">
+		<!-- 구성 속성 -> 고급 -> 고급 속성 -> 디버그 라이브러리 사용 -->
+		<UseDebugLibraries>false</UseDebugLibraries>
+		<!-- 구성 속성 -> 고급 -> 고급 속성 -> 전체 프로그램 최적화 -->
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<!-- 구성 속성 -> 링커 -> 일반 -> 증분 링크 사용 -->
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> 추가 포함 디렉토리 -->
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<!-- 구성 속성 -> C/C++ -> 미리 컴파일된 헤더 -> 미리 컴파일된 헤더 -->
+			<PrecompiledHeader>Use</PrecompiledHeader>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> 경고 수준 -->
+			<WarningLevel>Level4</WarningLevel>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> SDL 검사 -->
+			<SDLCheck>true</SDLCheck>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> 내 코드만 디버깅 지원 -->
+			<SupportJustMyCode>false</SupportJustMyCode>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> 공용 언어 런타임 지원 -->
+			<CompileAsManaged>false</CompileAsManaged>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> Windows 런타임 확장 사용 -->
+			<CompileAsWinRT>false</CompileAsWinRT>
+			<!-- 구성 속성 -> C/C++ -> 일반 -> 다중 프로세서 컴파일 -->
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 함수 수준 링크 사용 -->
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 병렬 코드 생성 사용 -->
+			<EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 부동 소수점 모델 -->
+			<FloatingPointModel>Precise</FloatingPointModel>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 부동 소수점 예외 사용 -->
+			<FloatingPointExceptions>false</FloatingPointExceptions>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 핫 패치 가능 이미지 만들기 -->
+			<CreateHotpatchableImage>false</CreateHotpatchableImage>
+			<!-- 구성 속성 -> C/C++ -> 언어 -> C++ 언어 표준 -->
+			<LanguageStandard>stdcpp20</LanguageStandard>
+			<!-- 구성 속성 -> C/C++ -> 언어 -> 준수 모드 -->
+			<ConformanceMode>true</ConformanceMode>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 프레임 포인터 생략 -->
+			<OmitFramePointers>false</OmitFramePointers>
+		</ClCompile>
+		<Link>
+			<!-- 구성 속성 -> 링커 -> 일반 -> 추가 라이브러리 디렉토리 -->
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+			<!-- 구성 속성 -> 링커 -> 디버깅 -> 디버그 정보 생성 -->
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+		<ClCompile>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 최적화 -->
+			<Optimization>Disabled</Optimization>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 내장 함수 사용 -->
+			<IntrinsicFunctions>false</IntrinsicFunctions>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 크기 또는 속도 -->
+			<FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 인라인 함수 확장 -->
+			<InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 런타임 라이브러리 -->
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 전체 프로그램 최적화 -->
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+		</ClCompile>
+		<Link>
+			<!-- 구성 속성 -> 링커 -> 최적화 -> COMDAT 정리 사용 -->
+			<EnableCOMDATFolding>false</EnableCOMDATFolding>
+			<!-- 구성 속성 -> 링커 -> 최적화 -> 참조 -->
+			<OptimizeReferences>false</OptimizeReferences>
+			<!-- 구성 속성 -> 링커 -> 최적화 -> 링크 타임 코드 생성 -->
+			<LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+		<ClCompile>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 최적화 -->
+			<Optimization>MaxSpeed</Optimization>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 내장 함수 사용 -->
+			<IntrinsicFunctions>true</IntrinsicFunctions>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 크기 또는 속도 -->
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 인라인 함수 확장 -->
+			<InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+			<!-- 구성 속성 -> C/C++ -> 코드 생성 -> 런타임 라이브러리 -->
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<!-- 구성 속성 -> C/C++ -> 최적화 -> 전체 프로그램 최적화 -->
+			<WholeProgramOptimization>true</WholeProgramOptimization>
+		</ClCompile>
+		<Link>
+			<!-- 구성 속성 -> 링커 -> 최적화 -> COMDAT 정리 사용 -->
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<!-- 구성 속성 -> 링커 -> 최적화 -> 참조 -->
+			<OptimizeReferences>true</OptimizeReferences>
+			<!-- 구성 속성 -> 링커 -> 최적화 -> 링크 타임 코드 생성 -->
+			<LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+		</Link>
+	</ItemDefinitionGroup>
+</Project>

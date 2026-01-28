@@ -1,0 +1,425 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\Apple.rc2""  // Microsoft Visual C++ AI￠?UAC ￠￥U￠￢¡I ￥i￥i¡¾￠￢￠?￠®¨u¡ⓒ ¨¡iAyCN ￠￢￠c¨uO¨o¨￢AO￠￥I￠￥U.\r\n"
+    "#include ""afxres.rc""     // C¡IA¨ª ¡¾￠￢¨u¨￢ ￠?a¨uOAO￠￥I￠￥U.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Apple.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_Apple_DIALOG DIALOGEX 0, 0, 259, 488
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "iPack Application Selector"
+FONT 9, "굴림", 400, 0, 0x0
+BEGIN
+    CONTROL         "Hardware Exist",IDC_CHECK_HARDWARE_EXIST,"Button",BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,5,4,66,10
+    RTEXT           " Inspection Thread Num :",IDC_STATIC,5,87,107,8
+    COMBOBOX        IDC_CMB_THREAD_NUMBER,118,84,135,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "LED Duration",IDC_STATIC_LED_DURATION,13,138,43,8
+    EDITTEXT        IDC_EDIT_LED_DURATION,65,135,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Grab Duration",IDC_STATIC_GRAB_DURATION,135,138,45,8
+    EDITTEXT        IDC_EDIT_GRAB_DURATION,187,135,40,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "ms",IDC_STATIC,109,139,11,8
+    LTEXT           "ms",IDC_STATIC,231,139,11,8
+    DEFPUSHBUTTON   "OK",IDOK,62,456,93,25
+    PUSHBUTTON      "Cancel",IDCANCEL,160,456,93,25
+    GROUPBOX        "2D Common Parameter(2D && NGRV && Side && TR)",IDC_STATIC,6,124,247,48
+    RTEXT           "Handler Type :",IDC_STATIC,5,70,107,8
+    COMBOBOX        IDC_CMB_HANDLER_TYPE,118,68,135,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Grab Buffer Num :",IDC_STATIC,5,103,107,8
+    COMBOBOX        IDC_CMB_GRAB_BUFFER_NUMBER,118,100,135,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use",IDC_CHECK_USE_AI_INSPECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,116,422,29,10
+    LTEXT           "Wait time :",IDC_STATIC_WAIT_TIME_SEND_DATA,151,424,35,8
+    EDITTEXT        IDC_EDIT_WAIT_TIME_SEND_DATA,188,420,32,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "msec",IDC_STATIC_WAIT_TIME_SEC,222,422,19,8
+    GROUPBOX        "2nd Inspection (Deep Learning)",IDC_STATIC,94,404,156,40
+    CONTROL         "Use Conersion Color Image by Bayer Pattern using GPU",IDC_CHECK_USE_BAYER_PATTERN_GPU,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,13,339,198,10
+    GROUPBOX        "NGRV Vision Color Optisc Parameter",IDC_STATIC_NGRV_COLOR_PARAM_BOX,6,263,247,91
+    CONTROL         "Use long exposure",IDC_CHECK_USE_LONG_EXPOSURE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,15,280,77,10
+    LTEXT           "IR Channel ID :",IDC_STATIC_IR_CHANNEL_ID,15,304,50,8
+    LTEXT           "UV Channel ID :",IDC_STATIC_UV_CHANNEL_ID,15,320,52,8
+    COMBOBOX        IDC_COMBO_IR_CHANNEL_ID,73,301,38,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_UV_CHANNEL_ID,73,318,38,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Default Cam Gain:",IDC_STATIC_DEFAULT_CAM_GAIN,130,287,60,8
+    EDITTEXT        IDC_EDIT_DEFAULT_CHANNEL_GAIN_VALUE,195,284,38,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "IR Channel Gain :",IDC_STATIC_IR_CHANNEL_GAIN,130,304,58,8
+    LTEXT           "UV Channel Gain :",IDC_STATIC_UV_CHANNEL_GAIN,130,320,61,8
+    EDITTEXT        IDC_EDIT_IR_CHANNEL_GAIN_VALUE,195,301,38,14,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UV_CHANNEL_GAIN_VALUE,195,318,38,14,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Coaxial Calibration Type",IDC_STATIC_COAXIAL_ILLUMINATION_CALIBRATION_TYPE,13,156,105,8
+    COMBOBOX        IDC_COMBO_COAXIAL_ILLUMINATION_CALIBRATION_TYPE,105,154,80,79,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Ring illumiantion Exist",IDC_CHECK_USE_RING_ILLUMINATION,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,196,87,10
+    COMBOBOX        IDC_CMB_VISION_TYPE,118,20,135,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Vision Type :",IDC_STATIC,5,22,107,8
+    GROUPBOX        "2D Vision Parameter",IDC_STATIC,6,182,247,29
+    GROUPBOX        "Side Vision Parameter",IDC_STATIC,6,359,247,40
+    COMBOBOX        IDC_CMB_SIDE_VISION_NUMBER,118,373,135,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Side Vision Number :",IDC_STATIC_SIDE_VISION_NUMBER,5,375,107,8
+    RTEXT           "Frame Grabber :",IDC_STATIC,5,38,107,8
+    COMBOBOX        IDC_CMB_FRAME_GRABBER_TYPE,118,36,135,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "NGRV Optics Type :",IDC_STATIC_NGRV_OPTICS_TYPE,5,54,107,8
+    COMBOBOX        IDC_CMB_NGRV_OPTICS_TYPE,118,52,135,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Camera Type : ",IDC_STATIC_2DVISION_CAMERA_TYPE,101,197,58,8
+    COMBOBOX        IDC_CMB_2DVISION_CAMERA_TYPE,156,194,90,89,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "3D Vision Parameter",IDC_STATIC,6,221,247,29
+    RTEXT           "Camera Type : ",IDC_STATIC_3DVISION_CAMERA_TYPE,11,236,51,8
+    COMBOBOX        IDC_CMB_3DVISION_CAMERA_TYPE,67,232,82,51,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Camera Number : ",IDC_STATIC_CAMERA_NUMBER,155,235,64,8
+    COMBOBOX        IDC_CMB_3DVISION_CAMERA_NUMBER,222,231,23,39,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 150, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Apple Password"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,43,24,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,24,50,14
+    EDITTEXT        IDC_EDIT_PASSWORD,7,7,136,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_Apple_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 253
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 481
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_Apple_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0032, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0033, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0035, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0036, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0037, 
+    IDC_CMB_THREAD_NUMBER, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_HANDLER_TYPE, 0x403, 16, 0
+0x5069, 0x5349, 0x332d, 0x3038, 0x4220, 0x6972, 0x6764, 0x0065, 
+    IDC_CMB_HANDLER_TYPE, 0x403, 10, 0
+0x5069, 0x5349, 0x352d, 0x3030, 0x0049, 
+    IDC_CMB_HANDLER_TYPE, 0x403, 10, 0
+0x5069, 0x5349, 0x352d, 0x3030, 0x0041, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 27, 0
+0x6153, 0x656d, 0x6120, 0x2073, 0x6863, 0x6365, 0x206b, 0x6874, 0x6572, 
+0x6461, 0x6320, 0x756f, 0x746e, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0032, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0033, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0034, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0035, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0036, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0037, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0038, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 2, 0
+0x0039, 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3632, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3732, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3832, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3932, "\000" 
+    IDC_CMB_GRAB_BUFFER_NUMBER, 0x403, 3, 0
+0x3033, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_IR_CHANNEL_ID, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0036, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0037, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0038, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 2, 0
+0x0039, 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_COMBO_UV_CHANNEL_ID, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_COAXIAL_ILLUMINATION_CALIBRATION_TYPE, 0x403, 14, 0
+0x7355, 0x2065, 0x6e4f, 0x796c, 0x4720, 0x6172, 0x0079, 
+    IDC_COMBO_COAXIAL_ILLUMINATION_CALIBRATION_TYPE, 0x403, 16, 0
+0x7355, 0x2065, 0x6e4f, 0x796c, 0x4d20, 0x7269, 0x6f72, 0x0072, 
+    IDC_COMBO_COAXIAL_ILLUMINATION_CALIBRATION_TYPE, 0x403, 9, 0
+0x7355, 0x2065, 0x7544, 0x6c61, "\000" 
+    IDC_CMB_VISION_TYPE, 0x403, 10, 0
+0x4432, 0x5620, 0x7369, 0x6f69, 0x006e, 
+    IDC_CMB_VISION_TYPE, 0x403, 10, 0
+0x4433, 0x5620, 0x7369, 0x6f69, 0x006e, 
+    IDC_CMB_VISION_TYPE, 0x403, 12, 0
+0x474e, 0x5652, 0x5620, 0x7369, 0x6f69, 0x006e, 
+    IDC_CMB_VISION_TYPE, 0x403, 12, 0
+0x6953, 0x6564, 0x5620, 0x7369, 0x6f69, 0x006e, 
+    IDC_CMB_VISION_TYPE, 0x403, 12, 0
+0x5753, 0x5249, 0x5620, 0x7369, 0x6f69, 0x006e, 
+    IDC_CMB_VISION_TYPE, 0x403, 10, 0
+0x5254, 0x5620, 0x7369, 0x6f69, 0x006e, 
+    IDC_CMB_SIDE_VISION_NUMBER, 0x403, 7, 0
+0x6953, 0x6564, 0x3120, "\000" 
+    IDC_CMB_SIDE_VISION_NUMBER, 0x403, 7, 0
+0x6953, 0x6564, 0x3220, "\000" 
+    IDC_CMB_FRAME_GRABBER_TYPE, 0x403, 15, 0
+0x4769, 0x6172, 0x4762, 0x2032, 0x6553, 0x6972, 0x7365, "\000" 
+    IDC_CMB_FRAME_GRABBER_TYPE, 0x403, 8, 0
+0x4769, 0x6172, 0x5862, 0x0045, 
+    IDC_CMB_FRAME_GRABBER_TYPE, 0x403, 8, 0
+0x4769, 0x6172, 0x5862, 0x0051, 
+    IDC_CMB_NGRV_OPTICS_TYPE, 0x403, 13, 0
+0x6f43, 0x6f6c, 0x2072, 0x704f, 0x6974, 0x7363, "\000" 
+    IDC_CMB_NGRV_OPTICS_TYPE, 0x403, 12, 0
+0x5753, 0x5249, 0x4f20, 0x7470, 0x6369, 0x0073, 
+    IDC_CMB_2DVISION_CAMERA_TYPE, 0x403, 18, 0
+0x614c, 0x6e6f, 0x5020, 0x6f65, 0x6c70, 0x2065, 0x3228, 0x4d35, 0x0029, 
+
+    IDC_CMB_2DVISION_CAMERA_TYPE, 0x403, 12, 0
+0x4144, 0x534c, 0x2041, 0x3628, 0x4d37, 0x0029, 
+    IDC_CMB_3DVISION_CAMERA_TYPE, 0x403, 12, 0
+0x6956, 0x7765, 0x726f, 0x736b, 0x5620, 0x0043, 
+    IDC_CMB_3DVISION_CAMERA_TYPE, 0x403, 17, 0
+0x694d, 0x726b, 0x746f, 0x6f72, 0x206e, 0x6f45, 0x6553, 0x736e, "\000" 
+    IDC_CMB_3DVISION_CAMERA_NUMBER, 0x403, 2, 0
+0x0031, 
+    IDC_CMB_3DVISION_CAMERA_NUMBER, 0x403, 2, 0
+0x0032, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_Apple_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "Apple 정보(&A)..."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\Apple.rc2"  // Microsoft Visual C++ AI￠?UAC ￠￥U￠￢¡I ￥i￥i¡¾￠￢￠?￠®¨u¡ⓒ ¨¡iAyCN ￠￢￠c¨uO¨o¨￢AO￠￥I￠￥U.
+#include "afxres.rc"     // C¡IA¨ª ¡¾￠￢¨u¨￢ ￠?a¨uOAO￠￥I￠￥U.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

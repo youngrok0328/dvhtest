@@ -1,0 +1,63 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// VisionInspectionLgaBottom2D.rc에서 사용되고 있습니다.
+//
+#define IDC_SBAR_TOP_BUMP_EDGE_COUNT    8000
+#define IDC_SCROLLBAR1                  8000
+#define IDC_SBAR_TOP_BUMP_SEARCH_LENGTH 8001
+#define IDC_COMBO_LAYER                 8001
+#define IDC_SBAR_TOP_BUMP_FILTER_SIZE   8002
+#define IDC_SBAR_TOP_BUMP_EDGE_THRESHOLD 8003
+#define IDC_COMBO_TOP_BUMP_IMAGE        8004
+#define IDC_GRID_BALL_BOTTOM_ALIGN_PARAM_LIST 8004
+#define IDC_GRID_BALL_INSPECTION_PARAM_LIST 8004
+#define IDC_GRID_LAND_INSP_PARAM_LIST   8004
+#define IDC_SBAR_TOP_BUMP_MIN_EDGE_COUNT 8005
+#define IDC_COMBO_COMBINE_MODE          8005
+#define IDC_COMBO_SELECT_COAXIAL_IMAGE  8009
+#define IDC_COMBO_SELECT_OBLIQUE_IMAGE  8010
+#define IDC_BUTTON_PREIMAGE             10011
+#define IDC_BUTTON_NEXTIMAGE            10012
+#define IDD_DIALOG                      13000
+#define IDC_STATIC_IMAGE_WINDOW         13001
+#define IDC_BUTTON_INSPECT              13004
+#define IDC_TAB_RESULT                  13005
+#define IDC_TAB_LOG                     13006
+#define IDC_BUTTON_APPLY                13007
+#define IDC_BUTTON_CLOSE                13008
+#define IDC_EDIT_TOP_BUMP_EDGE_COUNT    13011
+#define IDC_EDIT_Scroll1                13011
+#define IDC_EDIT_TOP_BUMP_SEARCH_LENGTH 13012
+#define IDC_EDIT_TOP_BUMP_FILTER_SIZE   13013
+#define IDC_EDIT_TOP_BUMP_EDGE_THRESHOLD 13014
+#define IDC_EDIT_TOP_BUMP_EDGE_THRESHOLD2 13015
+#define IDC_EDIT_TOP_BUMP_MIN_EDGE_COUNT 13015
+#define IDC_DIA_OFFSET                  26000
+#define IDC_BUTTON1                     26001
+#define IDC_BUTTON_TEACH                26001
+#define IDC_COMBO_CURRPANE              26001
+#define IDD_DLG_HIDDEN_PARAMETER        26001
+#define IDC_COMBO1                      26002
+#define IDC_BTN_SAVE_LOG2               26002
+#define IDC_BTN_VIEW_THRESHOLD          26002
+#define IDD_DIALOG_HIDDEN_OFFSET_BGA    26002
+#define IDD_DIALOG_HIDDEN_OFFSET_LAND   26002
+#define IDC_CMB_VIEW_IMAGE              26003
+#define IDC_EDIT1                       26004
+#define IDC_EDIT_WIDTH_RATIO            26004
+#define IDC_EDIT_MASS_CENTER_OFFSET_X   26004
+#define IDC_GRID_BALL_HIDDEN_OFFSET     26005
+#define IDC_EDIT_MASS_CENTER_OFFSET_Y   26005
+#define IDD_DLG_LAND_PARAMETER          26005
+#define IDC_STATIC_PARAM_AREA           26007
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        26007
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         26008
+#define _APS_NEXT_SYMED_VALUE           26000
+#endif
+#endif

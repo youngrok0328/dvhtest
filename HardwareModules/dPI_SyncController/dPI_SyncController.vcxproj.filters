@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DioView.cpp" />
+    <ClCompile Include="dPI_SyncController.cpp" />
+    <ClCompile Include="SimpleLabel.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SyncController.cpp" />
+    <ClCompile Include="SyncPci.cpp" />
+    <ClCompile Include="SlitIlluminator.cpp" />
+    <ClCompile Include="SyncViewerThread.cpp" />
+    <ClCompile Include="IlluminationTable.cpp" />
+    <ClCompile Include="VirtualVisionIO.cpp">
+      <Filter>VirtualVisionIO</Filter>
+    </ClCompile>
+    <ClCompile Include="CNGRVDioView.cpp" />
+    <ClCompile Include="firmware\ipis300_pci_v51\interrupt.c">
+      <Filter>언빌드 소스\Exist</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\ipis300_pci_v51\Lighting.c">
+      <Filter>언빌드 소스\Exist</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\ipis300_pci_v51\PZT.c">
+      <Filter>언빌드 소스\Exist</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\ipis300_pci_v51\sync_main.c">
+      <Filter>언빌드 소스\Exist</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\ipis300_pci_v51\Timer.c">
+      <Filter>언빌드 소스\Exist</Filter>
+    </ClCompile>
+    <ClCompile Include="firmware\ipis300_pci_v51\variables.c">
+      <Filter>언빌드 소스\Exist</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncController_2D.cpp">
+      <Filter>Sync_Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncController_3D.cpp">
+      <Filter>Sync_Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncController_NGRV.cpp">
+      <Filter>Sync_Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncController_SIDE.cpp">
+      <Filter>Sync_Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncController_Base.cpp">
+      <Filter>Sync_Control\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncCalculator.cpp" />
+    <ClCompile Include="Firmware\ipis300_pci_avr_v330_1\interrupt.c">
+      <Filter>언빌드 소스\New</Filter>
+    </ClCompile>
+    <ClCompile Include="Firmware\ipis300_pci_avr_v330_1\Lighting.c">
+      <Filter>언빌드 소스\New</Filter>
+    </ClCompile>
+    <ClCompile Include="Firmware\ipis300_pci_avr_v330_1\PZT.c">
+      <Filter>언빌드 소스\New</Filter>
+    </ClCompile>
+    <ClCompile Include="Firmware\ipis300_pci_avr_v330_1\sync_main.c">
+      <Filter>언빌드 소스\New</Filter>
+    </ClCompile>
+    <ClCompile Include="Firmware\ipis300_pci_avr_v330_1\Timer.c">
+      <Filter>언빌드 소스\New</Filter>
+    </ClCompile>
+    <ClCompile Include="Firmware\ipis300_pci_avr_v330_1\variables.c">
+      <Filter>언빌드 소스\New</Filter>
+    </ClCompile>
+    <ClCompile Include="SyncController_TR.cpp">
+      <Filter>Sync_Control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DioView.h" />
+    <ClInclude Include="dPI_SyncController.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SimpleLabel.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SyncController.h" />
+    <ClInclude Include="SyncPci.h" />
+    <ClInclude Include="SlitIlluminator.h" />
+    <ClInclude Include="SyncViewerThread.h" />
+    <ClInclude Include="IlluminationTable.h" />
+    <ClInclude Include="VirtualVisionIO.h">
+      <Filter>VirtualVisionIO</Filter>
+    </ClInclude>
+    <ClInclude Include="CNGRVDioView.h" />
+    <ClInclude Include="SyncController_2D.h">
+      <Filter>Sync_Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncController_3D.h">
+      <Filter>Sync_Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncController_NGRV.h">
+      <Filter>Sync_Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncController_SIDE.h">
+      <Filter>Sync_Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncController_Base.h">
+      <Filter>Sync_Control\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="SyncCalculator.h" />
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\CommDef.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\define.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\DioDef.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\Interrupt.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\Lighting.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\macro.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\PZT.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\sync_io.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\sync_ram.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\Timer.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\typedef.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\ipis300_pci_avr_v330_1\variables.h">
+      <Filter>언빌드 소스\New</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h" />
+    <ClInclude Include="_libsetup.h" />
+    <ClInclude Include="SyncController_TR.h">
+      <Filter>Sync_Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Firmware\TR\sync_ram.h">
+      <Filter>언빌드 소스\TR</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="firmware\ipis300_pci_v51\CommDef.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\define.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\DioDef.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\Interrupt.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\IPIS300_PCI_V51_BG.hex">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\Lighting.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\macro.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\PCI Sync Communication Spec.xls">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\PZT.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\sync.prj">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\sync_io.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\sync_ram.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\Timer.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\typedef.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+    <CustomBuild Include="firmware\ipis300_pci_v51\variables.h">
+      <Filter>언빌드 소스\Exist</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dPI_SyncController.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dPI_SyncController.rc2" />
+    <None Include="SyncPci.dll" />
+    <None Include="Firmware\ipis300_pci_avr_v330_1\IPIS300_PCI_V51.hex">
+      <Filter>언빌드 소스\New</Filter>
+    </None>
+    <None Include="Firmware\ipis300_pci_avr_v330_1\IPIS300_PCI_V51_BG.hex">
+      <Filter>언빌드 소스\New</Filter>
+    </None>
+    <None Include="Firmware\ipis300_pci_avr_v330_1\PCI Sync Communication Spec.xls">
+      <Filter>언빌드 소스\New</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="언빌드 소스">
+      <UniqueIdentifier>{12bf8ed2-d599-4554-8019-e05b7b95c315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VirtualVisionIO">
+      <UniqueIdentifier>{5855d619-d2f2-4693-9ae7-7fbc0d09257f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="언빌드 소스\Exist">
+      <UniqueIdentifier>{f018ceb6-0c06-4d5a-98f3-9d08af761414}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="언빌드 소스\New">
+      <UniqueIdentifier>{f7574a04-8940-4c9f-a82a-8632a55b261a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sync_Control">
+      <UniqueIdentifier>{449b8259-e59c-4fe2-b80c-06cabeb5f287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sync_Control\Base">
+      <UniqueIdentifier>{f1f3d0ee-3f06-4ff4-877d-95b704d55259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="언빌드 소스\TR">
+      <UniqueIdentifier>{53a96c91-b8ca-4e98-814f-40852505d6c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

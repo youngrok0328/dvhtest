@@ -1,0 +1,116 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// dPI_SyncController.rc에서 사용되고 있습니다.
+//
+#define IDD_DIALOG_DIO                  230
+#define IDC_STATIC_HANDLER_START        287
+#define IDC_STATIC_HANDLER_BIT_0        288
+#define IDC_STATIC_VISION_READY         289
+#define IDC_STATIC_VISION_ACQUISITION   290
+#define IDC_STATIC_HANDLER_BIT_1        291
+#define IDC_STATIC_HANDLER_BIT_2        292
+#define IDC_CHECK_REPEAT_READY          293
+#define IDC_CHECK_REPEAT_ACQUISITION    294
+#define IDC_STATIC_HANDLER_BIT_3        295
+#define IDC_STATIC_HANDLER_BIT_4        296
+#define IDC_STATIC_HANDLER_BIT_5        297
+#define IDC_STATIC_HANDLER_BIT_6        298
+#define IDC_STATIC_HANDLER_BIT_7        299
+#define IDC_STATIC_HANDLER_BIT_8        300
+#define IDC_STATIC_HANDLER_BIT_9        301
+#define IDC_STATIC_HANDLER_POCKET_ID    302
+#define IDC_STATIC_OUTPUT_0             303
+#define IDC_STATIC_OUTPUT_1             304
+#define IDC_STATIC_OUTPUT_2             305
+#define IDC_STATIC_OUTPUT_3             306
+#define IDC_STATIC_OUTPUT_4             307
+#define IDC_STATIC_OUTPUT_5             308
+#define IDC_STATIC_OUTPUT_6             309
+#define IDC_STATIC_OUTPUT_7             310
+#define IDC_STATIC_OUTPUT_8             311
+#define IDC_STATIC_OUTPUT_9             312
+#define IDC_STATIC_OUTPUT_10            313
+#define IDC_STATIC_OUTPUT_11            314
+#define IDC_STATIC_OUTPUT_12            315
+#define IDC_STATIC_OUTPUT_13            316
+#define IDC_STATIC_OUTPUT_14            317
+#define IDC_STATIC_OUTPUT_15            318
+#define IDC_STATIC_INPUT_0              319
+#define IDC_STATIC_VISION_EXPOSURE      320
+#define IDC_CHECK_REPEAT_EXPOSURE       321
+#define IDC_STATIC_HANDLER_ENCODER_COUNT 323
+#define IDC_STATIC_INPUT_1              335
+#define IDC_STATIC_INPUT_2              336
+#define IDC_STATIC_INPUT_3              337
+#define IDC_STATIC_INPUT_4              338
+#define IDC_STATIC_INPUT_5              339
+#define IDC_STATIC_INPUT_6              340
+#define IDC_STATIC_INPUT_7              341
+#define IDC_STATIC_INPUT_8              342
+#define IDC_STATIC_INPUT_9              343
+#define IDC_STATIC_INPUT_10             344
+#define IDC_STATIC_INPUT_11             345
+#define IDC_STATIC_INPUT_12             346
+#define IDC_STATIC_INPUT_13             347
+#define IDC_STATIC_INPUT_14             348
+#define IDC_STATIC_INPUT_15             349
+#define IDD_DIALOG_NGRV_DIO             10002
+#define IDC_STATIC_NGRV_HANDLER_START   10002
+#define IDC_STATIC_NGRV_SEND_PKG_ID     10003
+#define IDC_STATIC_NGRV_START_IR_FRAME  10003
+#define IDC_STATIC_NGRV_SEND_DEFECT_ID  10004
+#define IDC_STATIC_NGRV_SEND_GRAB_ID    10004
+#define IDC_EDIT1                       10006
+#define IDC_EDIT_NGRV_NUMERICAL_ID      10006
+#define IDC_STATIC_NGRV_VISION_READY    10007
+#define IDC_STATIC_NGRV_MOVE_IR_POS     10008
+#define IDC_STATIC_NGRV_ACUISITION_FAST 10009
+#define IDC_STATIC_NGRV_ACQUISITION_FAST 10009
+#define IDC_STATIC_NGRV_VISION_ACQUISITION 10010
+#define IDC_STATIC_NGRV_VISION_RCV_PKG_ID_DONE 10011
+#define IDC_STATIC_NGRV_VISION_RCV_DEFECT_ID_DONE 10012
+#define IDC_STATIC_NGRV_OUTPUT_0        10013
+#define IDC_STATIC_NGRV_OUTPUT_1        10014
+#define IDC_STATIC_NGRV_OUTPUT_2        10015
+#define IDC_STATIC_NGRV_OUTPUT_3        10016
+#define IDC_STATIC_NGRV_OUTPUT_4        10017
+#define IDC_STATIC_NGRV_OUTPUT_5        10018
+#define IDC_STATIC_NGRV_OUTPUT_6        10019
+#define IDC_STATIC_NGRV_OUTPUT_7        10020
+#define IDC_STATIC_NGRV_OUTPUT_8        10021
+#define IDC_STATIC_NGRV_OUTPUT_9        10022
+#define IDC_STATIC_NGRV_OUTPUT_10       10023
+#define IDC_STATIC_NGRV_OUTPUT_11       10024
+#define IDC_STATIC_NGRV_OUTPUT_12       10025
+#define IDC_STATIC_NGRV_OUTPUT_13       10026
+#define IDC_STATIC_NGRV_OUTPUT_14       10027
+#define IDC_STATIC_NGRV_OUTPUT_15       10028
+#define IDC_STATIC_NGRV_INPUT_0         10029
+#define IDC_STATIC_NGRV_INPUT_1         10030
+#define IDC_STATIC_NGRV_INPUT_2         10031
+#define IDC_STATIC_NGRV_INPUT_3         10032
+#define IDC_STATIC_NGRV_INPUT_4         10033
+#define IDC_STATIC_NGRV_INPUT_5         10034
+#define IDC_STATIC_NGRV_INPUT_6         10035
+#define IDC_STATIC_NGRV_INPUT_7         10036
+#define IDC_STATIC_NGRV_INPUT_8         10037
+#define IDC_STATIC_NGRV_INPUT_9         10038
+#define IDC_STATIC_NGRV_INPUT_10        10039
+#define IDC_STATIC_NGRV_INPUT_11        10040
+#define IDC_STATIC_NGRV_INPUT_12        10041
+#define IDC_STATIC_NGRV_INPUT_13        10042
+#define IDC_STATIC_NGRV_INPUT_14        10043
+#define IDC_STATIC_NGRV_INPUT_15        10044
+#define IDC_EDIT2                       10045
+#define IDC_EDIT_NGRV_STITCH_ID         10045
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        10004
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         10046
+#define _APS_NEXT_SYMED_VALUE           10000
+#endif
+#endif

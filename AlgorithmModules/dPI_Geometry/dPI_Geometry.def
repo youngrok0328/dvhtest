@@ -1,0 +1,6 @@
+; dPI_Geometry.def : Declares the module parameters for the DLL.
+
+LIBRARY      "dPI_Geometry"
+
+EXPORTS
+    ; Explicit exports can go here

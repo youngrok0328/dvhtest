@@ -1,0 +1,289 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionMain.rc2""  // Microsoft Visual C++ AI￠®E?UAC ￠®E￠®IU￠®E￠®ⓒ­¡E￠cI ￠®Ii￠®Ii¡E￠c¡§u￠®E￠®ⓒ­￠®E?￠®E¡Ec￠®¡×u¡E￠c¡§I ￠®¡×¡E￠ciAyCN ￠®E￠®ⓒ­￠®Ec￠®¡×uO￠®¡×o￠®¡×￠®ⓒ­AO￠®E￠®II￠®E￠®IU.\r\n"
+    "#include ""afxres.rc""     // C¡E￠cIA￠®¡×¡§¡I ¡E￠c¡§u￠®E￠®ⓒ­￠®¡×u￠®¡×￠®ⓒ­ ￠®E?a￠®¡×uOAO￠®E￠®II￠®E￠®IU.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_VISION_INSP_SPEC DIALOGEX 0, 0, 531, 491
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Inspection Item Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,341,468,86,18
+    PUSHBUTTON      "Add",IDC_BUTTON_SM_ADD,453,203,45,18
+    PUSHBUTTON      "Delete",IDC_BUTTON_SM_DELETE,407,203,45,18
+    PUSHBUTTON      "Save",IDC_BUTTON_SI_EXPORT,279,419,45,18
+    PUSHBUTTON      "Open",IDC_BUTTON_SI_IMPORT,325,419,45,18
+    PUSHBUTTON      "Add",IDC_BTN_GEO_ADD,176,465,76,18
+    PUSHBUTTON      "Delete",IDC_BTN_GEO_DEL,98,465,76,18
+    CONTROL         "",IDC_REGION_SM,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,279,35,219,165
+    CONTROL         "",IDC_REGION_GEOMETRY,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,14,270,237,192
+    CONTROL         "",IDC_REGION_VISIONITEM,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,13,19,238,233
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,431,468,86,18
+    PUSHBUTTON      "Add",IDC_BUTTON_SI_ADD,453,419,45,18
+    PUSHBUTTON      "Delete",IDC_BUTTON_SI_DELETE,407,419,45,18
+    CONTROL         "",IDC_REGION_SI,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,279,251,219,165
+    GROUPBOX        "PreDefine",IDC_STATIC,6,7,252,251
+    GROUPBOX        "Geometry",IDC_STATIC,6,257,252,229
+    GROUPBOX        "Surface",IDC_STATIC,263,7,252,461
+    GROUPBOX        "Mask",IDC_STATIC,271,19,234,206
+    GROUPBOX        "Inspection",IDC_STATIC,271,239,234,206
+    PUSHBUTTON      "Save",IDC_BUTTON_SM_EXPORT,279,203,45,18
+    PUSHBUTTON      "Open",IDC_BUTTON_SM_IMPORT,325,203,45,18
+END
+
+IDD_DIALOG_VISION_INSP_INIT_SPEC DIALOGEX 0, 0, 322, 339
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Inspection Init Spec"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,265,318,50,14
+    PUSHBUTTON      "Load Default",IDC_BTN_LOAD_DEFAULT,7,317,65,15
+    PUSHBUTTON      "Set Default",IDC_BTN_SET_DEFAULT,73,317,65,15
+    CONTROL         "Apply List",IDC_GRID_LIST_SPEC,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,7,7,308,307
+END
+
+IDD_DIALOG_ILLUM_SETUP_2D DIALOGEX 0, 0, 365, 290
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAP_RGB_ILLUM_CH13,IDC_STATIC_ILLUM_RGB,"Static",SS_BITMAP,7,7,179,258
+    PUSHBUTTON      "",IDC_ILLUM_VIEW,317,150,33,14
+    CTEXT           "Static",IDC_STATIC_SIDE_FRONT_ILLUM,220,16,18,8,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "Static",IDC_STATIC_SIDE_REAR_ILLUM,244,16,18,8,SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_DIALOG_ILLUM_SETUP_3D DIALOGEX 0, 0, 365, 290
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_OVERLAY_MANAGER DIALOGEX 0, 0, 226, 293
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Overlay Manager"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,124,278,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,175,278,50,14
+    CONTROL         "",IDC_GRID,"MFCGridCtrl",WS_TABSTOP,2,3,222,274
+END
+
+IDD_DIALOG_ILLUM_SETUP_SIDE DIALOGEX 0, 0, 365, 290
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAP_SIDE_ILLUM_CH10,IDC_STATIC_ILLUM_RGB,"Static",SS_BITMAP,7,7,260,278
+    PUSHBUTTON      "",IDC_ILLUM_VIEW,317,150,33,14
+    CTEXT           "Static",IDC_STATIC_SIDE_FRONT_ILLUM,220,16,18,8,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "Static",IDC_STATIC_SIDE_REAR_ILLUM,244,16,18,8,SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_DIALOG_ILLUM_SETUP_TR DIALOGEX 0, 0, 365, 290
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAP_RGB_ILLUM_CH13,IDC_STATIC_ILLUM_RGB,"Static",SS_BITMAP,7,7,179,258
+    PUSHBUTTON      "",IDC_ILLUM_VIEW,317,150,33,14
+    CTEXT           "Static",IDC_STATIC_SIDE_FRONT_ILLUM,220,16,18,8,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "Static",IDC_STATIC_SIDE_REAR_ILLUM,244,16,18,8,SS_CENTERIMAGE | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_VISION_INSP_SPEC, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 486
+    END
+
+    IDD_DIALOG_VISION_INSP_INIT_SPEC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 315
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 332
+    END
+
+    IDD_DIALOG_ILLUM_SETUP_2D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_DIALOG_ILLUM_SETUP_3D, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_DIALOG_OVERLAY_MANAGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 219
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_DIALOG_ILLUM_SETUP_SIDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_DIALOG_ILLUM_SETUP_TR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 358
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_ILLUM_SETUP_2D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ILLUM_SETUP_3D AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_VISION_INSP_SPEC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_VISION_INSP_INIT_SPEC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ILLUM_SETUP_SIDE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ILLUM_SETUP_TR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_RGB_ILLUM_CH13 BITMAP                  "res\\Illum_RGB_CH13.bmp"
+
+IDB_BITMAP_NGRV_ILLUM_CH10 BITMAP                  "res\\Illum_NGRV_CH10.bmp"
+
+IDB_BITMAP_AF_Z_POSITION BITMAP                  "res\\AF_Z_Position.bmp"
+
+IDB_BITMAP_SIDE_ILLUM_CH10 BITMAP                  "res\\Illum_SIDE_CH10.bmp"
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionMain.rc2"  // Microsoft Visual C++ AI￠®E?UAC ￠®E￠®IU￠®E￠®ⓒ­¡E￠cI ￠®Ii￠®Ii¡E￠c¡§u￠®E￠®ⓒ­￠®E?￠®E¡Ec￠®¡×u¡E￠c¡§I ￠®¡×¡E￠ciAyCN ￠®E￠®ⓒ­￠®Ec￠®¡×uO￠®¡×o￠®¡×￠®ⓒ­AO￠®E￠®II￠®E￠®IU.
+#include "afxres.rc"     // C¡E￠cIA￠®¡×¡§¡I ¡E￠c¡§u￠®E￠®ⓒ­￠®¡×u￠®¡×￠®ⓒ­ ￠®E?a￠®¡×uOAO￠®E￠®II￠®E￠®IU.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

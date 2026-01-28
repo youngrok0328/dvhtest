@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F386165B-8FED-406C-8F7C-88E9EC84D5E1}</ProjectGuid>
+    <RootNamespace>VisionUnit</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseIntelIPP>false</UseIntelIPP>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.61030.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CodeAnalysisRuleSet>NativeRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0412</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <SubSystem>Windows</SubSystem>
+      <FullProgramDatabaseFile>true</FullProgramDatabaseFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DeviceType.cpp" />
+    <ClCompile Include="DeviceType_Impl.cpp" />
+    <ClCompile Include="MenuBar.cpp" />
+    <ClCompile Include="VisionUnitDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VisionUnit.cpp" />
+    <ClCompile Include="VisionUnitApp.cpp" />
+    <ClCompile Include="VisionUnitFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionUnit.def" />
+    <None Include="res\VisionUnit.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceType.h" />
+    <ClInclude Include="DeviceType_Impl.h" />
+    <ClInclude Include="MenuBar.h" />
+    <ClInclude Include="VisionUnitDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="VisionUnit.h" />
+    <ClInclude Include="VisionUnitApp.h" />
+    <ClInclude Include="_buildsetup.h" />
+    <ClInclude Include="_libsetup.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionUnit.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AlgorithmModules\dPI_Geometry\dPI_Geometry.vcxproj">
+      <Project>{858eb41b-86db-4e9b-bd18-865bb5b3f7c3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DefineModules\dA_Base\dA_Base.vcxproj">
+      <Project>{632a3d23-61d4-4e9c-b416-446d6b010d02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\HardwareModules\dPI_Framegrabber\dPI_Framegrabber.vcxproj">
+      <Project>{afab912e-aa1f-4dd8-882f-316f106433b4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InformationModule\dPI_DataBase\dPI_DataBase.vcxproj">
+      <Project>{95763156-79b7-4d7b-873c-69625c8cc0f3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InformationModule\dPI_SystemIni\dPI_SystemIni.vcxproj">
+      <Project>{58ac8a48-308b-459d-9bb1-4aa989bdc0fb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspection2DMatrix\VisionInspection2DMatrix.vcxproj">
+      <Project>{a4f600d4-49c2-4eaf-a5dc-f8cc534cfaac}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionBgaBallBridge\VisionInspectionBgaBallBridge.vcxproj">
+      <Project>{b0a869e3-fb17-4d6b-b4c8-48a0fc5759bb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionBgaBallPixelQuality\VisionInspectionBgaBallPixelQuality.vcxproj">
+      <Project>{bebc9881-279f-4036-8cd9-2fffc7172520}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionBgaBottom2D\VisionInspectionBgaBottom2D.vcxproj">
+      <Project>{bc79e070-1a09-43cc-9aae-8bf4da839894}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionBgaBottom3D\VisionInspectionBgaBottom3D.vcxproj">
+      <Project>{9d34aaa3-e0dc-4834-ae5f-2e9e2266f1a7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionComponent2D\VisionInspectionComponent2D.vcxproj">
+      <Project>{827905bc-a864-4aa0-b47e-569da409438c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionComponent3D\VisionInspectionComponent3D.vcxproj">
+      <Project>{53228599-5daf-41af-b4a6-d9221e1a9a51}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionDie2D\VisionInspectionDie2D.vcxproj">
+      <Project>{ca74e37a-d1f3-4157-a141-84463666ceb8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionGeometry\VisionInspectionGeometry.vcxproj">
+      <Project>{99867bb2-5219-4818-9f02-13a4a1eafdda}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionGlassSubstrate2D\VisionInspectionGlassSubstrate2D.vcxproj">
+      <Project>{0dda87f4-331f-47cc-9546-2d69affa35dd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionIntensityChecker2D\VisionInspectionIntensityChecker2D.vcxproj">
+      <Project>{6ba6fe87-4a42-4403-8c97-4432d9d42d31}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionKOZ2D\VisionInspectionKOZ2D.vcxproj">
+      <Project>{5a6425e7-8c6a-4c46-99db-b626ead9153e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionLgaBottom2D\VisionInspectionLgaBottom2D.vcxproj">
+      <Project>{51273538-5269-4bb4-91e5-294e14f747fb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionLgaBottom3D\VisionInspectionLgaBottom3D.vcxproj">
+      <Project>{648f2eb3-d776-410c-9629-51f1a414e209}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionLid2D\VisionInspectionLid2D.vcxproj">
+      <Project>{0e1b15b5-25ca-4223-979b-f84e899bed0e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionLid3D\VisionInspectionLid3D.vcxproj">
+      <Project>{b230aeba-8c92-4061-9269-9f09255f89ab}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionMark\VisionInspectionMark.vcxproj">
+      <Project>{fc613df1-1a15-43db-9ec8-a4d36fa8155e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionPackageSize\VisionInspectionPackageSize.vcxproj">
+      <Project>{d90d3d75-f08e-4f51-bfc8-042abcf0ee55}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionPatch2D\VisionInspectionPatch2D.vcxproj">
+      <Project>{1e96c542-4180-4e94-9968-5f600f2e66b0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionPatch3D\VisionInspectionPatch3D.vcxproj">
+      <Project>{82059de0-5bf2-4408-ae52-35b5a0368b7d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionSide2D\VisionInspectionSide2D.vcxproj">
+      <Project>{1c008eaf-2ed7-4fef-ba7f-d3cab7e8e8c9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\InspectionItems\VisionInspectionSurface\VisionInspectionSurface.vcxproj">
+      <Project>{6647163e-85b0-4ac8-91e1-7a399393eb80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MemoryModules\VisionReusableMemory\VisionReusableMemory.vcxproj">
+      <Project>{6fa03858-0172-4bdd-86eb-a140a86b43bd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingAlign2D\VisionProcessingAlign2D.vcxproj">
+      <Project>{132a6a36-1f6c-4753-93b2-4536dbde37d8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingAlign3D\VisionProcessingAlign3D.vcxproj">
+      <Project>{793d15fd-2ab1-4697-9fdf-300754a5f9b4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingCoupon2D\VisionProcessingCoupon2D.vcxproj">
+      <Project>{578f0e8f-b9da-4339-9b6b-f7c3847b8a22}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingFiducialAlign\VisionProcessingFiducialAlign.vcxproj">
+      <Project>{7d65eb91-1b7f-4388-b02e-5aceedf34a76}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingFOV\VisionProcessingFOV.vcxproj">
+      <Project>{a9ef534f-6263-4845-a4cc-523f95939d1b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingGlobalMaskMaker\VisionProcessingGlobalMaskMaker.vcxproj">
+      <Project>{024b7611-e853-4208-8a56-5abb6d1a1f2b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingNGRV\VisionProcessingNGRV.vcxproj">
+      <Project>{748f042b-1d1f-4c00-8deb-66499cc28663}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingOtherAlign\VisionProcessingOtherAlign.vcxproj">
+      <Project>{7a54c847-37a4-40e2-9e79-e49aa687f83d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingPadAlign2D\VisionProcessingPadAlign2D.vcxproj">
+      <Project>{2d80bd66-abc3-4b07-8963-a4ae11c9c596}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingSideDetailAlign\VisionProcessingSideDetailAlign.vcxproj">
+      <Project>{dab5854e-2354-4872-8d52-31c300487973}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ProcessingItems\VisionProcessingSpec\VisionProcessingSpec.vcxproj">
+      <Project>{f1776f0d-2f9a-4e55-a081-ad0f9e5349dd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SharedCommunicationModules\VisionHostCommon\VisionHostCommon.vcxproj">
+      <Project>{891e342d-d93f-4cb9-a093-fe237a25677a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VisionNeedLibrary\VisionCommon\VisionCommon.vcxproj">
+      <Project>{26aa5039-4b3d-46d5-adb6-f1ff5563d676}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\VisionNeedLibrary\VisionEdgeAlign\VisionEdgeAlign.vcxproj">
+      <Project>{099100b4-d2e4-4f1c-906a-d23ea7e86ebf}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Rollback.bmp" />
+    <Image Include="res\Rollback_Down.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="VisionUnit.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

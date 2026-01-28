@@ -1,0 +1,184 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionInspectionGeometry.rc2""  // Microsoft Visual C++ AI¿UAC ´U¸￥ μμ±¸¿¡¼­ ÆiAyCN ¸®¼O½ºAO´I´U.\r\n"
+    "#include ""afxres.rc""     // C￥AØ ±¸¼º ¿a¼OAO´I´U.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_IMAGE_WINDOW,17,15,48,40
+    PUSHBUTTON      "Inspect",IDC_BUTTON_INSPECT,71,129,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_LOG,"SysTabControl32",0x0,71,175,50,30
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,18,129,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Close",IDC_BUTTON_CLOSE,125,130,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+    COMBOBOX        IDC_COMBO_CURRPANE,141,31,205,82,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BUTTON_PREIMAGE,141,57,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      ">>",IDC_BUTTON_NEXTIMAGE,199,55,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_GEOMETRY_LIST,"XTPGrid",WS_TABSTOP,222,120,222,131
+    CTEXT           "Static",IDC_STATIC_SIDE_FRONT_GEOMETRY,42,226,19,8,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+    CTEXT           "Static",IDC_STATIC_SIDE_REAR_GEOMETRY,63,225,19,8,SS_CENTERIMAGE,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_EDITOR DIALOGEX 0, 0, 679, 578
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Geometry Inspection Editor"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_GRID_REF_LIST,"MFCGridCtrl",WS_TABSTOP,164,21,508,85
+    CONTROL         "",IDC_GRID_TAR_LIST,"MFCGridCtrl",WS_TABSTOP,164,139,508,83
+    CONTROL         "",IDC_GRID_INFO_LIST,"MFCGridCtrl",WS_TABSTOP,7,21,132,201
+    PUSHBUTTON      ">>",IDC_BTN_ADD_REF,142,49,17,29
+    PUSHBUTTON      ">>",IDC_BTN_ADD_TAR,142,165,17,29
+    LTEXT           "Reference Setting Parameter",IDC_STATIC,165,11,94,8
+    LTEXT           "Target Setting Parameter",IDC_STATIC,165,128,82,8
+    PUSHBUTTON      "Delete",IDC_BTN_DEL_REF,164,107,55,16
+    PUSHBUTTON      "Reference Step Run",IDC_BTN_RUN_REF,570,107,102,17
+    PUSHBUTTON      "Delete",IDC_BTN_DEL_TAR,164,223,55,16
+    PUSHBUTTON      "Target Step Run",IDC_BTN_RUN_TAR,571,223,101,17
+    CONTROL         "",IDC_IMAGE_VIEW,"Static",SS_BLACKFRAME,164,243,508,312
+    EDITTEXT        IDC_EDIT_RESULT,7,390,151,165,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL
+    CONTROL         "",IDC_GRID_INSP_PARAM,"MFCGridCtrl",WS_TABSTOP,7,243,152,106
+    LTEXT           "Inspection Parameter",IDC_STATIC,7,232,70,8
+    LTEXT           "Inspection  Result",IDC_STATIC,7,379,58,8
+    PUSHBUTTON      "Run Inspection",IDC_BTN_RUN,7,351,152,21
+    LTEXT           "Align Info Data List",IDC_STATIC,8,11,62,8
+    DEFPUSHBUTTON   "OK",IDOK,469,557,101,14
+    PUSHBUTTON      "CANCEL",IDC_BTN_CANCEL,571,557,101,14
+    LTEXT           "",IDC_STATIC_WARNING_REFERENCE,271,10,401,8
+    LTEXT           "",IDC_STATIC_WARNING_TARGET,271,128,401,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DIALOG_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 672
+        VERTGUIDE, 159
+        VERTGUIDE, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 571
+        HORZGUIDE, 21
+        HORZGUIDE, 106
+        HORZGUIDE, 123
+        HORZGUIDE, 222
+        HORZGUIDE, 243
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_EDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionInspectionGeometry.rc2"  // Microsoft Visual C++ AI¿UAC ´U¸￥ μμ±¸¿¡¼­ ÆiAyCN ¸®¼O½ºAO´I´U.
+#include "afxres.rc"     // C￥AØ ±¸¼º ¿a¼OAO´I´U.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

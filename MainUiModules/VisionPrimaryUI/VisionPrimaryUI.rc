@@ -1,0 +1,436 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionPrimaryUI.rc2""  // Microsoft Visual C++ AI￠®E¡EcE?UAC ￠®E¡EcE￠®E¡EcIU￠®E¡EcE￠®E¡Ec¡§I￠®¨I¡E￠cE￠®EcI ￠®E¡EcIi￠®E¡EcIi¡E￠cE￠®Ec¡E￠c￠®¡¿u￠®E¡EcE￠®E¡Ec¡§I￠®¨I￠®E¡EcE?￠®E¡EcE¡E￠cEc￠®E¡Ec¡E￠c￠®￠?u¡E￠cE￠®Ec¡E￠c￠®¡¿I ￠®E¡Ec¡E￠c￠®￠?¡E￠cE￠®EciAyCN ￠®E¡EcE￠®E¡Ec¡§I￠®¨I￠®E¡EcEc￠®E¡Ec¡E￠c￠®￠?uO￠®E¡Ec¡E￠c￠®￠?o￠®E¡Ec¡E￠c￠®￠?￠®E¡Ec¡§I￠®¨IAO￠®E¡EcE￠®E¡EcII￠®E¡EcE￠®E¡EcIU.\r\n"
+    "#include ""afxres.rc""     // C¡E￠cE￠®EcIA￠®E¡Ec¡E￠c￠®￠?¡E￠c￠®¡¿¡E￠cI ¡E￠cE￠®Ec¡E￠c￠®¡¿u￠®E¡EcE￠®E¡Ec¡§I￠®¨I￠®E¡Ec¡E￠c￠®￠?u￠®E¡Ec¡E￠c￠®￠?￠®E¡Ec¡§I￠®¨I ￠®E¡EcE?a￠®E¡Ec¡E￠c￠®￠?uOAO￠®E¡EcE￠®E¡EcII￠®E¡EcE￠®E¡EcIU.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_PRIMARY MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Job Open",                    ID_FILE_JOB_OPEN
+        MENUITEM "Gerber Open",                 ID_FILE_GERBER_OPEN
+        MENUITEM "Image Open",                  ID_FILE_IMAGE_OPEN
+        MENUITEM "E&xit",                       ID_FILE_EXIT
+    END
+    MENUITEM "&Edit",                       ID_EDIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PRIMARY DIALOGEX 0, 0, 589, 526
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         IDB_BITMAP_LOGO,IDC_STATIC_LOGO,"Static",SS_BITMAP,0,2,421,62
+    LTEXT           "job",IDC_STATIC_JOB_FILE,0,63,119,22,WS_BORDER
+    LTEXT           "Static",IDC_STATIC_JOB_FILE_NAME,121,63,301,22,WS_BORDER
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,289,177,86,36
+    LTEXT           "Connect Status",IDC_STATIC_CONNECT1,0,109,119,22,WS_BORDER
+    LTEXT           "Connected",IDC_STATIC_CONNECT2,121,109,301,22,WS_BORDER
+    LTEXT           "Access Mode",IDC_STATIC_ACCESSMODE1,0,133,119,22,WS_BORDER
+    LTEXT           "Service",IDC_STATIC_ACCESSMODE2,121,133,301,22,WS_BORDER
+    LTEXT           "Version",IDC_STATIC_VERSION1,0,86,119,22,WS_BORDER
+    LTEXT           "Version",IDC_STATIC_VERSION2,121,86,301,22,WS_BORDER
+    CONTROL         IDB_BITMAP_BGABOTTOM,IDC_STATIC_BGABOTTOM,"Static",SS_BITMAP,74,236,423,151
+    CONTROL         IDB_BITMAP_BGATOP,IDC_STATIC_BGATOP,"Static",SS_BITMAP,0,313,423,151
+    LTEXT           "Result",IDC_STATIC_RESULT,424,2,119,22,WS_BORDER
+    CTEXT           "Static",IDC_STATIC_SIDE_FRONT_PRIMARY,8,427,18,8,SS_CENTERIMAGE | WS_BORDER
+    CTEXT           "Static",IDC_STATIC_SIDE_REAR_PRIMARY,34,428,18,8,SS_CENTERIMAGE | WS_BORDER
+END
+
+IDD_DLGLOGIN DIALOGEX 0, 0, 124, 103
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Log in"
+FONT 18, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "Operator",IDC_Operator,"Button",BS_AUTORADIOBUTTON | WS_GROUP,39,26,44,9
+    CONTROL         "Engineer",IDC_Engineer,"Button",BS_AUTORADIOBUTTON,39,41,45,9
+    CONTROL         "IntekPlus",IDC_IntekPlus,"Button",BS_AUTORADIOBUTTON,39,57,53,9
+    CONTROL         "Hidden Mode",IDC_HiddenMode,"Button",BS_AUTORADIOBUTTON,39,57,55,9
+    DEFPUSHBUTTON   "OK",IDOK,11,82,50,13
+    PUSHBUTTON      "Cancel",IDCANCEL,64,82,50,13
+    GROUPBOX        "Select Mode",IDC_STATIC,11,7,103,73
+END
+
+IDD_DIALOG_REVIEWIMAGE_VIEWER DIALOGEX 0, 0, 508, 554
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Review Image Viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,4,4,499,487
+    COMBOBOX        IDC_CMB_DATE,9,506,122,236,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_JOB_NAME,133,506,182,236,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_LOTID,317,506,182,236,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_FILE_NAME,9,522,490,236,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "File Name :",IDC_STATIC_FILE_NAME,11,539,120,11
+    EDITTEXT        IDC_EDIT_SEARCH,133,538,122,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "File Serarch",ID_BTN_SEARCH_FILE,258,537,58,15
+    DEFPUSHBUTTON   "Refresh Info",ID_BTN_REFRESH,317,537,125,15
+    DEFPUSHBUTTON   "Close",IDOK,444,537,56,15
+    LTEXT           "Date :",IDC_STATIC,11,495,65,11
+    LTEXT           "Job Name :",IDC_STATIC,135,495,65,11
+    LTEXT           "Lot ID :",IDC_STATIC,319,495,65,11
+    CONTROL         "",IDC_RICHEDIT,"RichEdit20W",WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | 0x8c4,10,24,114,64,WS_EX_STATICEDGE
+END
+
+IDD_IMAGEVIEWER DIALOGEX 0, 0, 187, 94
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_BORDER | WS_VSCROLL | WS_HSCROLL
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_MARK_TEACH_RESULT_VIEW DIALOGEX 0, 0, 451, 327
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mark Teach Result Viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,399,311,50,14
+    CONTROL         "",IDC_MARK_TEACH_RESULT_VIEW,"Static",SS_BLACKFRAME,2,2,447,305
+END
+
+IDD_DIALOG_AUTOFOCUSING DIALOGEX 0, 0, 229, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AutoFocusing"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,171,185,50,14
+    CONTROL         "Start Manual AutoFocus",IDC_CHECK_AUTOFOCUSING_TUNING_MODE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,12,109,9
+    LTEXT           "Cur  Value :",IDC_STATIC_CurFocusValue,9,31,47,8
+    LTEXT           "Max Value :",IDC_STATIC_PeakFocusValue,9,48,47,8
+    EDITTEXT        IDC_EDIT_CurFocusValue,61,30,47,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_PeakFocusValue,61,46,47,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Target:",IDC_STATIC_TargetSelect,124,18,28,8
+    LTEXT           "Frame:",IDC_STATIC_FrameSelect,125,35,28,8
+    LTEXT           "O.Maks:",IDC_STATIC_ObejctMask,124,54,33,8
+    COMBOBOX        IDC_COMBO_AutoFocus_TargetSelect,162,16,56,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_AutoFocus_FrameSelect,162,34,56,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_AutoFocus_ObjectMask,162,52,56,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Max ValueClear",IDC_BUTTON_PEAKVALUEINIT,9,70,87,13
+    PUSHBUTTON      "Grab",IDC_BUTTON_GRABANDCALCFOCUSVALUE,104,70,59,13
+    CONTROL         "User ROI",IDC_CHECK_AUTOFOCUSING_SetUserROI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,93,53,9
+    LTEXT           "Average Value :",IDC_STATIC_AverageFocusValue,9,109,61,8
+    EDITTEXT        IDC_EDIT_AverageFocusValue,76,106,47,13,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "AverageCalc",IDC_BUTTON_CALCAVERAGEFOCUSVALUE,129,106,59,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_PRIMARY, DIALOG
+    BEGIN
+        TOPMARGIN, 2
+    END
+
+    IDD_DLGLOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_DIALOG_REVIEWIMAGE_VIEWER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 501
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 547
+    END
+
+    IDD_IMAGEVIEWER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_DIALOG_MARK_TEACH_RESULT_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 449
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 325
+    END
+
+    IDD_DIALOG_AUTOFOCUSING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_LOGO         BITMAP                  "res\\Logo.bmp"
+
+IDB_BITMAP_BGABOTTOM    BITMAP                  "res\\BgaBottom.bmp"
+
+IDB_BITMAP_BGATOP       BITMAP                  "res\\BgaTop.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_PRIMARY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_AUTOFOCUSING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SYSTEM_SETUP DIALOGEX 0, 0, 400, 285
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "System Setup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,288,264,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,343,264,50,14
+    LTEXT           "Send To Host image Frame Number :",IDC_STATIC,9,51,128,14
+    EDITTEXT        IDC_EDIT_SEND_FRAME,136,50,58,14,ES_AUTOHSCROLL
+    LTEXT           "Review Image Delete Expire Day :",IDC_STATIC,9,83,116,14,WS_DISABLED
+    EDITTEXT        IDC_EDIT_REVIEW_EXPIRE_DAY,136,82,58,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "Pass Save Review Image",IDC_CHK_SAVE_REVIEW_IMAGE,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,9,99,95,12
+    EDITTEXT        IDC_EDIT_REVIEW_SAVE_FRAME,136,99,30,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Frame",IDC_STATIC,172,103,25,10,WS_DISABLED
+    CONTROL         "Send To Host Review Image",IDC_CHK_SEND_HOST_REVIEW,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,9,115,104,12
+    LTEXT           "Review Image Save Drive :",IDC_STATIC,9,67,116,14
+    COMBOBOX        IDC_CMB_DRIVE,136,67,58,78,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use Mark Multi Teaching",IDC_CHK_USE_MULTI_TEACHING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,131,96,12
+    LTEXT           "Surface (PVI) Reject Report Area Count :",IDC_STATIC,9,181,134,8
+    EDITTEXT        IDC_EDIT_REJECT_REPORT_X,60,192,58,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REJECT_REPORT_Y,136,192,58,14,ES_AUTOHSCROLL
+    LTEXT           "X :",IDC_STATIC,47,194,11,14
+    LTEXT           "Y :",IDC_STATIC,125,193,9,14
+    CONTROL         "Save inline raw images",IDC_CHK_SAVE_INLINE_RAW_IMAGES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,8,158,12
+    CONTROL         "Save slitbeam original images",IDC_CHK_SAVE_SLITBEAM_ORIGINAL_IMAGES,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,21,158,12
+    PUSHBUTTON      "Refresh System.ini",IDC_BTN_SYSTEMINI_REFRESH,207,264,76,14
+    GROUPBOX        "No Hardware Option",IDC_STATIC,202,12,188,49
+    LTEXT           "Image Sampling :",IDC_STATIC,220,29,56,8
+    COMBOBOX        IDC_COMBO_IMAGESAMPLING,284,26,95,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Socket Connection",IDC_CHECK_SOCKET_CONNECTION,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,308,43,75,10
+    LTEXT           "3D Grab Verify Matching Count:",IDC_STATIC,9,151,116,14
+    COMBOBOX        IDC_CMB_GPU_CALC_RETRY,136,151,58,78,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Current recipe version :",IDC_STATIC,209,63,77,8
+    EDITTEXT        IDC_EDIT_RECIPE_VERSION,288,61,99,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "Use Grab Retry (Camera Grab)",IDC_CHK_USE_GRAB_RETRY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,164,158,12
+    LTEXT           "Save by Inspection Count :",IDC_STATIC,221,148,88,8
+    LTEXT           "Maximum Report Count     :",IDC_STATIC,221,161,88,8
+    GROUPBOX        "DEV. Option",IDC_STATIC,202,124,188,123
+    CONTROL         "Enable CPU Calc. LOG",IDC_CHK_ENABLE_CPU_CALC_LOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,136,86,10
+    CONTROL         "Enable GPU Calc. LOG",IDC_CHK_ENABLE_GPU_CALC_LOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,173,86,10
+    EDITTEXT        IDC_EDIT_CPU_SAVE_INSP_COUNT,310,146,49,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CPU_SAVE_REPORT_MAXIMUM_COUNT,310,159,49,12,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "Collect M/V reject data (Learning Image)",IDC_CHK_SAVE_MV_REJECT_DATA,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,34,158,12
+    LTEXT           "NGRV Vision Image Save Type :",IDC_STATIC,9,251,102,8
+    COMBOBOX        IDC_CMB_NGRV_IMAGE_SAVE_TYPE,136,251,58,30,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Cam Gain:",IDC_STATIC,206,45,34,8
+    EDITTEXT        IDC_EDIT_CAM_GAIN,241,42,27,14,ES_CENTER | ES_AUTOHSCROLL
+    PUSHBUTTON      "APPLY",IDC_BTN_APPLY_CAM_GAIN,270,42,28,14
+    LTEXT           "2D Illumination Cal. type :",IDC_STATIC,9,215,84,8
+    COMBOBOX        IDC_CMB_ILLUM_CAL_TYPE,110,215,84,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Enable Inspection Time LOG",IDC_CHK_ENABLE_SEQUENCE_INSPECTION_TIME_LOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,187,105,10
+    LTEXT           "2D DualCal interpolation start point [ms]",IDC_STATIC,9,233,132,8
+    EDITTEXT        IDC_EDIT_INTERPOLATION_START,155,232,41,14,ES_AUTOHSCROLL
+    CONTROL         "Enable iGrab B/D Temperature Save Log",IDC_CHK_ENABLE_IGRAB_BD_TEMPERATURE_LOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,201,182,10
+    CONTROL         "Enable Inspection Result Timeout Save Raw image",IDC_CHK_ENABLE_INSPECTION_RESULT_TIMEOUT_RAW_IMAGE_SAVE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,215,177,10
+    CONTROL         "Enable Inspection Result Send Time Log",IDC_CHK_ENABLE_INSPECTION_RESULT_SEND_TIMELOG,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,206,229,143,10
+    COMBOBOX        IDC_COMBO_GRAB_FAIL_FOR_IMAGE_ZERO_LIMIT_COUNT,358,80,29,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_GRAB_FAIL_FOR_CABLE_ERROR_LIMIT_COUNT,358,95,29,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Continuous image Grab Fail Limit Count :",IDC_STATIC,209,82,130,8
+    LTEXT           "Continuous Cxp Link Cable Error Limit Count :",IDC_STATIC,209,97,146,8
+    LTEXT           "2DID Cropping image Save Option :",IDC_STATIC,209,112,114,8
+    COMBOBOX        IDC_COMBO_2DID_CROPPING_IMAGE_SAVE_OPTION,325,110,62,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use 3D Noise Check",IDC_CHK_USE_3D_NOISECHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,266,158,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SYSTEM_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 278
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SYSTEM_SETUP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SYSTEM_SETUP DLGINIT
+BEGIN
+    IDC_COMBO_IMAGESAMPLING, 0x403, 2, 0
+0x0031, 
+    IDC_COMBO_IMAGESAMPLING, 0x403, 2, 0
+0x0032, 
+    IDC_COMBO_IMAGESAMPLING, 0x403, 2, 0
+0x0033, 
+    IDC_COMBO_IMAGESAMPLING, 0x403, 2, 0
+0x0034, 
+    IDC_COMBO_IMAGESAMPLING, 0x403, 2, 0
+0x0035, 
+    IDC_COMBO_2DID_CROPPING_IMAGE_SAVE_OPTION, 0x403, 9, 0
+0x6f4e, 0x2074, 0x6153, 0x6576, "\000" 
+    IDC_COMBO_2DID_CROPPING_IMAGE_SAVE_OPTION, 0x403, 9, 0
+0x6153, 0x6576, 0x4120, 0x6c6c, "\000" 
+    0
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionPrimaryUI.rc2"  // Microsoft Visual C++ AI￠®E¡EcE?UAC ￠®E¡EcE￠®E¡EcIU￠®E¡EcE￠®E¡Ec¡§I￠®¨I¡E￠cE￠®EcI ￠®E¡EcIi￠®E¡EcIi¡E￠cE￠®Ec¡E￠c￠®¡¿u￠®E¡EcE￠®E¡Ec¡§I￠®¨I￠®E¡EcE?￠®E¡EcE¡E￠cEc￠®E¡Ec¡E￠c￠®￠?u¡E￠cE￠®Ec¡E￠c￠®¡¿I ￠®E¡Ec¡E￠c￠®￠?¡E￠cE￠®EciAyCN ￠®E¡EcE￠®E¡Ec¡§I￠®¨I￠®E¡EcEc￠®E¡Ec¡E￠c￠®￠?uO￠®E¡Ec¡E￠c￠®￠?o￠®E¡Ec¡E￠c￠®￠?￠®E¡Ec¡§I￠®¨IAO￠®E¡EcE￠®E¡EcII￠®E¡EcE￠®E¡EcIU.
+#include "afxres.rc"     // C¡E￠cE￠®EcIA￠®E¡Ec¡E￠c￠®￠?¡E￠c￠®¡¿¡E￠cI ¡E￠cE￠®Ec¡E￠c￠®¡¿u￠®E¡EcE￠®E¡Ec¡§I￠®¨I￠®E¡Ec¡E￠c￠®￠?u￠®E¡Ec¡E￠c￠®￠?￠®E¡Ec¡§I￠®¨I ￠®E¡EcE?a￠®E¡Ec¡E￠c￠®￠?uOAO￠®E¡EcE￠®E¡EcII￠®E¡EcE￠®E¡EcIU.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,980 @@
+﻿//CPP_0_________________________________ Precompiled header
+#include "stdafx.h"
+
+//CPP_1_________________________________ Main header
+#include "DlgVisionProcessingNGRV_TOP2D.h"
+
+//CPP_2_________________________________ This project's headers
+#include "VisionProcessingNGRV.h"
+#include "VisionProcessingNGRVPara.h"
+#include "DlgVisionProcessingNGRV.h"
+#include "DlgVisionProcessingNGRV_DetailSetup.h"
+
+//CPP_3_________________________________ Other projects' headers
+#include "../../HardwareModules/dPI_Framegrabber/Framegrabber.h"
+#include "../../HardwareModules/dPI_SyncController/SyncController.h"
+#include "../../InformationModule/dPI_SystemIni/SystemConfig.h"
+#include "../../InformationModule/dPI_DataBase/IllumInfo2D.h"
+#include "../../SharedCommonUtilityModules/dPI_MsgDialog/SimpleMessage.h"
+#include "../../SharedCommunicationModules/VisionHostCommon/NGRV_ProtocolDataBase.h"
+#include "../../UserInterfaceModules/CommonControlExtension/XTPPropertyGridItemCustomFloat.h"
+#include "../../UserInterfaceModules/CommonControlExtension/XTPPropertyGridItemCustomItems.h"
+#include "../../UserInterfaceModules/ImageLotView/ImageLotView.h"
+#include "../../UserInterfaceModules/ImageViewEx/ImageViewEx.h"
+#include "../../VisionNeedLibrary/VisionCommon/VisionImageLot.h"
+#include "../../VisionNeedLibrary/VisionCommon/VisionImageLotInsp.h"
+#include "../../VisionNeedLibrary/VisionCommon/VisionProcessing.h"
+#include "../../VisionNeedLibrary/VisionCommon/VisionUnitAgent.h"
+
+//CPP_4_________________________________ External library headers
+#include <Algorithm/ImageProcessing.h>
+#include <Types/Image_8u_C3.h>
+#include <Types/Point_32f_C2.h>
+#include <Types/Rect_32f.h>
+
+//CPP_5_________________________________ Standard library headers
+//CPP_6_________________________________ Preprocessor macros
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#endif
+
+#define UM_GRAB_END_EVENT (WM_USER + 1054)
+#define NGRV_TOTAL_FRAME_NUM 8
+#define NGRV_CAMERA_X_UM 19000
+#define NGRV_CAMERA_Y_UM 15000
+
+//CPP_7_________________________________ Implementation body
+enum GridItemID_TOP
+{
+    ITEM_START = 0,
+    ITEM_ADD_TOP = ITEM_START,
+    ITEM_DELETE_TOP,
+    ITEM_APPLY_TOP,
+    ITEM_END,
+};
+
+enum ListItemID_TOP
+{
+    COLUMN_START = 0,
+    COLUMN_DEFECT_NAME_TOP = COLUMN_START,
+    COLUMN_ITEM_SETUP_TOP,
+    COLUMN_MOVE_POS_TOP,
+    COLUMN_END,
+};
+
+
+// DlgVisionProcessingNGRV_TOP2D 대화 상자
+
+IMPLEMENT_DYNAMIC(DlgVisionProcessingNGRV_TOP2D, CDialog)
+
+DlgVisionProcessingNGRV_TOP2D::DlgVisionProcessingNGRV_TOP2D(VisionProcessingNGRV* processor, VisionProcessingNGRVPara& para, CWnd* pParent /*=nullptr*/)
+	: CDialog(IDD_DLG_NGRV_TOP_TAB, pParent)
+    , m_processor(processor)
+    , m_imageView(nullptr)
+    , m_para(para)    
+    , m_grid(new CXTPPropertyGrid)
+    , m_selectedDefectID(0)
+    , m_currentFrameNum(0)
+    , m_isLive(FALSE)
+    , m_grabImage(new IPVM::Image_8u_C1)
+    , m_bayerImage(new IPVM::Image_8u_C3)
+{
+    m_imageID = 0;
+}
+
+DlgVisionProcessingNGRV_TOP2D::~DlgVisionProcessingNGRV_TOP2D()
+{
+    delete m_grid;
+    delete m_imageView;
+}
+
+void DlgVisionProcessingNGRV_TOP2D::DoDataExchange(CDataExchange* pDX)
+{
+    CDialog::DoDataExchange(pDX);
+    DDX_Control(pDX, IDC_LIST_NGRV_TOP2D, m_parameterList);
+    DDX_Control(pDX, IDC_EDIT_FRAME_NUM_TOP, m_frameNum);
+    DDX_Control(pDX, IDC_BUTTON_CHANGE_FRAME_BACK, m_frameBW);
+    DDX_Control(pDX, IDC_BUTTON_CHANGE_FRAME_FOWARD, m_frameFW);
+    DDX_Control(pDX, IDC_BUTTON_LIVE_TOP, m_buttonLive);
+    DDX_Control(pDX, IDC_BUTTON_GRAB_TOP, m_buttonGrab);
+}
+
+
+BEGIN_MESSAGE_MAP(DlgVisionProcessingNGRV_TOP2D, CDialog)
+ON_WM_CREATE()
+ON_WM_DESTROY()
+ON_MESSAGE(UM_GRAB_END_EVENT, &DlgVisionProcessingNGRV_TOP2D::OnGrabEndEvent)
+ON_MESSAGE(XTPWM_PROPERTYGRID_NOTIFY, OnGridNotify)
+ON_NOTIFY(XTP_NM_GRID_ITEMBUTTONCLICK, IDC_LIST_NGRV_TOP2D, &DlgVisionProcessingNGRV_TOP2D::OnItemButtonClickTOP)
+ON_NOTIFY(XTP_NM_GRID_VALUECHANGED, IDC_LIST_NGRV_TOP2D, &DlgVisionProcessingNGRV_TOP2D::OnDefectNameChangedTOP)
+ON_BN_CLICKED(IDC_BUTTON_CHANGE_FRAME_BACK, &DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonChangeFrameBack)
+ON_BN_CLICKED(IDC_BUTTON_CHANGE_FRAME_FOWARD, &DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonChangeFrameFoward)
+ON_BN_CLICKED(IDC_BUTTON_LIVE_TOP, &DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonLiveTop)
+ON_BN_CLICKED(IDC_BUTTON_GRAB_TOP, &DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonGrabTop)
+END_MESSAGE_MAP()
+
+
+// DlgVisionProcessingNGRV_TOP2D 메시지 처리기
+
+BOOL DlgVisionProcessingNGRV_TOP2D::OnInitDialog()
+{
+    CDialog::OnInitDialog();
+
+    CRect parentRect;
+    GetParent()->GetClientRect(parentRect);
+    parentRect.top = parentRect.top + 21;
+    parentRect.left = parentRect.left + 1;
+    parentRect.right = parentRect.right - 3;
+    parentRect.bottom = parentRect.bottom - 2;
+    MoveWindow(parentRect);
+
+    CRect tempArea, gridArea;
+    tempArea = m_processor->m_pVisionInspDlg->m_procDlgInfo.m_rtParaArea;
+    tempArea.left = parentRect.left + 10;
+    tempArea.right = parentRect.right - 10;
+    tempArea.bottom = tempArea.bottom - 430;
+    tempArea.top = tempArea.top - 20;
+
+    gridArea.SetRect(tempArea.left, tempArea.top, tempArea.right, tempArea.bottom);
+    m_grid->Create(gridArea, this, IDC_STATIC);   
+    m_grid->ShowHelp(FALSE);      
+
+    m_gridArea = gridArea;
+
+    OnInitGrid();
+    OnInitList();
+    OnInitImage();
+
+    ResetListControl();
+
+    SetROI();
+
+    return TRUE; // return TRUE unless you set the focus to a control
+    // 예외: OCX 속성 페이지는 FALSE를 반환해야 합니다.
+}
+
+int DlgVisionProcessingNGRV_TOP2D::OnCreate(LPCREATESTRUCT lpCreateStruct)
+{
+    if (CDialog::OnCreate(lpCreateStruct) == -1)
+        return -1;
+
+    // TODO:  여기에 특수화된 작성 코드를 추가합니다.
+
+    return 0;
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnDestroy()
+{
+    CDialog::OnDestroy();
+
+    // TODO: 여기에 메시지 처리기 코드를 추가합니다.
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnInitGrid()
+{
+    m_grid->ResetContent();
+
+    if (auto* category = m_grid->AddCategory(_T("Item Control Parameter")))
+    {
+        category->AddChildItem(new CCustomItemButton(_T("Add Item"), TRUE, FALSE))->SetID(ITEM_ADD_TOP);
+        category->AddChildItem(new CCustomItemButton(_T("Delete Item"), TRUE, FALSE))->SetID(ITEM_DELETE_TOP);
+        category->AddChildItem(new CCustomItemButton(_T("Apply"), TRUE, FALSE))->SetID(ITEM_APPLY_TOP);
+
+        m_grid->FindItem(ITEM_ADD_TOP)->SetHeight(50);
+        m_grid->FindItem(ITEM_DELETE_TOP)->SetHeight(50);
+        m_grid->FindItem(ITEM_APPLY_TOP)->SetHeight(50);
+
+        category->Expand();
+    }
+
+    m_grid->SetViewDivider(0.60);
+    m_grid->HighlightChangedItems(TRUE);
+    m_grid->Refresh();
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnInitList()
+{
+    CRect tempArea, listArea;
+    tempArea = m_processor->m_pVisionInspDlg->m_procDlgInfo.m_rtParaArea;
+    tempArea.bottom = tempArea.bottom - 400;
+
+    listArea = m_processor->m_pVisionInspDlg->m_procDlgInfo.m_rtParaArea;
+
+    listArea.top = m_gridArea.bottom + 10;
+    listArea.bottom = listArea.bottom - 110;
+    listArea.left = m_gridArea.left;
+    listArea.right = m_gridArea.right;
+
+    m_parameterList.MoveWindow(listArea);
+    m_listArea = listArea;
+
+    int length = listArea.Width() / 4;
+    m_parameterList.AddColumn(new CXTPGridColumn(COLUMN_DEFECT_NAME_TOP, _T("Defect Name"), length * 2));
+    m_parameterList.AddColumn(new CXTPGridColumn(COLUMN_ITEM_SETUP_TOP, _T("Item Setup"), length));
+    m_parameterList.AddColumn(new CXTPGridColumn(COLUMN_MOVE_POS_TOP, _T("Move Position"), length));
+
+    m_parameterList.Populate();
+    m_parameterList.SetTheme(xtpGridThemeVisualStudio2012Light);
+    m_parameterList.SetGridStyle(0, xtpGridSmallDots);
+    COLORREF rgbGridColor = RGB(0, 0, 0);
+    m_parameterList.SetGridColor(rgbGridColor);
+    m_parameterList.FocusSubItems(TRUE);
+    m_parameterList.AllowEdit(TRUE);
+
+    //// Live/Grab Button
+    CRect grabButtonArea;
+    grabButtonArea.left = m_listArea.left;
+    grabButtonArea.top = m_listArea.bottom + 5;
+    grabButtonArea.right = m_listArea.right;
+    grabButtonArea.bottom = grabButtonArea.top + 20;
+
+    int grabButtonLength = grabButtonArea.Width() / 5;
+
+    m_buttonLive.MoveWindow(grabButtonArea.TopLeft().x, grabButtonArea.TopLeft().y, grabButtonLength, 20);
+    m_buttonGrab.MoveWindow(
+        grabButtonArea.TopLeft().x + grabButtonLength, grabButtonArea.TopLeft().y, grabButtonLength, 20);
+
+    m_buttonLive.ShowWindow(SW_SHOW);
+    m_buttonGrab.ShowWindow(SW_SHOW);
+    //////////////////////
+
+    //// Frame Button
+    CRect buttonArea;
+    buttonArea.left = grabButtonArea.left;
+    buttonArea.top = grabButtonArea.bottom + 5;
+    buttonArea.right = grabButtonArea.right;
+    buttonArea.bottom = buttonArea.top + 20;
+
+    m_frameSelectionArea = buttonArea;
+    int buttonLength = m_frameSelectionArea.Width() / 5;
+
+    m_frameBW.MoveWindow(m_frameSelectionArea.TopLeft().x, m_frameSelectionArea.TopLeft().y, buttonLength * 2, 20);
+    m_frameNum.MoveWindow(
+        m_frameSelectionArea.TopLeft().x + (buttonLength * 2), m_frameSelectionArea.TopLeft().y, buttonLength, 20);
+    m_frameFW.MoveWindow(
+        m_frameSelectionArea.TopLeft().x + (buttonLength * 3), m_frameSelectionArea.TopLeft().y, buttonLength * 2, 20);
+
+    m_frameBW.ShowWindow(SW_SHOW);
+    m_frameNum.ShowWindow(SW_SHOW);
+    m_frameFW.ShowWindow(SW_SHOW);
+    ///////////////////////
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnInitImage()
+{
+    IPVM::Rect imageArea;
+    imageArea.m_left = m_frameSelectionArea.left;
+    imageArea.m_top = m_frameSelectionArea.bottom + 5;
+    imageArea.m_right = m_frameSelectionArea.right;
+    imageArea.m_bottom = m_processor->m_pVisionInspDlg->m_procDlgInfo.m_rtDataArea.bottom;
+    imageArea.m_bottom = imageArea.m_top + (imageArea.Height() * 0.85);
+
+    m_imageView = new ImageViewEx(GetSafeHwnd(), imageArea);
+}
+
+void DlgVisionProcessingNGRV_TOP2D::ResetListControl()
+{
+    m_parameterList.ResetContent(FALSE);
+
+    long coulmnLength = m_listArea.Width() / 4;
+
+    CString temp;
+    for (long inspID = 0; inspID < m_para.m_defectNumber; inspID++)
+    {
+        CXTPGridRecord* record = new CXTPGridRecord();
+
+        // Inspection Name
+        temp.Format(_T("%s"), m_para.m_vecDefectName[inspID]);
+        record->AddItem(new CXTPGridRecordItemText(temp));
+
+        // Inspection Setup
+        temp.Format(_T(""));
+        record->AddItem(new CXTPGridRecordItemText(temp));
+
+        // Inspection Position
+        temp.Format(_T(""));
+        record->AddItem(new CXTPGridRecordItemText(temp));
+
+        // Add Record to List Control
+        m_parameterList.AddRecord(record);
+
+        //Add Setup Button
+        CXTPGridRecordItem* itemSetup = record->GetItem(1);
+        itemSetup->SetEditable(FALSE);
+        auto* button = itemSetup->GetItemControls()->AddControl(xtpItemControlTypeButton);
+        if (button->GetState() == FALSE)
+        {
+            continue;
+        }
+        button->SetIconIndex(PBS_NORMAL, 0);
+        button->SetIconIndex(PBS_PRESSED, 1);
+        button->SetCaption(_T("Setup"));
+        button->SetSize(CSize(coulmnLength, 0));
+
+        // Add Move Button
+        CXTPGridRecordItem* itemMovePos = record->GetItem(2);
+        itemMovePos->SetEditable(FALSE);
+        button = itemMovePos->GetItemControls()->AddControl(xtpItemControlTypeButton);
+        if (button->GetState() == FALSE)
+        {
+            continue;
+        }
+        button->SetIconIndex(PBS_NORMAL, 1);
+        button->SetIconIndex(PBS_PRESSED, 2);
+        button->SetCaption(_T("Move to"));
+        button->SetSize(CSize(coulmnLength, 0));
+    }
+    m_parameterList.Populate();
+
+    temp.Empty();
+}
+
+void DlgVisionProcessingNGRV_TOP2D::AddItem()
+{
+    long oldNum = m_para.m_defectNumber;
+    long newNum = oldNum + 1;
+
+    m_para.m_vecDefectName.resize(newNum);
+    m_para.m_vecStitchCount.resize(newNum);
+    m_para.m_vecAFtype.resize(newNum);
+    m_para.m_vecGrabHeightOffset_um.resize(newNum);
+    m_para.m_vec2IllumUsage.resize(newNum);
+
+    CString temp;
+    for (long index = oldNum; index < newNum; index++)
+    {
+        temp.Format(_T("Untiltle Name_%d"), index);
+        m_para.m_vecDefectName[index] = temp;
+        m_para.m_vecStitchCount[index] = IPVM::Point_32f_C2(1, 1);
+        m_para.m_vecAFtype[index] = 0;
+        m_para.m_vecGrabHeightOffset_um[index] = 0.0f;
+        m_para.m_vec2IllumUsage[index].resize(LED_ILLUM_FRAME_MAX);
+    }
+
+    m_para.m_defectNumber = newNum;
+
+    ResetListControl();
+
+    SetROI();
+
+    long selectDefectID = m_para.m_defectNumber - 1;
+
+    if (selectDefectID < 0)
+    {
+        selectDefectID = 0;
+    }
+
+    temp.Empty();
+}
+
+void DlgVisionProcessingNGRV_TOP2D::DeleteItem()
+{
+    if (m_para.m_defectNumber <= 1)
+    {
+        return;
+    }
+
+    long selectDefectID = m_selectedDefectID;
+
+    CString selectedDefectName = m_para.m_vecDefectName[selectDefectID];
+
+    CString temp;
+    temp.Format(_T("Press OK button to delete %s item."), selectedDefectName);
+    if (::SimpleMessage(temp, MB_OKCANCEL) == IDCANCEL)
+    {
+        return;
+    }
+
+    long oldNum = m_para.m_defectNumber;
+    long newNum = oldNum - 1;
+
+    m_para.m_vecDefectName.erase(m_para.m_vecDefectName.begin() + selectDefectID);
+    m_para.m_vecStitchCount.erase(m_para.m_vecStitchCount.begin() + selectDefectID);
+    m_para.m_vecAFtype.erase(m_para.m_vecAFtype.begin() + selectDefectID);
+    m_para.m_vec2IllumUsage.erase(m_para.m_vec2IllumUsage.begin() + selectDefectID);
+    m_para.m_vecGrabHeightOffset_um.erase(m_para.m_vecGrabHeightOffset_um.begin() + selectDefectID);
+
+    m_para.m_defectNumber = newNum;
+
+    //m_visionInsp->DeleteSpec
+
+    if (selectDefectID > m_para.m_defectNumber)
+    {
+        selectDefectID = m_para.m_defectNumber - 1;
+    }
+
+    if (selectDefectID < 0)
+    {
+        selectDefectID = 0;
+    }
+
+    ResetListControl();
+
+    SetROI();
+
+    temp.Empty();
+}
+
+void DlgVisionProcessingNGRV_TOP2D::ApplyItem()
+{
+    const auto& scale = m_processor->getScale();
+
+    // 현재까지 편집된 item들을 저장
+    // 1. CNGRVSingleRunInfo 생성
+    std::vector<CNGRVOnePointGrabInfo> onePointGrabInfo;
+    onePointGrabInfo.clear();
+    onePointGrabInfo.resize(m_para.m_defectNumber);
+
+    std::vector<IPVM::Point_32s_C2> eachCenterPoints;
+
+    // 2. 현재 Setup된 item 정보 복사
+    for (long index = 0; index < m_para.m_defectNumber; index++)
+    {
+        eachCenterPoints.clear();
+
+        // a. Single Run Info 초기화
+        onePointGrabInfo[index].Init();
+
+        // b. Defect Name, Image center position, Z-offset
+        onePointGrabInfo[index].m_defectPositionName = m_para.m_vecDefectName[index];
+
+        // Stitching X/Y 둘 중 하나라도 1 이상이면 각 ROI의 center와 전체 ROI의 center 좌표를 보내준다.
+        if (m_para.m_vecStitchCount[index].m_x > 1 || m_para.m_vecStitchCount[index].m_y > 1)
+        {
+            long centerX(0), centerY(0);
+            long stitchX = m_para.m_vecStitchCount[index].m_x;
+            long stitchY = m_para.m_vecStitchCount[index].m_y;
+
+            for (long nY = 0; nY < stitchY; nY++)
+            {
+                centerY = m_para.m_vecGrabPosROI[index].m_top + (m_para.m_vecGrabPosROI[index].Height() / (stitchY * 2) * (nY * 2 + 1));
+
+                for (long nX = 0; nX < stitchX; nX++)
+                {
+                    long roiIndex = stitchX * nY + nX;
+                    centerX = m_para.m_vecGrabPosROI[index].m_left + (m_para.m_vecGrabPosROI[index].Width() / (stitchX * 2) * (nX * 2 + 1));
+                    eachCenterPoints.push_back(IPVM::Point_32s_C2(centerX, centerY));
+                }
+            }
+            eachCenterPoints.push_back(m_para.m_vecGrabPosROI[index].CenterPoint());
+        }
+        else // Stitching 안할 경우, 해당 ROI의 center 좌표를 보내준다.
+        {
+            eachCenterPoints.push_back(IPVM::Point_32s_C2(
+                m_para.m_vecGrabPosROI[index].CenterPoint().m_x, m_para.m_vecGrabPosROI[index].CenterPoint().m_y));
+        }
+
+        for (long nSize = 0; nSize < eachCenterPoints.size(); nSize++)
+        {
+            // Real Image Center Position in pixel
+            IPVM::Point_32f_C2 imageCenterPoint(
+                m_processor->getImageLot().GetImageSizeX() / 2, m_processor->getImageLot().GetImageSizeY() / 2);
+            // Push back with real value with convert pixel to BCU function
+            onePointGrabInfo[index].m_vecPointGrabPosition_um.push_back(
+                scale.convert_PixelToBCU(eachCenterPoints[nSize], imageCenterPoint));
+        }
+
+        onePointGrabInfo[index].m_grabHeightOffset_um = m_para.m_vecGrabHeightOffset_um[index];
+        onePointGrabInfo[index].m_afType = m_para.m_vecAFtype[index];
+    }
+
+    // 3. parameter에 저장
+    CNGRVSingleRunInfo singleRunInfo;
+    singleRunInfo.Init();
+
+    singleRunInfo.m_vecOnePointGrabInfo.resize((long)onePointGrabInfo.size());
+
+    for (long infoIndex = 0; infoIndex < (long)onePointGrabInfo.size(); infoIndex++)
+    {
+        singleRunInfo.m_vecOnePointGrabInfo[infoIndex] = onePointGrabInfo[infoIndex];
+    }
+
+    // 4. visionUnit을 거쳐 visionmain에 NGRV parameter에 저장
+    m_processor->m_visionUnit.SetNGRVSingleRunInfo(VISION_TOP_2D, singleRunInfo);
+}
+
+LRESULT DlgVisionProcessingNGRV_TOP2D::OnGridNotify(WPARAM wParam, LPARAM lParam)
+{
+    if (wParam != XTP_PGN_ITEMVALUE_CHANGED)
+        return 0;
+
+    CXTPPropertyGridItem* item = (CXTPPropertyGridItem*)lParam;
+
+    if (auto* value = dynamic_cast<CCustomItemButton*>(item))
+    {
+        switch (value->GetID())
+        {
+            case ITEM_ADD_TOP:
+                AddItem();
+                break;
+            case ITEM_DELETE_TOP:
+                DeleteItem();
+                break;
+            case ITEM_APPLY_TOP:
+                ApplyItem();
+                break;
+            default:
+                break;
+        }
+
+        value->SetBool(FALSE);
+    }
+
+    return 0;
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnItemButtonClickTOP(NMHDR* pNotifyStruct, LRESULT*)
+{
+    XTP_NM_GRIDITEMCONTROL* pItemNotify = (XTP_NM_GRIDITEMCONTROL*)pNotifyStruct;
+    if (!(pItemNotify->pRow && pItemNotify->pItem && pItemNotify->pItemControl))
+        return;
+
+    if (pItemNotify->pItemControl->GetCaption() == _T("Setup"))
+    {
+        long selectedDefectID = pItemNotify->pRow->GetRecord()->GetIndex();
+        m_selectedDefectID = selectedDefectID;        
+
+        DlgVisionProcessingNGRV_DetailSetup dlg(m_processor, selectedDefectID, FALSE, m_processor->getImageLotInsp().m_vecColorImages);
+        if (dlg.DoModal() == IDOK)
+        {
+        }     
+    }
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnDefectNameChangedTOP(NMHDR* pNotifyStruct, LRESULT*)
+{
+    XTP_NM_GRIDRECORDITEM* itemNotify = (XTP_NM_GRIDRECORDITEM*)pNotifyStruct;
+    ASSERT(itemNotify != NULL);
+
+    long selectDefectID = itemNotify->pRow->GetRecord()->GetIndex();
+
+    CString defectNameTemp;
+    CString defectNameTemp0;
+    CString defectNameTemp1;
+    BOOL sameName = FALSE;
+
+    srand((unsigned int)time(NULL));
+    long randomID = rand() % 100;
+
+    defectNameTemp = itemNotify->pItem->GetCaption();
+
+    defectNameTemp0 = defectNameTemp;
+
+    defectNameTemp0.MakeUpper();
+
+    long count = 0;
+    while (1)
+    {
+        if (count > 100)
+        {
+            break;
+        }
+
+        ++count;
+
+        if (defectNameTemp0.Right(1) == 32) // 아스키 코드 '띄어쓰기'
+        {
+            defectNameTemp0 = defectNameTemp0.Left(defectNameTemp0.GetLength() - 1);
+            continue;
+        }
+        if (defectNameTemp0.Right(1) == 32) // 아스키 코드 '띄어쓰기'
+        {
+            defectNameTemp0 = defectNameTemp0.Right(defectNameTemp0.GetLength() - 1);
+            continue;
+        }
+        break;
+    }
+
+    for (long idx = 0; idx < (long)m_para.m_vecDefectName.size(); idx++)
+    {
+        if (selectDefectID == idx)
+        {
+            continue;
+        }
+
+        defectNameTemp1 = m_para.m_vecDefectName[idx];
+        defectNameTemp1.MakeUpper();
+
+        if (defectNameTemp0 == defectNameTemp1)
+        {
+            sameName = TRUE;
+            break;
+        }
+    }
+
+    if (sameName == TRUE)
+    {
+        ::SimpleMessage(_T("It already has the same name.\nPlease check again."), MB_OK);
+        m_para.m_vecDefectName[selectDefectID].Format(_T("%s_%d"), (LPCTSTR)defectNameTemp, randomID);
+    }
+    else
+    {
+        m_para.m_vecDefectName[selectDefectID] = defectNameTemp;
+    }
+
+    ChangeROItitle();
+
+    defectNameTemp.Empty();
+    defectNameTemp0.Empty();
+    defectNameTemp1.Empty();
+}
+
+bool DlgVisionProcessingNGRV_TOP2D::SetROI()
+{
+    // Main Dialog에서 ImageLotView, Scale을 가져온다.
+    auto& imageLotView = *m_processor->m_pVisionInspDlg->m_imageLotView;
+    const auto& scale = m_processor->getScale();
+
+    // Main UI에 ROI를 지운다.
+    imageLotView.ROI_RemoveAll();
+
+    // NGRV Camera FOV : 19mm x 15mm
+    IPVM::Rect_32f cameraFOV(0, 0, NGRV_CAMERA_X_UM, NGRV_CAMERA_Y_UM);
+    // NGRV Camera FOV를 Pixel로 변환한다 : 불러오는 건 2D Scale이지만 실제 ROI는 NGRV의 Scale에 맞춰야함
+    IPVM::Rect roiSize = scale.convert_umToPixel(cameraFOV);
+
+    // 기존에 저장되어있는 Rect크기와 다르면 새로 설정한다.
+    if (m_para.m_vecGrabPosROI.size() != m_para.m_defectNumber)
+    {
+        m_para.m_vecGrabPosROI.resize(m_para.m_defectNumber);
+    }
+
+    // 만약 GrabROI Rect의 크기가 0이면 다 기본 크기로 설정해줘야한다
+    for (long index = 0; index < m_para.m_defectNumber; index++)
+    {
+        if (m_para.m_vecGrabPosROI[index].IsRectEmpty() == TRUE)
+        {
+            m_para.m_vecGrabPosROI[index].SetRect(roiSize.TopLeft(), roiSize.BottomRight());
+        }
+    }
+
+    // ROI를 설정한다.
+    if (m_para.m_defectNumber < 0)
+    {
+        return false;
+    }
+    else
+    {
+        for (long defectID = 0; defectID < m_para.m_defectNumber; defectID++)
+        {
+            CString key;
+            key.Format(_T("Defect_%d"), defectID);
+
+            CString name;
+            name.Format(_T("%s"), m_para.m_vecDefectName[defectID]);
+            // ROI를 설정한다.
+            if (m_para.m_vecGrabPosROI[defectID].CenterPoint() != roiSize.CenterPoint())
+            {               
+                imageLotView.ROI_Add(key, name, m_para.m_vecGrabPosROI[defectID], RGB(255, 0, 0), TRUE, FALSE);
+            }
+            else
+            {
+                imageLotView.ROI_Add(key, name, roiSize, RGB(255, 0, 0), TRUE, FALSE);
+            }            
+        }
+    }
+
+    imageLotView.ROI_Show(TRUE);
+
+    return true;
+}
+
+void DlgVisionProcessingNGRV_TOP2D::ChangeROItitle()
+{
+    auto& imageLotView = *m_processor->m_pVisionInspDlg->m_imageLotView;
+
+    // 이름이 바뀌면 지우고 다시 그려야되는 것 아닐까...?
+    GetROI();
+
+    imageLotView.ROI_RemoveAll();
+
+    for (long defectID = 0; defectID < m_para.m_defectNumber; defectID++)
+    {
+        CString key;
+        key.Format(_T("Defect_%d"), defectID);
+
+        CString name;
+        name.Format(_T("%s"), m_para.m_vecDefectName[defectID]);
+        // ROI를 설정한다.
+        imageLotView.ROI_Add(key, name, m_para.m_vecGrabPosROI[defectID], RGB(255, 0, 0), TRUE, FALSE);
+    }
+}
+
+void DlgVisionProcessingNGRV_TOP2D::SetDefectROIinfo()
+{
+    if (m_para.m_defectNumber < 0)
+    {
+        return;
+    }
+
+    auto& imageLotView = *m_processor->m_pVisionInspDlg->m_imageLotView;    
+
+    GetROI();
+
+    imageLotView.ROI_Show(TRUE);
+}
+
+bool DlgVisionProcessingNGRV_TOP2D::GetROI()
+{
+    if (m_para.m_defectNumber < 0)
+    {
+        return FALSE;
+    }
+
+    auto& imageLotView = *m_processor->m_pVisionInspDlg->m_imageLotView;
+
+    for (long index = 0; index < m_para.m_defectNumber; index++)
+    {
+        CString temp;
+        temp.Format(_T("Defect_%d"), index);
+        imageLotView.ROI_Get(temp, m_para.m_vecGrabPosROI[index]);
+    }
+
+    return true;
+}
+
+/// Live 관련 함수
+bool DlgVisionProcessingNGRV_TOP2D::StartLive(long frameNum)
+{
+    auto& illum = m_processor->m_visionUnit.getIllumInfo2D();
+    auto& imageLot = m_processor->m_visionUnit.getImageLot();
+
+    frameNum = min(frameNum, illum.getTotalFrameCount());
+
+    if (SystemConfig::GetInstance().IsHardwareExist() == TRUE)
+    {
+        SyncController::GetInstance().SetIllumiParameter(frameNum, illum.getIllum(frameNum));
+        SyncController::GetInstance().TurnOnLight(frameNum);
+        FrameGrabber::GetInstance().SetLiveOn(
+            GetSafeHwnd(), UM_GRAB_END_EVENT, 500L, enSideVisionModule::SIDE_VISIONMODULE_FRONT);
+    }
+    else
+    {
+        long frame = (long)imageLot.GetImageFrameCount();
+
+        if (frameNum >= frame)
+        {
+            frameNum = frame - 1;
+        }
+
+        m_imageView->SetImage(imageLot.GetColorImageFrame(frameNum));
+    }
+
+    m_isLive = TRUE;
+
+    return TRUE;
+}
+
+bool DlgVisionProcessingNGRV_TOP2D::StartGrab(long defectNum)
+{
+    /*IPVM::Image_8u_C1 image;
+
+    image.Create(FrameGrabber::GetInstance().GetGrabImageWidth(), FrameGrabber::GetInstance().GetGrabImageHeight());
+
+    BYTE* imageMem = image.GetMem();
+    SyncController::GetInstance().TurnOnLight(nSendFrameID);
+
+    FrameGrabber::GetInstance().StartGrabNGRV(&imageMem, 1, nullptr);
+    SyncController::GetInstance().StartSyncBoard();
+    FrameGrabber::GetInstance().WaitGrabEnd(nullptr);*/
+
+    auto& visionunit = m_processor->m_visionUnit;
+
+    BOOL isCameraGrabRetry = SystemConfig::GetInstance().m_bUseGrabRetry;
+
+    SyncController::GetInstance().SetReadySignal(FALSE);
+    SyncController::GetInstance().SetGrabAcquisition(TRUE);
+    SyncController::GetInstance().SetGrabExposure(TRUE);
+
+    long cameraImageSizeX = FrameGrabber::GetInstance().GetGrabImageWidth();
+    long cameraImageSizeY = FrameGrabber::GetInstance().GetGrabImageHeight();
+
+    std::vector<long> vecFrameID;
+    for (long index = 0; index < NGRV_TOTAL_FRAME_NUM; index++)
+    {
+        if (m_para.m_vec2IllumUsage[defectNum][index] == TRUE)
+        {
+            vecFrameID.push_back(index);
+        }
+    }
+
+    ReadyToGrabNGRV(vecFrameID, FALSE, FALSE);
+
+    SyncController::GetInstance().SetSignalNGRV_VisionMoveIRPos(FALSE);
+
+    auto& bufferList = m_buffers[0]->m_imagePtrs;
+    bool success = true;
+
+    return TRUE;
+}
+
+bool DlgVisionProcessingNGRV_TOP2D::ReadyToGrabNGRV(std::vector<long> vecFrameID, bool useIR, bool isInline)
+{
+    const auto& systemConfig = SystemConfig::GetInstance();
+    const auto& illum = m_processor->m_visionUnit.getIllumInfo2D();
+
+    SyncController::GetInstance().SetTriggerEdgeMode(TRUE, TRUE, TRUE);
+
+    long nTotalFrameCount = (isInline ? (long)vecFrameID.size() : illum.getTotalFrameCount());
+    long nHighPosGrabCount = (useIR ? 1 : 0); //kircheis_MultiGrab //추후 Job에 있는 Hig Pos Grab Count를 쓰자
+    SyncController::GetInstance().SetFrameCount(nTotalFrameCount - nHighPosGrabCount, nHighPosGrabCount);
+
+    //{{//kircheis_CamTrans
+    float fFrameExposureSum = 0.f;
+    float fFrameExposureMax = 0.f;
+    //}}
+
+    // Set 2D Illumination
+    long nRealTotalFrameNum = illum.getTotalFrameCount();
+
+    for (int i = 0; i < nTotalFrameCount; i++)
+    {
+        auto illumFrame = isInline ? illum.getIllum(vecFrameID[i]) : illum.getIllum(i);
+
+        if (isInline)
+        {
+            if (vecFrameID.size() > nRealTotalFrameNum)
+            {
+                for (long nCh = 0; nCh < 12; nCh++)
+                {
+                    illumFrame[nCh] = 0.f;
+                }
+            }
+        }
+        else
+        {
+            if (i > nRealTotalFrameNum)
+            {
+                for (long nCh = 0; nCh < 12; nCh++)
+                {
+                    illumFrame[nCh] = 0.f;
+                }
+            }
+        }
+        SyncController::GetInstance().SetIllumiParameter(i, illumFrame);
+
+        //{{//kircheis_CamTrans
+        fFrameExposureSum = 0.f;
+        for (long nCh = 0; nCh < 12; nCh++)
+            fFrameExposureSum += vecFrameID[nCh];
+
+        fFrameExposureMax = (float)max(fFrameExposureMax, fFrameExposureSum);
+        //}}
+    }
+
+    //{{//kircheis_CamTrans//두영아
+    static const int nDuration = SystemConfig::GetInstance().GetGrabDuration();
+    int nMaxExposure = (int)(fFrameExposureMax + .5f) + SystemConfig::GetInstance().m_nCameraTransferTimeMS;
+    SystemConfig::GetInstance().m_nLastDownloadDuration = nMaxExposure;
+    SyncController::GetInstance().SetFramePeriod((int)max(nDuration, nMaxExposure));
+    //}}
+
+    return TRUE;
+}
+
+LRESULT DlgVisionProcessingNGRV_TOP2D::OnGrabEndEvent(WPARAM /*wparam*/, LPARAM /*lparam*/)
+{
+    FrameGrabber::GetInstance().GetLiveImage(*m_grabImage);
+    FrameGrabber::GetInstance().GetNGRVLiveImage(*m_bayerImage);
+
+    m_imageView->SetImage(*m_bayerImage);
+
+    return 1L;
+}
+
+void DlgVisionProcessingNGRV_TOP2D::ShowPreviousImage()
+{
+    // Image Display 를 위한 테스트 코드
+    if (m_processor->getImageLotInsp().m_vecColorImages.size() == 0)
+        return;
+
+    if (m_imageID <= 0)
+        return;
+
+    m_imageID--;
+
+    ShowImage(TRUE);
+}
+
+void DlgVisionProcessingNGRV_TOP2D::ShowNextImage()
+{
+    // Image Display 를 위한 테스트 코드
+    if (m_processor->getImageLotInsp().m_vecColorImages.size() == 0)
+        return;
+
+    if (m_imageID >= (long)(m_processor->getImageLotInsp().m_vecColorImages.size()) - 1)
+        return;
+
+    m_imageID++;
+
+    ShowImage(TRUE);
+}
+
+void DlgVisionProcessingNGRV_TOP2D::ShowImage(BOOL change)
+{
+    if (m_processor->GetImageFrameCount() == 0)
+    {
+        return;
+    }
+
+    if (!change)
+    {
+        m_imageID = max(0, m_processor->GetImageFrameIndex(0));
+    }
+
+    if ((long)m_processor->getImageLotInsp().m_vecColorImages.size() <= 0)
+        return;
+
+    if ((long)m_processor->getImageLotInsp().m_vecColorImages.size() <= m_imageID)
+        m_imageID = (long)m_processor->getImageLotInsp().m_vecColorImages.size() - 1;
+
+    m_imageView->SetImage(m_processor->getImageLotInsp().m_vecColorImages[m_imageID]);
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonChangeFrameBack()
+{
+    ShowPreviousImage();
+
+    CString temp;
+    temp.Format(_T("frame_%d"), m_imageID);
+    SetDlgItemText(IDC_EDIT_FRAME_NUM_TOP, temp);
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonChangeFrameFoward()
+{
+    ShowNextImage();
+
+    CString temp;
+    temp.Format(_T("frame_%d"), m_imageID);
+    SetDlgItemText(IDC_EDIT_FRAME_NUM_TOP, temp);
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonLiveTop()
+{
+    if (m_isLive == FALSE)
+    {
+        StartLive(m_currentFrameNum);
+    }
+    else
+    {
+        FrameGrabber::GetInstance().SetLiveOff();
+        SyncController::GetInstance().TurnOffLight();
+    }
+}
+
+void DlgVisionProcessingNGRV_TOP2D::OnBnClickedButtonGrabTop()
+{
+    if (m_isLive == TRUE)
+    {
+        FrameGrabber::GetInstance().SetLiveOff();
+        SyncController::GetInstance().TurnOffLight();
+
+        StartGrab(m_selectedDefectID);
+    }
+    else
+    {
+        StartGrab(m_selectedDefectID);
+
+        SyncController::GetInstance().TurnOffLight();
+    }
+}

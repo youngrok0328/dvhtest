@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{4797e9da-7df5-487a-b2c2-bea3e40c68ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libXML">
+      <UniqueIdentifier>{c45b3cd5-9b89-4a7e-b464-a7b9fc6d7953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="서브 다이얼로그">
+      <UniqueIdentifier>{6830fbbe-caa8-4343-8aca-3c23c3f7837d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VisionProcessingMapDataEditor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMapDataEditorUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CMapDataEditorDlg.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="CMapDataConverterDlg.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="Markup.cpp">
+      <Filter>libXML</Filter>
+    </ClCompile>
+    <ClCompile Include="PadTypeChangerDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="LandGroupIdChangerDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="BallDataChangerDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="CompDataChangerDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\VisionProcessingMapDataEditor.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="VisionProcessingMapDataEditor.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingMapDataEditor.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionMapDataEditorUI.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapDataEditorDlg.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapDataConverterDlg.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>libXML</Filter>
+    </ClInclude>
+    <ClInclude Include="PadTypeChangerDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="LandGroupIdChangerDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="BallDataChangerDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="CompDataChangerDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingMapDataEditor.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

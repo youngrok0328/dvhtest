@@ -1,0 +1,6 @@
+; dPI_MsgDialog.def : Declares the module parameters for the DLL.
+
+LIBRARY      "dPI_MsgDialog"
+
+EXPORTS
+    ; Explicit exports can go here

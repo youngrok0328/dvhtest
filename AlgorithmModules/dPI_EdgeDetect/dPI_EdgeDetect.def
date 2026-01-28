@@ -1,0 +1,6 @@
+; dPI_EdgeDetect.def : Declares the module parameters for the DLL.
+
+LIBRARY      "dPI_EdgeDetect"
+
+EXPORTS
+    ; Explicit exports can go here

@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionInspectionKOZ2D.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_IMAGE_WINDOW,17,15,48,40
+    PUSHBUTTON      "Inspect",IDC_BUTTON_INSPECT,71,129,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_LOG,"SysTabControl32",0x0,71,175,50,30
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,18,129,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Close",IDC_BUTTON_CLOSE,125,130,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+    COMBOBOX        IDC_COMBO_CURRPANE,141,31,205,82,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BUTTON_PREIMAGE,141,57,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      ">>",IDC_BUTTON_NEXTIMAGE,199,55,50,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_PARAMETER DIALOGEX 0, 0, 287, 396
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "굴림", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_BARCODE_IMAGE,60,4,64,59,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Barcode Image",IDC_STATIC,7,7,50,8
+    CONTROL         "",IDC_GRID_2DBARCODE_PARAM_LIST,"MFCGridCtrl",NOT WS_VISIBLE | WS_TABSTOP,7,25,219,268
+    PUSHBUTTON      "OCR DB Editor",IDC_BTN_OCR_DB,198,363,74,18,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_DB_FILE_PATH,40,324,232,15,ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "DB Path :",IDC_STATIC,6,327,31,8,NOT WS_VISIBLE
+    PUSHBUTTON      "Teach Characters",IDC_BTN_TEACH_CHAR,198,342,74,18,NOT WS_VISIBLE
+    EDITTEXT        IDC_EDIT_STRING,40,344,156,15,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+END
+
+IDD_DIALOG_IMAGEPROC DIALOGEX 0, 0, 684, 230
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Image Proc"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,216,59,13
+    PUSHBUTTON      "CANCEL",IDCANCEL,260,216,59,13
+    LTEXT           "Image Combine Mode :",IDC_STATIC,13,6,91,8
+    COMBOBOX        IDC_COMBO_COMBINE_MODE,105,3,212,107,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Combine Aux Frame :",IDC_STATIC,12,21,84,8
+    COMBOBOX        IDC_COMBO_COMBINE_AUX_FRAME,105,19,212,111,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_ALGORITHM,17,80,99,121,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Up",IDC_BUTTON_UP,277,81,34,13
+    LTEXT           "Algorithm List",IDC_STATIC,28,67,53,8
+    LTEXT           "Apply List",IDC_STATIC,134,67,39,8
+    PUSHBUTTON      "Down",IDC_BUTTON_DOWN,277,98,34,13
+    CONTROL         "Apply List",IDC_GRID_APPLY,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,127,79,145,122
+    CONTROL         "",IDC_TAB_ALGORITHM,"SysTabControl32",0x0,8,33,310,181
+    CONTROL         "",IDC_COMBINE_PREVIEW,"Static",SS_BLACKFRAME,320,3,362,225
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DIALOG_PARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 389
+        HORZGUIDE, 387
+    END
+
+    IDD_DIALOG_IMAGEPROC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_PARAMETER DLGINIT
+BEGIN
+    IDC_COMBO_BARCODE_IMAGE, 0x403, 5, 0
+0x7247, 0x7961, "\000" 
+    IDC_COMBO_BARCODE_IMAGE, 0x403, 7, 0
+0x6f52, 0x6174, 0x6574, "\000" 
+    IDC_COMBO_BARCODE_IMAGE, 0x403, 7, 0
+0x614d, 0x7274, 0x7869, "\000" 
+    IDC_COMBO_BARCODE_IMAGE, 0x403, 6, 0
+0x6152, 0x6974, 0x006f, 
+    IDC_COMBO_BARCODE_IMAGE, 0x403, 10, 0
+0x6e49, 0x6574, 0x736e, 0x7469, 0x0079, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PARAMETER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionInspectionKOZ2D.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

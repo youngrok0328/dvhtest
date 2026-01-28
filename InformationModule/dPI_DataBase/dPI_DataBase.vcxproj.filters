@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dPI_DataBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SlitBeam3DParameters.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PackageSpec.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="IllumInfo2D.cpp">
+      <Filter>[] Illum Info</Filter>
+    </ClCompile>
+    <ClCompile Include="OldScanSpec.cpp">
+      <Filter>[] 구버전 Recipe 호환용 클래스</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentCollectionOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="Land.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="LandCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="LandCollectionOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="Pad.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="PadCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="PadCollectionOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomPolygon.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomPolygonCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomPolygonCollectionOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ChipInfo.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFixed.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFixedCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomFixedCollectionOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="BallCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="BallOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="BallTypeDefinition.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="BallCollectionOriginal.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSArrayChip.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSBall.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSChip.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSHeatsink.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSInfo.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSPassiveChip.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="DMSPatch.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyInfo.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="ChipInfoCollection.cpp">
+      <Filter>[] Package Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionTapeSpec.cpp">
+      <Filter>[] Vision Tape Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionTrayScanSpec.cpp">
+      <Filter>[] Vision Tray Scan Spec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SlitBeam3DParameters.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PackageSpec.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="IllumInfo2D.h">
+      <Filter>[] Illum Info</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionTrayScanSpec.h">
+      <Filter>[] Vision Tray Scan Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="OldScanSpec.h">
+      <Filter>[] 구버전 Recipe 호환용 클래스</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentCollectionOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="Land.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="LandCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="LandCollectionOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="Pad.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="PadCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="PadCollectionOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomPolygon.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomPolygonCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomPolygonCollectionOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipInfo.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomFixedCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomFixed.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomFixedCollectionOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="BallCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="BallOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="BallTypeDefinition.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="BallCollectionOriginal.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSArrayChip.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSBall.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSChip.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSHeatsink.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSInfo.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSPassiveChip.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="DMSPatch.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="BodyInfo.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="ChipInfoCollection.h">
+      <Filter>[] Package Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionTapeSpec.h">
+      <Filter>[] Vision Tape Spec</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{20cf1b46-739f-423f-b2a8-be83c49b4fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{15676ea1-06d9-48d3-ad93-b24900d1c87f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Illum Info">
+      <UniqueIdentifier>{adfd97f7-588f-4c3f-906d-fe3e0234731c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Vision Tray Scan Spec">
+      <UniqueIdentifier>{349d235f-914e-4a58-86f8-79e7e71daee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Package Spec">
+      <UniqueIdentifier>{6a55ede5-c692-4e53-afde-0721976df0bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] 구버전 Recipe 호환용 클래스">
+      <UniqueIdentifier>{edbb1910-8917-4928-84f6-edfb576f15cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Vision Tape Spec">
+      <UniqueIdentifier>{b1411cea-5472-4a25-b5f9-a2581f93a5cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="dPI_DataBase.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\dPI_DataBase.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>

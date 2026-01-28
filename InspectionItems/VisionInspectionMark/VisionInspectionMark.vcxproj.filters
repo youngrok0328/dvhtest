@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgMarkAlgorithmParameter.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionInspectionMark.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionMark.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionMarkApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionMarkInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionMarkPara.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionMarkSpec.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMarkTeachResultViewer.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="InspResult.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionInspectionMarkOperator.cpp">
+      <Filter>SubDlgMarkOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectEnableMarkMapData.cpp">
+      <Filter>SubDlgSelectEnableMarkMapData</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgMarkAlgorithmParameter.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionInspectionMark.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionMark.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionMarkApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionMarkPara.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionMarkSpec.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMarkTeachResultViewer.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="InspResult.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionInspectionMarkOperator.h">
+      <Filter>SubDlgMarkOperator</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectEnableMarkMapData.h">
+      <Filter>SubDlgSelectEnableMarkMapData</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionInspectionMark.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionInspectionMark.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{2587ef1c-a7e9-41ca-82a3-f3a9ba87331f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{65cb06b5-e300-42b5-b1f0-9947670f380b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{6ecae5ca-5c97-4592-adab-efec199d05e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Result">
+      <UniqueIdentifier>{b2034ffe-7785-4594-859e-0b5a7f1b7047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubDlgMarkOperator">
+      <UniqueIdentifier>{a31456bc-b6e8-486d-9e04-abeb3c86bfa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SubDlgSelectEnableMarkMapData">
+      <UniqueIdentifier>{4ae68935-330f-4580-a8ea-adf426ae7ccc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionInspectionMark.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

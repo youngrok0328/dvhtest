@@ -1,0 +1,212 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÇÑ±¹¾î(´ëÇÑ¹Î±¹) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionInspectionMark.rc2""  // Microsoft Visual C++ AI¢¯UAC ¢¥U¢¬¡Í ¥ì¥ì¡¾¢¬¢¯¢®¨ù¡© ¨¡iAyCN ¢¬¢ç¨ùO¨ö¨¬AO¢¥I¢¥U.\r\n"
+    "#include ""afxres.rc""     // C¡ÍA¨ª ¡¾¢¬¨ù¨¬ ¢¯a¨ùOAO¢¥I¢¥U.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Inspect",IDC_BUTTON_INSPECT,71,129,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_LOG,"SysTabControl32",0x0,71,175,50,30
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,18,129,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Close",IDC_BUTTON_CLOSE,125,130,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+    COMBOBOX        IDC_COMBO_CURRPANE,141,31,205,291,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BUTTON_PREIMAGE,141,57,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      ">>",IDC_BUTTON_NEXTIMAGE,199,55,50,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_OPERATOR_PARAMETER DIALOGEX 0, 0, 249, 301
+STYLE DS_SETFONT | WS_CHILD | WS_BORDER
+FONT 9, "±¼¸²", 400, 0, 0x0
+BEGIN
+    CONTROL         "Set 1",IDC_RADIO_MULTI_TEACHING_SLOT_1,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT | WS_GROUP,26,45,35,10
+    CONTROL         "Set 2",IDC_RADIO_MULTI_TEACHING_SLOT_2,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT,26,116,35,10
+    CONTROL         "Set 3",IDC_RADIO_MULTI_TEACHING_SLOT_3,"Button",BS_AUTORADIOBUTTON | BS_LEFTTEXT,26,188,35,10
+    PUSHBUTTON      "¡á",IDC_BTN_REMOVE_SLOT_1,11,44,11,14,NOT WS_VISIBLE | NOT WS_TABSTOP
+    PUSHBUTTON      "¡á",IDC_BTN_REMOVE_SLOT_2,11,114,11,14,NOT WS_TABSTOP
+    PUSHBUTTON      "¡á",IDC_BTN_REMOVE_SLOT_3,11,186,11,14,NOT WS_TABSTOP
+END
+
+IDD_DIALOG_ALGORITHM_PARAMETER DIALOGEX 0, 0, 306, 327
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Algorithm Parameter"
+FONT 9, "±¼¸²", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_MARK_TEACH_RESULT_VIEW DIALOGEX 0, 0, 465, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mark Teach Result Viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,413,258,50,14
+    CONTROL         "",IDC_MARK_TEACH_RESULT_VIEW,"Static",SS_BLACKFRAME,2,2,461,255
+END
+
+IDD_DIALOG_SELECT_ENABLE_MARK_MAPDATA DIALOGEX 0, 0, 707, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Enable Mark MapData"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_MARK_MAPDATA_PREVIEW,"Static",SS_BLACKFRAME,326,7,374,339
+    CONTROL         "",IDC_PROPERTYGRID_AREA,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,7,7,283,339
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DIALOG_OPERATOR_PARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+    END
+
+    IDD_DIALOG_ALGORITHM_PARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 320
+    END
+
+    IDD_DIALOG_MARK_TEACH_RESULT_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 463
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_DIALOG_SELECT_ENABLE_MARK_MAPDATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 700
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_ALGORITHM_PARAMETER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_OPERATOR_PARAMETER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SELECT_ENABLE_MARK_MAPDATA AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // ÇÑ±¹¾î(´ëÇÑ¹Î±¹) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionInspectionMark.rc2"  // Microsoft Visual C++ AI¢¯UAC ¢¥U¢¬¡Í ¥ì¥ì¡¾¢¬¢¯¢®¨ù¡© ¨¡iAyCN ¢¬¢ç¨ùO¨ö¨¬AO¢¥I¢¥U.
+#include "afxres.rc"     // C¡ÍA¨ª ¡¾¢¬¨ù¨¬ ¢¯a¨ùOAO¢¥I¢¥U.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

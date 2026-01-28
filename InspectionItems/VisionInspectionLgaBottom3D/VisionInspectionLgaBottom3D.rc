@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionInspectionLgaBottom3D.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""afxres.rc""     // 표준 구성 요소입니다.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC_IMAGE_WINDOW,17,15,48,40
+    PUSHBUTTON      "Inspect",IDC_BUTTON_INSPECT,71,129,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_LOG,"SysTabControl32",0x0,71,175,50,30
+    PUSHBUTTON      "Apply",IDC_BUTTON_APPLY,18,129,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Close",IDC_BUTTON_CLOSE,125,130,50,14,NOT WS_VISIBLE
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+    COMBOBOX        IDC_COMBO_CURRPANE,141,31,205,82,CBS_DROPDOWNLIST | NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<<",IDC_BUTTON_PREIMAGE,141,57,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      ">>",IDC_BUTTON_NEXTIMAGE,199,55,50,14,NOT WS_VISIBLE
+END
+
+IDD_DIALOG_HISTOGRAM DIALOGEX 0, 0, 391, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Histogram"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_CHART,0,0,391,302,WS_BORDER
+END
+
+IDD_3DVIEWER DIALOGEX 0, 0, 420, 370
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "3D Viewer"
+FONT 9, "MS Sans Serif, 굴림", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Refresh",IDC_BUTTON_REFRESH,224,338,92,18
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,327,338,92,18
+    CONTROL         "",IDC_STATIC_VIEW,"Static",SS_BLACKFRAME,0,0,419,338
+    CONTROL         "Median Filter x",IDC_CHECK_MEDIAN_FILTER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,343,63,10
+    EDITTEXT        IDC_EDIT_MEDIAN_REPEAT,78,343,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_VIEW_SCALE,173,343,35,12,ES_AUTOHSCROLL
+    LTEXT           "Vew Scale x",IDC_STATIC,132,344,39,8
+    EDITTEXT        IDC_EDIT_MASK_SIZE,78,358,35,12,ES_AUTOHSCROLL
+    LTEXT           "Median Mask Size",IDC_STATIC,16,360,56,8
+END
+
+IDD_DLG_LAND_PARAMETER DIALOGEX 0, 0, 297, 299
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,191,278,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,278,50,14
+    LTEXT           "",IDC_STATIC_PARAM_AREA,0,0,296,251,NOT WS_VISIBLE | WS_BORDER
+END
+
+IDD_DLG_LUCP_PARAMETER DIALOGEX 0, 0, 297, 299
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,191,278,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,246,278,50,14
+    LTEXT           "",IDC_STATIC_PARAM_AREA,0,0,296,251,NOT WS_VISIBLE | WS_BORDER
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DIALOG_HISTOGRAM, DIALOG
+    BEGIN
+    END
+
+    IDD_DLG_LAND_PARAMETER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 296
+        BOTTOMMARGIN, 292
+    END
+
+    IDD_DLG_LUCP_PARAMETER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 296
+        BOTTOMMARGIN, 292
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DLG_LAND_PARAMETER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DLG_LUCP_PARAMETER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionInspectionLgaBottom3D.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "afxres.rc"     // 표준 구성 요소입니다.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

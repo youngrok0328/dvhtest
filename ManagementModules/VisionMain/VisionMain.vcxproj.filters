@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgInspSpecList.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionInspSpec.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMain.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMainApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectionSpecConfig.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgOverlayManager.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionMainSocket.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CallBackList_InspectionEnd.cpp">
+      <Filter>CallBack</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionIllumSetup2D.cpp">
+      <Filter>Illumination Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionIllumSetup3D.cpp">
+      <Filter>Illumination Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionIlluminationSetup.cpp">
+      <Filter>Illumination Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="IllumControl2D.cpp">
+      <Filter>Illumination Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="InlineGrab.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="FOVImageGrabber.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageClassifier.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="FOVImageGrabber3D.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="FOVImageGrabber2D.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="InspectionOrderer.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgVisionIllumSetupNGRV.cpp">
+      <Filter>Illumination Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgVisionInspSpecNGRV.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="FOVImageGrabberNGRV.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="IllumControlNGRV.cpp">
+      <Filter>Illumination Setup</Filter>
+    </ClCompile>
+    <ClCompile Include="FOVImageGrabberSide.cpp">
+      <Filter>Inline\Grab</Filter>
+    </ClCompile>
+    <ClCompile Include="CDlgSub2DVisionTune.cpp">
+      <Filter>Sub Tuning item</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgInspSpecList.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionInspSpec.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionMain.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionMainApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectionSpecConfig.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgOverlayManager.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="CallBackList_InspectionEnd.h">
+      <Filter>CallBack</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionIllumSetup2D.h">
+      <Filter>Illumination Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionIllumSetup3D.h">
+      <Filter>Illumination Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionIlluminationSetup.h">
+      <Filter>Illumination Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="IllumControl2D.h">
+      <Filter>Illumination Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="InlineGrab.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="FOVImageGrabber.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageClassifier.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="FOVImageGrabber3D.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="FOVImageGrabber2D.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="InspectionOrderer.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="MainDefine.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgVisionIllumSetupNGRV.h">
+      <Filter>Illumination Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgVisionInspSpecNGRV.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="FOVImageGrabberNGRV.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="IllumControlNGRV.h">
+      <Filter>Illumination Setup</Filter>
+    </ClInclude>
+    <ClInclude Include="FOVImageGrabberSide.h">
+      <Filter>Inline\Grab</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CDlgSub2DVisionTune.h">
+      <Filter>Sub Tuning item</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionMain.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionMain.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Default_BYPASS.dll">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="Default_NGRV.dll">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{fc1e9612-6ef0-4526-bf0e-67237886ba16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{7b101f90-52ce-44d6-830b-6a6e9db3bc79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{c5fab6e4-0b02-4ecd-81ad-1c0b79f88eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inline">
+      <UniqueIdentifier>{b12e967f-6634-49f0-af82-7d006837c73f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CallBack">
+      <UniqueIdentifier>{120464a0-e228-4bc4-8240-19fbc9b25b0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Illumination Setup">
+      <UniqueIdentifier>{9058208c-bffe-42d1-8bc8-b0979fe41f2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inline\Grab">
+      <UniqueIdentifier>{bee07e4b-94d1-4cca-8351-4fdb0cd3f7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sub Tuning item">
+      <UniqueIdentifier>{5d3ee8c7-af32-4f70-80da-a98d89458253}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionMain.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Illum_RGB_CH13.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Illum_NGRV_CH10.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\AF_Z_Position.bmp" />
+    <Image Include="res\Illum_SIDE_CH10.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

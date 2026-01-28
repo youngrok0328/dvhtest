@@ -1,0 +1,297 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ÇÑ±¹¾î(´ëÇÑ¹Î±¹) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionProcessingSpec.rc2""  // Microsoft Visual C++ AI¢¯UAC ¢¥U¢¬¡Í ¥ì¥ì¡¾¢¬¢¯¢®¨ù¡© ¨¡iAyCN ¢¬¢ç¨ùO¨ö¨¬AO¢¥I¢¥U.\r\n"
+    "#include ""afxres.rc""     // C¡ÍA¨ª ¡¾¢¬¨ù¨¬ ¢¯a¨ùOAO¢¥I¢¥U.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_BODY_SIZE DIALOGEX 0, 0, 150, 368
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Body Size Editor"
+FONT 9, "±¼¸²", 400, 0, 0x0
+BEGIN
+    RADIOBUTTON     "mm",IDC_RADIO_UNIT_MM,12,7,29,10,WS_GROUP
+    RADIOBUTTON     "mil",IDC_RADIO_UNIT_MIL,43,7,26,10
+    EDITTEXT        IDC_EDIT_BODY_SIZE_X,76,25,62,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BODY_SIZE_Y,76,43,62,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BODY_SIZE_Z,76,61,62,12,ES_CENTER | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,30,347,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,93,347,50,14
+    LTEXT           "Body Size X",IDC_STATIC,12,28,41,8
+    LTEXT           "Body Size Y",IDC_STATIC,12,46,41,8,NOT WS_GROUP
+    LTEXT           "Body Size Z",IDC_STATIC,12,63,41,8,NOT WS_GROUP
+    GROUPBOX        "Static",IDC_STATIC,7,177,136,69
+    CONTROL         "SD Card Size",IDC_CHECK_SD_CARD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,176,58,12
+    EDITTEXT        IDC_EDIT_DIST_LEFT,76,193,62,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Dist From Left",IDC_STATIC,12,195,46,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_LOW_TOP,76,208,62,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Low Form Top",IDC_STATIC,12,210,48,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_RADIUS,76,223,62,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Round Radius",IDC_STATIC,12,225,46,8,NOT WS_GROUP
+    GROUPBOX        "Static",IDC_STATIC,7,253,136,30
+    CONTROL         "Octagon Package Option",IDC_CHECK_OCTAGON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,251,92,12
+    EDITTEXT        IDC_EDIT_DIST_OCTAGON_CHAMFER,76,265,62,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Chamfer Size",IDC_STATIC,12,267,45,8,NOT WS_GROUP
+    CONTROL         "Dead Bug",IDC_CHECK_DEAD_BUG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,7,44,12
+    GROUPBOX        "Round Package Option",IDC_STATIC,7,290,136,50
+    COMBOBOX        IDC_COMBO_ROUND_PACKAGE_OPTION,76,303,62,172,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ROUND_PACKAGE_RADIUS,76,323,62,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Round R",IDC_STATIC,12,325,28,8,NOT WS_GROUP
+    LTEXT           "Round Option",IDC_STATIC,12,307,44,8,NOT WS_GROUP
+    GROUPBOX        "Static",IDC_STATIC,7,81,136,91
+    CONTROL         "Glass Core Package",IDC_CHECK_GLASS_CORE_PACKAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,79,76,12
+    EDITTEXT        IDC_EDIT_GLASS_THICKNESS,103,97,35,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Glass Thickness",IDC_STATIC_GLASS_CORE_THICKNESS,12,99,56,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_GLASS_SUBSTRATE_SIZE_X,103,113,35,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Substrate Size X",IDC_STATIC_GLASS_CORE_SUBSTRATE_SIZE_X,12,115,55,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_GLASS_SUBSTRATE_SIZE_Y,103,128,35,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Substrate Size Y",IDC_STATIC_GLASS_CORE_SUBSTRATE_SIZE_Y,12,130,55,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_GLASS_TOP_SUBSTRATE_THICKNESS,103,143,35,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Top Substrate Thickness",IDC_STATIC_GLASS_CORE_TOP_SUBSTRATE_THICKNESS,12,145,82,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_GLASS_BTM_SUBSTRATE_THICKNESS,103,158,35,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "BTM Substrate Thickness",IDC_STATIC_GLASS_CORE_BTM_SUBSTRATE_THICKNESS,12,160,85,8,NOT WS_GROUP
+END
+
+IDD_DIALOG DIALOGEX 0, 0, 474, 334
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STC_VIEWER,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,279,7,188,222
+    CONTROL         "",IDC_FRAME_PROPERTY_GRID,"Static",SS_GRAYFRAME | NOT WS_VISIBLE,7,7,127,221
+END
+
+IDD_BGA_GRID_GENERATOR DIALOGEX 0, 0, 141, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BGA grid generator"
+FONT 9, "±¼¸²", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,84,101,50,14
+    LTEXT           "Grid Pitch Y",IDC_STATIC,7,51,39,8
+    LTEXT           "Grid Pitch X",IDC_STATIC,7,37,39,8
+    LTEXT           "Ball Diameter",IDC_STATIC,7,65,44,8
+    LTEXT           "Ball Height",IDC_STATIC,7,79,35,8
+    EDITTEXT        IDC_EDIT_GRID_PITCH_X,57,35,62,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GRID_PITCH_Y,57,49,62,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BALL_DIAMETER,57,63,62,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_BALL_HEIGHT,57,77,62,12,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "um",IDC_STATIC,120,40,11,8
+    LTEXT           "um",IDC_STATIC,120,54,11,8
+    LTEXT           "um",IDC_STATIC,120,68,11,8
+    LTEXT           "um",IDC_STATIC,120,82,11,8
+    LTEXT           "Grid Count Y",IDC_STATIC,7,23,42,8
+    LTEXT           "Grid Count X",IDC_STATIC,7,9,42,8
+    EDITTEXT        IDC_EDIT_GRID_COUNT_X,57,7,62,12,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GRID_COUNT_Y,57,21,62,12,ES_CENTER | ES_AUTOHSCROLL
+END
+
+IDD_DlgLandShapeEditor DIALOGEX 0, 0, 156, 96
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Land Shape Editor"
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,45,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,99,75,50,14
+    LTEXT           "Group Info",IDC_STATIC,19,21,35,8
+    LTEXT           "Shape Type",IDC_STATIC,19,47,39,8
+    COMBOBOX        IDC_GROUP_INFO,66,20,72,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_SHAPE_TYPE,66,45,72,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_BODY_SIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        VERTGUIDE, 12
+        VERTGUIDE, 62
+        VERTGUIDE, 124
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 361
+    END
+
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 467
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_BGA_GRID_GENERATOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DlgLandShapeEditor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_BODY_SIZE DLGINIT
+BEGIN
+    IDC_COMBO_ROUND_PACKAGE_OPTION, 0x403, 7, 0
+0x6f4e, 0x6d72, 0x6c61, "\000" 
+    IDC_COMBO_ROUND_PACKAGE_OPTION, 0x403, 10, 0
+0x7055, 0x2620, 0x4420, 0x776f, 0x006e, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Group Menu"
+    BEGIN
+        MENUITEM "Make Group (Space)",          ID_GROUPMENU_MAKEGROUP
+        MENUITEM "Group Editor",                ID_GROUPMENU_GROUPEDITOR
+        MENUITEM "Chip DB Editor",              ID_GROUPMENU_DBEDITOR
+        MENUITEM "Remove Group",                ID_GROUPMENU_REMOVEGROUP
+    END
+END
+
+IDR_LAND_SHAPE_MENU MENU
+BEGIN
+    POPUP "Land Menu"
+    BEGIN
+        MENUITEM "Land Shape Change",           ID_LANDMENU_LANDSHAPECHANGE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_MAPDATA_EDITOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BGA_GRID_GENERATOR AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DlgLandShapeEditor AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_BODY_SIZE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // ÇÑ±¹¾î(´ëÇÑ¹Î±¹) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionProcessingSpec.rc2"  // Microsoft Visual C++ AI¢¯UAC ¢¥U¢¬¡Í ¥ì¥ì¡¾¢¬¢¯¢®¨ù¡© ¨¡iAyCN ¢¬¢ç¨ùO¨ö¨¬AO¢¥I¢¥U.
+#include "afxres.rc"     // C¡ÍA¨ª ¡¾¢¬¨ù¨¬ ¢¯a¨ùOAO¢¥I¢¥U.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

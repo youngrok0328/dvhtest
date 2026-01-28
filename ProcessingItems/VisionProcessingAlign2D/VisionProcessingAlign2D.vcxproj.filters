@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgVisionProcessingAlign2D.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingAlign2D.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingAlign2DApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingAlign2DInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Stitch.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="StitchPara_BasedOnMatching.cpp">
+      <Filter>Based On Matching</Filter>
+    </ClCompile>
+    <ClCompile Include="StitchPara.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="StitchPara_BasedOnBodySize.cpp">
+      <Filter>Based On Body Size</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineBasedOnMatching.cpp">
+      <Filter>Based On Matching</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineBasedOnBodySize.cpp">
+      <Filter>Based On Body Size</Filter>
+    </ClCompile>
+    <ClCompile Include="Constants.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="StitchResult.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="StitchPara_Structure.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBodySizeROIPara.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgVisionProcessingAlign2D.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingAlign2D.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingAlign2DApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Stitch.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchPara_BasedOnMatching.h">
+      <Filter>Based On Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchPara.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchPara_BasedOnBodySize.h">
+      <Filter>Based On Body Size</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchPara_Structure.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBasedOnMatching.h">
+      <Filter>Based On Matching</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineBasedOnBodySize.h">
+      <Filter>Based On Body Size</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchResult.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBodySizeROIPara.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionProcessingAlign2D.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionProcessingAlign2D.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{816e2cb4-9a0a-44fd-85a7-0455fb4e189c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{6ac99ffc-a1e2-411d-8662-d5e1677f4fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{1adfead0-9029-44c7-8805-9631091073c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{15c3c85d-55f4-4783-9e53-bc6a3a04fe42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Based On Matching">
+      <UniqueIdentifier>{94de7e9e-c3e9-4841-876e-c1e07c33020e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Based On Body Size">
+      <UniqueIdentifier>{8291e498-4396-4711-8042-422f17f6f96e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingAlign2D.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

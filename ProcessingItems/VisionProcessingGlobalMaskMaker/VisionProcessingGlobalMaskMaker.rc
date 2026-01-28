@@ -1,0 +1,271 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionProcessingGlobalMaskMaker.rc2""  // Microsoft Visual C++ AI﹌ＹE╳EcE?UAC ﹌ＹE╳EcE﹌ＹE╳EcIU﹌ＹE╳EcE﹌ＹE╳Ec╳＝I﹌Ｙ“I╳E﹌cE﹌ＹEcI ﹌ＹE╳EcIi﹌ＹE╳EcIi╳E﹌cE﹌ＹEc╳E﹌c﹌Ｙ╳０u﹌ＹE╳EcE﹌ＹE╳Ec╳＝I﹌Ｙ“I﹌ＹE╳EcE?﹌ＹE╳EcE╳E﹌cEc﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?u╳E﹌cE﹌ＹEc╳E﹌c﹌Ｙ╳０I ﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?╳E﹌cE﹌ＹEciAyCN ﹌ＹE╳EcE﹌ＹE╳Ec╳＝I﹌Ｙ“I﹌ＹE╳EcEc﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?uO﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?o﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?﹌ＹE╳Ec╳＝I﹌Ｙ“IAO﹌ＹE╳EcE﹌ＹE╳EcII﹌ＹE╳EcE﹌ＹE╳EcIU.\r\n"
+    "#include ""afxres.rc""     // C╳E﹌cE﹌ＹEcIA﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?╳E﹌c﹌Ｙ╳０╳E﹌cI ╳E﹌cE﹌ＹEc╳E﹌c﹌Ｙ╳０u﹌ＹE╳EcE﹌ＹE╳Ec╳＝I﹌Ｙ“I﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?u﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?﹌ＹE╳Ec╳＝I﹌Ｙ“I ﹌ＹE╳EcE?a﹌ＹE╳Ec╳E﹌c﹌Ｙ﹌?uOAO﹌ＹE╳EcE﹌ＹE╳EcII﹌ＹE╳EcE﹌ＹE╳EcIU.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG DIALOGEX 0, 0, 522, 363
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,7,174,50,30
+END
+
+IDD_DIALOG_LAYERNAME DIALOGEX 0, 0, 311, 45
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set layer name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,57,7,246,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,199,24,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,255,24,50,14
+    LTEXT           "Layer name :",IDC_STATIC,9,9,44,8
+END
+
+IDD_DIALOG_PARA DIALOGEX 0, 0, 209, 292
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LAYER_NAME,0,0,209,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SELECT_VIEW,"Static",SS_BLACKRECT,0,15,209,277
+END
+
+IDD_DIALOG_PARA_SINGLE DIALOGEX 0, 0, 209, 182
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_LIST_PREPARED_IMAGE,0,0,88,89,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_USER_ROI,0,91,88,89,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Mask List",IDC_MASKLIST,"Button",BS_OWNERDRAW | WS_TABSTOP,90,0,119,89
+END
+
+IDD_DIALOG_LAYER DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Layer List",IDC_LAYERLIST,"Button",BS_OWNERDRAW | WS_TABSTOP,7,7,295,162
+END
+
+IDD_IMPORT_LAYER DIALOGEX 0, 0, 309, 212
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Layer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,191,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,191,50,14
+    COMBOBOX        IDC_COMBO_IMPORT_TYPE,7,7,295,138,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Layer List",IDC_LAYERLIST,"Button",BS_OWNERDRAW | WS_TABSTOP,7,23,295,166
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 515
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DIALOG_LAYERNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_DIALOG_PARA, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_PARA_SINGLE, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_IMPORT_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_LAYERNAME AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PARA AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_PARA_SINGLE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_LAYER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_IMPORT_LAYER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MANAGE_LAYER MENU
+BEGIN
+    POPUP "No select"
+    BEGIN
+        MENUITEM "Add Layer",                   ID_LM_ADDLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Export All Layer",            ID_LM_EXPORTALLLAYER
+        MENUITEM "Import Layer",                ID_LM_IMPORTLAYER
+    END
+    POPUP "select"
+    BEGIN
+        MENUITEM "Delete Layer",                ID_LM_DELETELAYER
+        MENUITEM "Rename Layer",                ID_LM_RENAMELAYER
+        MENUITEM "Empty Layer",                 ID_LM_EMPTYLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Add Layer",                   ID_LM_ADDLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Import Layer",                ID_LM_IMPORTLAYER
+    END
+    POPUP "select ignore mask"
+    BEGIN
+        MENUITEM "Add Layer",                   ID_LM_ADDLAYER
+        MENUITEM "Empty Layer",                 ID_LM_EMPTYLAYER
+        MENUITEM SEPARATOR
+        MENUITEM "Import Layer",                ID_LM_IMPORTLAYER
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionProcessingGlobalMaskMaker.rc2"  // Microsoft Visual C++ AI╳E﹌cE?UAC ╳E﹌cE╳E﹌cIU╳E﹌cE╳E﹌c“I╳使﹌ＹE╳EcI ╳E﹌cIi╳E﹌cIi﹌ＹE╳Ec﹌Ｙ╳▼u╳E﹌cE╳E﹌c“I╳使╳E﹌cE?╳E﹌cE﹌ＹEc╳E﹌c﹌Ｙ╳０u﹌ＹE╳Ec﹌Ｙ╳▼I ╳E﹌c﹌Ｙ╳０﹌ＹE╳EciAyCN ╳E﹌cE╳E﹌c“I╳使╳E﹌cEc╳E﹌c﹌Ｙ╳０uO╳E﹌c﹌Ｙ╳０o╳E﹌c﹌Ｙ╳０╳E﹌c“I╳使AO╳E﹌cE╳E﹌cII╳E﹌cE╳E﹌cIU.
+#include "afxres.rc"     // C﹌ＹE╳EcIA╳E﹌c﹌Ｙ╳０﹌Ｙ╳▼﹌ＹI ﹌ＹE╳Ec﹌Ｙ╳▼u╳E﹌cE╳E﹌c“I╳使╳E﹌c﹌Ｙ╳０u╳E﹌c﹌Ｙ╳０╳E﹌c“I╳使 ╳E﹌cE?a╳E﹌c﹌Ｙ╳０uOAO╳E﹌cE╳E﹌cII╳E﹌cE╳E﹌cIU.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

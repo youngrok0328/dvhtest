@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionReusableMemory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionReusableMemoryApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ReusableMemory_Image.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceLayerMask.cpp">
+      <Filter>SurfaceLayerMask</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceLayerRoi.cpp">
+      <Filter>SurfaceLayerRoi</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionReusableMemory.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionReusableMemoryApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ReusableMemory_Image.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceLayerMask.h">
+      <Filter>SurfaceLayerMask</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceLayerRoi.h">
+      <Filter>SurfaceLayerRoi</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionReusableMemory.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionReusableMemory.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{61d822a7-bf71-431e-9bca-6fa30909d295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{061f95b3-5828-4c46-b733-4dac312368fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SurfaceLayerMask">
+      <UniqueIdentifier>{844f4f40-374b-4efc-9c4f-bc2a131e3276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SurfaceLayerRoi">
+      <UniqueIdentifier>{21a7794e-52a6-4ec3-8423-ebbe9073c749}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionReusableMemory.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

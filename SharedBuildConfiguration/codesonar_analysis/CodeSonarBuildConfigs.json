@@ -1,0 +1,368 @@
+[
+  {
+    "repo": "baoi-host",
+    "components": [
+      {
+        "sln": "BAOI_2019.sln",
+        "build_config": "win32 debug",
+        "use_parallel_build": false
+      }
+    ]
+  },
+  {
+    "repo": "baoi-vision",
+    "components": [
+      {
+        "sln": "VisionTest_vs2022.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "data-profiling-system",
+    "components": [
+      {
+        "sln": "IntekPlus_DataProfile_System.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "delami-host",
+    "components": [
+      {
+        "sln": "Host_Interface.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "foil-host",
+    "components": [
+      {
+        "sln": "Foil_Interface.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ibazs",
+    "components": [
+      {
+        "sln": "IBAZS.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ibfi",
+    "components": [
+      {
+        "sln": "IBFI_FOIL.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ibni",
+    "components": [
+      {
+        "sln": "IBNI.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true,
+        "name": "ibni"
+      },
+      {
+        "sln": "IBNI_Area.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true,
+        "name": "ibni_Area"
+      },
+      {
+        "sln": "IBNI_Interface.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true,
+        "name": "ibni_Interface"
+      },
+      {
+        "sln": "PLCMessenger2.sln",
+        "build_config": "Win32 debug",
+        "use_parallel_build": true,
+        "name": "ibni_PLCMessenger2"
+      }
+    ]
+  },
+  {
+    "repo": "ibnm",
+    "components": [
+      {
+        "sln": "IBNM.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ibti-ts6",
+    "components": [
+      {
+        "sln": "IBTI.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "imas-3000-host",
+    "components": [
+      {
+        "sln": "iMas3000.sln",
+        "build_config": "Win32 Release iMAS3000",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "imas-3000-vision",
+    "components": [
+      {
+        "sln": "iMAS_Vision.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-340hx-host-sec-mvp",
+    "components": [
+      {
+        "sln": "iPis340HX.sln",
+        "build_config": "x64 Release_Host_NoSide",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-340hx-vision-hynix",
+    "components": [
+      {
+        "sln": "ipis-340hx-vision-hynix.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-340hx-vision-oversea",
+    "components": [
+      {
+        "sln": "ipis-340hx-vision-oversea.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-340hx-vision-sec-onyang",
+    "components": [
+      {
+        "sln": "ipis-340hx-vision-sec-onyang.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-380-vision",
+    "components": [
+      {
+        "sln": "ipis-380-vision.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-500g-vision",
+    "components": [
+      {
+        "sln": "iPack.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-500i-host",
+    "components": [
+      {
+        "sln": "iPis500.sln",
+        "build_config": "x64 release",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-500i-vision",
+    "components": [
+      {
+        "sln": "iPack.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true,
+        "name": "ipis-500i-vision_iPack"
+      },
+      {
+        "sln": "iTRV.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true,
+        "name": "ipis-500i-vision_iTRV"
+      }
+    ]
+  },
+  {
+    "repo": "ipis-590-host-semco",
+    "components": [
+      {
+        "sln": "iPis590.sln",
+        "build_config": "x64 Debug Host",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-600mh-host",
+    "components": [
+      {
+        "sln": "ipis-600mh.slnx",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-640hx-host-hynix",
+    "components": [
+      {
+        "sln": "ipis-640hx-host-hynix-cheongju.sln",
+        "build_config": "x64 release",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-640hx-vision-jsck",
+    "components": [
+      {
+        "sln": "ipis-640hx-vision-jsck.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-640hx-vision-tsmc",
+    "components": [
+      {
+        "sln": "ipis-640hx-vision-tsmc.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-642hx-host-hynix",
+    "components": [
+      {
+        "sln": "ipis-640hx-host-hynix-icheon.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ipis-642hx-vision-hynix",
+    "components": [
+      {
+        "sln": "ipis-640hx-vision-hynix.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "logviewer",
+    "components": [
+      {
+        "sln": "LogViewer.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "ngmark-host",
+    "components": [
+      {
+        "sln": "Marking_Interface.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "nnd2000-host",
+    "components": [
+      {
+        "sln": "IBNI_Interface.sln",
+        "build_config": "x64 debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "qpm",
+    "components": [
+      {
+        "sln": "iSIS-QPM.sln",
+        "build_config": "x64 release",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "smtv-host-v1",
+    "components": [
+      {
+        "sln": "iSMTV_Host.sln",
+        "build_config": "Win32 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "bloomenergy",
+    "components": [
+      {
+        "sln": "BloomEnergy.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  },
+  {
+    "repo": "sqvision",
+    "components": [
+      {
+        "sln": "iMIS3DMoire.sln",
+        "build_config": "x64 Debug",
+        "use_parallel_build": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,333 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\VisionBatchInspectionUI.rc2""  // Microsoft Visual C++ AI￠®E?UAC ￠®E￠®IU￠®E￠®ⓒ­¡E￠cI ￠®Ii￠®Ii¡E￠c¡§u￠®E￠®ⓒ­￠®E?￠®E¡Ec￠®¡×u¡E￠c¡§I ￠®¡×¡E￠ciAyCN ￠®E￠®ⓒ­￠®Ec￠®¡×uO￠®¡×o￠®¡×￠®ⓒ­AO￠®E￠®II￠®E￠®IU.\r\n"
+    "#include ""afxres.rc""     // C¡E￠cIA￠®¡×¡§¡I ¡E￠c¡§u￠®E￠®ⓒ­￠®¡×u￠®¡×￠®ⓒ­ ￠®E?a￠®¡×uOAO￠®E￠®II￠®E￠®IU.\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PRIMARY DIALOGEX 0, 0, 433, 237
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB_RESULT,"SysTabControl32",0x0,5,6,86,36
+END
+
+IDD_DIALOG_BATCH_LIST DIALOGEX 0, 0, 436, 162
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Clear All",IDC_BUTTON_CLEAR_ALL,176,0,43,15
+    PUSHBUTTON      "All Inspect",IDC_BUTTON_AUTO_INSPECT,0,16,43,15
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,88,16,43,15
+    PUSHBUTTON      "Resume",IDC_BUTTON_RESUME,132,16,43,15
+    PUSHBUTTON      "D Sort",IDC_BUTTON_DSORT,0,0,43,15
+    PUSHBUTTON      "A Sort",IDC_BUTTON_ASORT,44,0,43,15
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,132,0,43,15
+    LTEXT           "00/00",IDC_STATIC_CURNUM,323,0,48,15,WS_BORDER
+    PUSHBUTTON      "View Yield",IDC_BUTTON_YIELD,88,0,43,15
+    PUSHBUTTON      "Infinite Insp",IDC_BUTTON_INFINITE_INSP,44,16,43,15
+    EDITTEXT        IDC_EDIT_SequenceInterrvalTime,323,16,48,15,ES_AUTOHSCROLL
+    LTEXT           "Sequence Interval Time :",IDC_STATIC,239,20,82,8
+    CONTROL         "scanID / pane",IDC_CHECK_SCANID_AND_PANE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,260,3,62,10
+    PUSHBUTTON      "Barcode",IDC_BUTTON_BARCODE,220,0,36,15
+    COMBOBOX        IDC_COMBO_SIDE_F_R_MODULE,380,17,49,37,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLGRNRHELPER DIALOGEX 0, 0, 267, 357
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RnR Helper"
+FONT 9, "MS Sans Serif, 굴림", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Start",IDC_BUTTON_START,7,7,50,14
+    PUSHBUTTON      "Refresh",IDC_BUTTON_END,64,7,50,14
+    EDITTEXT        IDC_EDIT_REPEATCNT,205,7,55,14,ES_AUTOHSCROLL
+    LTEXT           "Repeat Count : ",IDC_STATIC,142,9,52,8
+    LTEXT           "Package Count : ",IDC_STATIC,142,24,56,8
+    EDITTEXT        IDC_EDIT_PACKAGECNT,205,22,55,14,ES_AUTOHSCROLL
+    CONTROL         "Custom1",IDC_CUSTOM_GRID_RNR,"MFCGridCtrl",WS_TABSTOP,7,248,253,102
+    PUSHBUTTON      "View Report",IDC_BUTTON_REPORT,7,25,105,14
+END
+
+IDD_DLGRNRREPORT DIALOGEX 0, 0, 349, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "R&R Report"
+FONT 9, "MS Sans Serif, 굴림", 0, 0, 0x0
+BEGIN
+    CONTROL         "Custom1",IDC_CUSTOM_GRID_RNR,"MFCGridCtrl",WS_TABSTOP,7,7,335,172
+END
+
+IDD_DIALOG_YIELD_VIEWER DIALOGEX 0, 0, 535, 342
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Yield Viewer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,478,321,50,14
+    CONTROL         "Apply List",IDC_GRID_LIST,"MFCGridCtrl",WS_BORDER | WS_TABSTOP,7,6,521,313
+    CONTROL         "Save R&R File",IDC_CHECK_SAVE_RNR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,325,55,10
+END
+
+IDD_DIALOG_SAVE_MEMORY_LOG_TIME_INTERVAL_SETUP DIALOGEX 0, 0, 157, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save Memory Log Opt."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,101,33,50,14
+    LTEXT           "Time Interval :",IDC_STATIC,14,17,48,8
+    EDITTEXT        IDC_EDIT_TIME_INTERVAL,62,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "Min.",IDC_STATIC,107,17,14,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_PRIMARY, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_BATCH_LIST, DIALOG
+    BEGIN
+        RIGHTMARGIN, 435
+    END
+
+    IDD_DLGRNRHELPER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        VERTGUIDE, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 350
+    END
+
+    IDD_DLGRNRREPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG_YIELD_VIEWER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 528
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 335
+    END
+
+    IDD_DIALOG_SAVE_MEMORY_LOG_TIME_INTERVAL_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_PRIMARY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_BATCH_LIST AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SAVE_MEMORY_LOG_TIME_INTERVAL_SETUP AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_YIELD_VIEWER AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_BATCH_LIST DLGINIT
+BEGIN
+    IDC_COMBO_SIDE_F_R_MODULE, 0x403, 11, 0
+0x7246, 0x6e6f, 0x2074, 0x6953, 0x6564, "\000" 
+    IDC_COMBO_SIDE_F_R_MODULE, 0x403, 10, 0
+0x6552, 0x7261, 0x5320, 0x6469, 0x0065, 
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 영어(미국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECT_VISION DIALOGEX 0, 0, 309, 51
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Vision"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,30,50,14
+    LTEXT           "Vision Index :",IDC_STATIC,7,9,44,8
+    COMBOBOX        IDC_COMBO_VISION,58,7,244,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_SELECT_VISION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_SELECT_VISION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SELECT_VISION DLGINIT
+BEGIN
+    IDC_COMBO_VISION, 0x403, 14, 0
+0x2031, 0x4228, 0x746f, 0x6f74, 0x206d, 0x4432, 0x0029, 
+    IDC_COMBO_VISION, 0x403, 14, 0
+0x2032, 0x4228, 0x746f, 0x6f74, 0x206d, 0x4433, 0x0029, 
+    IDC_COMBO_VISION, 0x403, 11, 0
+0x2033, 0x5428, 0x706f, 0x3220, 0x2944, "\000" 
+    IDC_COMBO_VISION, 0x403, 11, 0
+0x2034, 0x5428, 0x706f, 0x3320, 0x2944, "\000" 
+    IDC_COMBO_VISION, 0x403, 12, 0
+0x2035, 0x5528, 0x6b6e, 0x6f6e, 0x6e77, 0x0029, 
+    IDC_COMBO_VISION, 0x403, 12, 0
+0x2036, 0x5528, 0x6b6e, 0x6f6e, 0x6e77, 0x0029, 
+    0
+END
+
+#endif    // 영어(미국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#pragma code_page(949)
+#include "res\VisionBatchInspectionUI.rc2"  // Microsoft Visual C++ AI￠®E?UAC ￠®E￠®IU￠®E￠®ⓒ­¡E￠cI ￠®Ii￠®Ii¡E￠c¡§u￠®E￠®ⓒ­￠®E?￠®E¡Ec￠®¡×u¡E￠c¡§I ￠®¡×¡E￠ciAyCN ￠®E￠®ⓒ­￠®Ec￠®¡×uO￠®¡×o￠®¡×￠®ⓒ­AO￠®E￠®II￠®E￠®IU.
+#include "afxres.rc"     // C¡E￠cIA￠®¡×¡§¡I ¡E￠c¡§u￠®E￠®ⓒ­￠®¡×u￠®¡×￠®ⓒ­ ￠®E?a￠®¡×uOAO￠®E￠®II￠®E￠®IU.
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

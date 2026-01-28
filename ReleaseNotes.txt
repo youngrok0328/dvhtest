@@ -1,0 +1,81 @@
+## IPIS500I Software Release Notes ##
+
+# 해당 내용을 파싱하여 Installer 만들 때 넣어주고
+# Installer 실행시에 해당 Version에 해당하는 Release Note를 보여줄까 함
+# (아직 작업 안했으나 기존 내용은 의미 없어 날려버리고 한번 혼자 양식을 만들어 보는 중.. 아직 결정안됨)
+#
+# '#'은 주석으로 처리될 예정
+# Notation
+# [>] Version 종류 (앞에 D는 아직 Release 되지 않은 버전, V는 Vision Release)
+# [D] : Date Developer : 개발자 이름 (수정내용 가장 앞에 와야 한다)
+# [C] : Category : 수정 분류
+# [K] : Keyword : 코드 검색 키워드 // 검사에 관련된 중요한 내용 아니면 생략해도 됨
+# [N] : Notes : 추가 및 수정 내용
+
+> V1.105.900.60
+	[D] : 2018-12-7 송준호
+	[C] : ETC
+	[N] : Recipe Format Changed. ROIs is saving in physical unit instead of pixel.
+
+> V1.105.900.55
+	[D] : 2018-11-7 송준호
+	[C] : ETC
+	[N] : Reduced inspection time
+
+> V1.104.1.53
+
+> V1.104.901.49
+	[D] : 2018-10-17 송준호
+	[C] : Surface Inspection
+	[N] : Bug-Fix :: If 'Normal Threshold' is used in a surface inspection, the defect type (Dark or Bright) was incorrectly determined.
+
+> V1.104.1.47
+	[D] : 2018-09-25 송준호
+	[C] : Surface Inspection
+	[N] : Bug-Fix :: When a column is sorted in the 'edit criteria' window, the selected row is wrong displayed in an image viewer. 
+
+> V1.104.0.46
+	[D] : 2018-09-18 송준호
+	[C] : Utility - Batch Inspection
+	[N] : Report Function : Import barcode information from host files
+
+	[D] : 2018-09-25 송준호
+	[C] : Surface Inspection
+	[N] : Bug-Fix :: When 'Defect Ratio' is used, LengthX and LengthY always needed.
+
+> V1.103.0.44
+	[D] : 2018-09-18 송준호
+	[C] : Camera Grab
+	[N] : Improvement : Can specify the number of grab buffers.
+
+> V1.102.0.43
+	[D] : 2018-09-13 송준호
+	[C] : Proofread (text)
+	[N] : (Combine Image) 0th Image Index Base -> 1st Image Index Base
+
+	[D] : 2018-09-13 송준호
+	[C] : Insp Item Setup
+	[N] : Add Cancel Button
+
+	[D] : 2018-09-13 송준호
+	[C] : Surface
+	[N] : Show ROI ID
+	[N] : Criteria Setup : Add 'Show selected defects only' button (Default : Show all defect)
+	[N] : ROI Editor : Edit Threshold item directly editable
+
+> V1.101.0.42
+	[D] : 2018-09-10 송준호
+	[C] : Package spec
+	[N] : Add Function : Delete all map data
+
+	[D] : 2018-09-12 송준호
+	[C] : Proofread (text)
+	[N] : Local Contrast Arean -> Local Contrast Area
+	[N] : Minimum Area for Bright Contrast -> Minimum Area for Key Contrast (Bright)
+	[N] : Minimum Area for Dark Contrast -> Minimum Area for Key Contrast (Dark)
+	[N] : Template ROI Move FOV X -> Move distance X between FOVs
+	[N] : Template ROI Move FOV Y -> Move distance Y between FOVs
+
+	[D] : 2018-09-12 송준호
+	[C] : Surface Inspection
+	[N] : enable or disable the use of surface inspection in 'Insp Item Setup'

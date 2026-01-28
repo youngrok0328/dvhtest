@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgImageVIewer.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLogin.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgReviewImageViewer.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSystemSetup.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionPrimaryUI.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgVisionPrimaryUI_SK.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="HostCommand.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionPrimaryUI.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionPrimaryUIApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMarkTeachTotalResultViewer.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgImageVIewer.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLogin.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgReviewImageViewer.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSystemSetup.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgVisionPrimaryUI.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="HostCommand.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionPrimaryUI.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionPrimaryUIApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMarkTeachTotalResultViewer.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\BgaBottom.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\BgaTop.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\Logo.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionPrimaryUI.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionPrimaryUI.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{8bd9a492-6868-4b8e-bd5a-ff7f2bf3d372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{f838fec3-abcb-4257-a802-416200f44429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{27b83548-9a6e-4be9-beb0-d425cd71d039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="서브 다이얼로그">
+      <UniqueIdentifier>{c4f93ee6-cad9-45f9-8a95-0b0cb356aaf1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionPrimaryUI.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

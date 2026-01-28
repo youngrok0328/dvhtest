@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgVisionProcessingTapeDetailAlign.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingTapeDetailAlign.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingTapeDetailAlignApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingTapeDetailAlignInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultSprocketHole.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultDevice.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="ResultPocket.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="Para.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="Inspection.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaSprocketHoleAlign.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaEdgeParameters.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaPocketAlign.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaDeviceAlign.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaEdgeSearchRoi.cpp">
+      <Filter>Para</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecTabCtrl.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgVisionProcessingTapeDetailAlign.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingTapeDetailAlignApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingTapeDetailAlign.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultSprocketHole.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultDevice.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="ResultPocket.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="Para.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="Inspection.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaSprocketHoleAlign.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaEdgeParameters.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaPocketAlign.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaDeviceAlign.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaEdgeSearchRoi.h">
+      <Filter>Para</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecTabCtrl.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaAlignment.hpp">
+      <Filter>Para</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionProcessingTapeDetailAlign.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionProcessingTapeDetailAlign.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{164c26c1-4201-4ee5-bb15-3ef5a2736455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{d015cb58-8452-4b07-b309-54d88fcc5be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{50913da8-d5e5-4dec-ad78-29884f9a1646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{25d04a2e-c964-4184-897b-a181b5b438d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Para">
+      <UniqueIdentifier>{fe3c3206-1503-4ac9-9584-3fd9dbc450f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Result">
+      <UniqueIdentifier>{88edd0bd-1f19-419a-a470-e5eebe007ad3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingTapeDetailAlign.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

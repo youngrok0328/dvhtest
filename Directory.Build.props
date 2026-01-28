@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!-- 컴파일 및 링크에 대한 기본 설정은 아래 파일의 내용을 기본값으로 사용한다. -->
+	<Import Project=".\SharedBuildConfiguration\IntekPlus.Default.v17.props" />
+	<PropertyGroup Label="UserMacros">
+		<!-- 32비트용 라이브러리 위치에 대한 매크로를 생성함 -->
+		<IPVMSDK32>C:\Program Files (x86)\Intekplus\VisionMadang v9.1.0.0\</IPVMSDK32>
+		<IPVMSDK32Include>$(IPVMSDK32)include</IPVMSDK32Include>
+		<IPVMSDK32Bin>$(IPVMSDK32)bin</IPVMSDK32Bin>
+		<!-- 64비트용 라이브러리 위치에 대한 매크로를 생성함 -->
+		<IPVM64>C:\Program Files\IntekPlus\VisionMadang v9.1.0.0\</IPVM64>
+		<IPVM64Include>$(IPVM64)include</IPVM64Include>
+		<IPVM64Bin>$(IPVM64)bin</IPVM64Bin>
+		<XTToolkitVersionMajor>22</XTToolkitVersionMajor>
+		<XTToolkitVersionMinor>1</XTToolkitVersionMinor>
+		<XTToolkitVersionRevision>0</XTToolkitVersionRevision>
+		<XTToolkitVersionString>v$(XTToolkitVersionMajor).$(XTToolkitVersionMinor).$(XTToolkitVersionRevision)</XTToolkitVersionString>
+		<XTToolkitVersionNumber>$(XTToolkitVersionMajor)$(XTToolkitVersionMinor)$(XTToolkitVersionRevision)</XTToolkitVersionNumber>
+		<XTToolkitVcVersion>vc170</XTToolkitVcVersion>
+		<XTToolkitInclude>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro $(XTToolkitVersionString)\Source\</XTToolkitInclude>
+		<XTToolkitLib64>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro $(XTToolkitVersionString)\Lib\$(XTToolkitVcVersion)x64\</XTToolkitLib64>
+		<XTToolkitLib32>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro $(XTToolkitVersionString)\Lib\$(XTToolkitVcVersion)\</XTToolkitLib32>
+		<XTToolkitBin64>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro $(XTToolkitVersionString)\Bin\$(XTToolkitVcVersion)x64\</XTToolkitBin64>
+		<XTToolkitBin32>C:\Program Files (x86)\Codejock Software\MFC\Xtreme ToolkitPro $(XTToolkitVersionString)\Bin\$(XTToolkitVcVersion)\</XTToolkitBin32>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Platform)'=='x64'">
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(IPVM64Include);$(XTToolkitInclude);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ClCompile>
+		<ResourceCompile>
+			<AdditionalIncludeDirectories>$(IPVM64Include);$(XTToolkitInclude);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalLibraryDirectories>$(XTToolkitLib64);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Platform)'=='Win32'">
+		<ClCompile>
+			<AdditionalIncludeDirectories>$(IPVM32Include);$(XTToolkitInclude);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ClCompile>
+		<ResourceCompile>
+			<AdditionalIncludeDirectories>$(IPVM32Include);$(XTToolkitInclude);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+		</ResourceCompile>
+		<Link>
+			<AdditionalLibraryDirectories>$(XTToolkitLib32);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+		</Link>
+	</ItemDefinitionGroup>
+</Project>

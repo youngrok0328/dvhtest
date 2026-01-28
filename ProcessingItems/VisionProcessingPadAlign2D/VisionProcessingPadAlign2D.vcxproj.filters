@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgVisionProcessingPadAlign2D.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingPadAlign2D.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingPadAlign2DApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingPadAlign2DInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionProcessingPadAlign2DPara.cpp">
+      <Filter>[] Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Result.cpp">
+      <Filter>[] Data</Filter>
+    </ClCompile>
+    <ClCompile Include="ParaDB.cpp">
+      <Filter>[] Data</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignPara.cpp">
+      <Filter>[] Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSetFiducial.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgAlgorithmDB.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectPAD.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>[] Utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgVisionProcessingPadAlign2D.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingPadAlign2DApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingPadAlign2D.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionProcessingPadAlign2DPara.h">
+      <Filter>[] Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Result.h">
+      <Filter>[] Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ParaDB.h">
+      <Filter>[] Data</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignPara.h">
+      <Filter>[] Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSetFiducial.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgAlgorithmDB.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectPAD.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>[] Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionProcessingPadAlign2D.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionProcessingPadAlign2D.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{164c26c1-4201-4ee5-bb15-3ef5a2736455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{d015cb58-8452-4b07-b309-54d88fcc5be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{50913da8-d5e5-4dec-ad78-29884f9a1646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Data">
+      <UniqueIdentifier>{88edd0bd-1f19-419a-a470-e5eebe007ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="[] Utility">
+      <UniqueIdentifier>{5d9c4a92-d5e8-4b4e-bb3a-52ab3b962226}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionProcessingPadAlign2D.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

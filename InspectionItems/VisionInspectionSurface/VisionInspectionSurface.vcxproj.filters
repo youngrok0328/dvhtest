@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DlgVisionInspectionSurface.cpp">
+      <Filter>다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceCriteriaDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceDetectRectThreshDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceROIEditorDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionSurface.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionSurfaceApp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionSurfaceInsp.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceSetMaskNameDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceUserCustomMaskDlg.cpp">
+      <Filter>서브 다이얼로그</Filter>
+    </ClCompile>
+    <ClCompile Include="InspBase.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceItemResult.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceCriteriaResult.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceAlgoPara.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceCirteriaColumn.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceCriteria.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceCustomROI.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceCustomROIItem.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="VisionInspectionSurfacePara.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceItem.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="Para_MaskOrder.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="Para_PolygonRects.cpp">
+      <Filter>Spec</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfaceSupportMask.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="SurfacePrepairResult.cpp">
+      <Filter>Result</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSubThresholdAdaptive.cpp">
+      <Filter>서브 다이얼로그\Threshold Sub Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSubThresholdNormal.cpp">
+      <Filter>서브 다이얼로그\Threshold Sub Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSubThresholdBase.cpp">
+      <Filter>서브 다이얼로그\Threshold Sub Dialog</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DlgVisionInspectionSurface.h">
+      <Filter>다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceCriteriaDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceDetectRectThreshDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceROIEditorDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionSurface.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionSurfaceApp.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceSetMaskNameDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceUserCustomMaskDlg.h">
+      <Filter>서브 다이얼로그</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InspBase.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceItemResult.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceCriteriaResult.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceAlgoPara.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceCirteriaColumn.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceCustomROIItem.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceCriteria.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceCustomROI.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="VisionInspectionSurfacePara.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceItem.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="Para_MaskOrder.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="Para_PolygonRects.h">
+      <Filter>Spec</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfaceSupportMask.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="SurfacePrepairResult.h">
+      <Filter>Result</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSubThresholdNormal.h">
+      <Filter>서브 다이얼로그\Threshold Sub Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSubThresholdAdaptive.h">
+      <Filter>서브 다이얼로그\Threshold Sub Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSubThresholdBase.h">
+      <Filter>서브 다이얼로그\Threshold Sub Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="_buildsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_libsetup.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="VisionInspectionSurface.def">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\VisionInspectionSurface.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="서브 다이얼로그">
+      <UniqueIdentifier>{a0e8d5db-7c5a-4149-b0c4-c143c2b2b23a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="다이얼로그">
+      <UniqueIdentifier>{b0170392-f8e6-45a0-8fcd-3464b9bcaa16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{07bb5cc9-1568-47a8-8a05-b0d0f8baa5d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{ce877d40-ad36-424e-b253-0396fd014867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spec">
+      <UniqueIdentifier>{9640f011-1134-4e93-b31f-0ae189c9058c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Result">
+      <UniqueIdentifier>{bd5c00dc-70e1-4ce7-bee0-5f5e47b46e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="서브 다이얼로그\Threshold Sub Dialog">
+      <UniqueIdentifier>{bd3e48d5-ad81-499b-8fe6-49abf1096c4a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VisionInspectionSurface.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

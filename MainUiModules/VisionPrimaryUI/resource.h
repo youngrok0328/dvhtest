@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// VisionPrimaryUI.rc에서 사용되고 있습니다.
+//
+#define ID_BTN_REFRESH                  2
+#define ID_BTN_SEARCH_FILE              3
+#define IDC_Operator                    1000
+#define IDC_Engineer                    1001
+#define IDC_IntekPlus                   1002
+#define IDC_HiddenMode                  1003
+#define IDC_MARK_TEACH_RESULT_VIEW      2460
+#define IDR_MENU_PRIMARY                10000
+#define IDD_DIALOG_PRIMARY              10001
+#define IDB_BITMAP_LOGO                 10003
+#define IDC_TAB_RESULT                  10005
+#define IDC_STATIC_LOGO                 10008
+#define IDC_STATIC_JOB_FILE             10009
+#define IDC_STATIC_JOB_FILE_NAME        10010
+#define IDB_BITMAP_BGABOTTOM            10011
+#define IDB_BITMAP_BGATOP               10012
+#define IDC_STATIC_CONNECT1             10014
+#define IDC_STATIC_CONNECT2             10016
+#define IDC_STATIC_ACCESSMODE1          10017
+#define IDC_STATIC_ACCESSMODE2          10018
+#define IDD_DIALOG_REVIEWIMAGE_VIEWER   10018
+#define IDD_IMAGEVIEWER                 10019
+#define IDC_STATIC_VERSION1             10021
+#define IDD_DIALOG_SYSTEM_SETUP         10021
+#define IDC_STATIC_VERSION2             10022
+#define IDC_STATIC_RESULT               10023
+#define IDC_STATIC_BGATOP               10027
+#define IDC_STATIC_BGABOTTOM            10028
+#define IDD_DLGLOGIN                    10038
+#define IDC_RICHEDIT                    10041
+#define IDC_CMB_DATE                    10042
+#define IDC_CMB_JOB_NAME                10043
+#define IDC_CMB_LOTID                   10045
+#define IDC_CMB_FILE_NAME               10046
+#define IDD_DIALOG_AUTOFOCUSING         10052
+#define IDC_STATIC_FILE_NAME            10056
+#define IDC_EDIT_SEARCH                 10057
+#define IDC_EDIT_SEND_FRAME             10058
+#define IDC_TAB                         10059
+#define IDC_EDIT_INTERPOLATION_START    10059
+#define IDC_EDIT_REVIEW_EXPIRE_DAY      10060
+#define IDC_CHK_SAVE_REVIEW_IMAGE       10062
+#define IDC_EDIT_REVIEW_SAVE_FRAME      10063
+#define IDC_CHK_SEND_HOST_REVIEW        10064
+#define IDC_CMB_DRIVE                   10067
+#define IDC_CHK_USE_MULTI_TEACHING      10068
+#define IDC_CMB_GPU_CALC_RETRY          10069
+#define IDC_EDIT_REJECT_REPORT_X        10070
+#define IDC_EDIT_REJECT_REPORT_Y        10071
+#define IDC_CHK_USE_GRAB_RETRY          10072
+#define IDC_CHK_USE_3D_NOISECHECK       10073
+#define IDC_CHK_SAVE_INLINE_RAW_IMAGES  10074
+#define IDC_CHK_SAVE_SLITBEAM_ORIGINAL_IMAGES 10075
+#define IDC_CHK_SAVE_MV_REJECT_DATA     10076
+#define IDC_CHECK_AUTOFOCUSING_TUNING_MODE 10081
+#define IDC_STATIC_CurFocusValue        10082
+#define IDC_STATIC_PeakFocusValue       10083
+#define IDC_EDIT_CurFocusValue          10084
+#define IDC_EDIT_PeakFocusValue         10085
+#define IDC_STATIC_TargetSelect         10086
+#define IDC_STATIC_FrameSelect          10087
+#define IDC_STATIC_ObejctMask           10088
+#define IDC_COMBO_AutoFocus_TargetSelect 10089
+#define IDC_COMBO_AutoFocus_FrameSelect 10090
+#define IDC_COMBO_AutoFocus_ObjectMask  10091
+#define IDC_BUTTON_PEAKVALUEINIT        10092
+#define IDC_BUTTON_GRABANDCALCFOCUSVALUE 10093
+#define IDC_CHECK_AUTOFOCUSING_SetUserROI 10094
+#define IDC_STATIC_AverageFocusValue    10095
+#define IDC_EDIT_AverageFocusValue      10096
+#define IDC_BUTTON_CALCAVERAGEFOCUSVALUE 10097
+#define IDC_LIST1                       10101
+#define IDC_BUTTON1                     10102
+#define IDC_BTN_SYSTEMINI_REFRESH       10102
+#define IDC_CHECK1                      10103
+#define IDC_CHECK_SOCKET_CONNECTION     10103
+#define IDC_COMBO1                      10104
+#define IDC_COMBO_IMAGESAMPLING         10104
+#define IDC_EDIT_RECIPE_VERSION         10105
+#define IDC_CHK_ENABLE_CPU_CALC_LOG     10106
+#define IDC_CHK_ENABLE_GPU_CALC_LOG     10107
+#define IDC_EDIT_CPU_SAVE_INSP_COUNT    10108
+#define IDC_EDIT_CPU_SAVE_REPORT_MAXIMUM_COUNT 10109
+#define IDC_CMB_NGRV_IMAGE_SAVE_TYPE    10110
+#define IDC_CMB_NGRV_IMAGE_SAVE_TYPE2   10111
+#define IDC_CMB_ILLUM_CAL_TYPE          10111
+#define IDC_EDIT_CAM_GAIN               10113
+#define IDC_BUTTON2                     10114
+#define IDC_BTN_APPLY_CAM_GAIN          10114
+#define IDC_CHK_ENABLE_SEQUENCE_INSPECTION_TIME_LOG 10115
+#define IDC_CHK_ENABLE_IGRAB_BD_TEMPERATURE_LOG 10116
+#define IDC_CHK_ENABLE_INSPECTION_RESULT_TIMEOUT_RAW_IMAGE_SAVE 10117
+#define IDC_CHK_ENABLE_INSPECTION_RESULT_SEND_TIMELOG 10118
+#define IDC_COMBO_GRAB_FAIL_FOR_IMAGE_ZERO_LIMIT_COUNT 10119
+#define IDC_COMBO_GRAB_FAIL_FOR_CABLE_ERROR_LIMIT_COUNT 10120
+#define IDC_COMBO_2DID_CROPPING_IMAGE_SAVE_OPTION 10123
+#define IDC_STATIC_SIDE_FRONT_PRIMARY   10124
+#define IDC_STATIC_SIDE_REAR_PRIMARY    10125
+#define IDD_DIALOG_MARK_TEACH_RESULT_VIEW 26088
+#define ID_FILE_EXIT                    32772
+#define ID_FILE_IMAGE_OPEN              32774
+#define ID_FILE_JOB_OPEN                32776
+#define ID_FILE_GERBER_OPEN             32778
+#define ID_EDIT                         32779
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        10053
+#define _APS_NEXT_COMMAND_VALUE         32780
+#define _APS_NEXT_CONTROL_VALUE         10126
+#define _APS_NEXT_SYMED_VALUE           10041
+#endif
+#endif

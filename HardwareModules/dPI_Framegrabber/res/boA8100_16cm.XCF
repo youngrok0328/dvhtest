@@ -1,0 +1,20 @@
+[XCF_OVERVIEW]
+REVISION_DATE=2024/3/8/, 10:45:57
+EDITOR=Unknown
+[CAMERA_INFO]
+CAMERA_NAME=Unknown Camera
+[CAMERA_FORMAT]
+Cam mode=0
+Trigger mode=2
+Trigger type=0
+Exposure high count=812500
+Exposure high time=13.000000
+Exposure low count=3125000
+Exposure low time=4.000000
+Trigger division=0
+Horizontal size=8192
+Vertical size=5468
+Page Trigger=0
+PayloadSize=4096
+Image bit=0
+Tap Geometry=0

@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VisionCommonDialog.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_TEXT_LOG DIALOGEX 0, 0, 330, 117
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+    CONTROL         "Event",IDC_CHECK_Event,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,88,7,34,10
+    CONTROL         "Thread",IDC_CHECK_Thread,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,129,7,34,10
+    CONTROL         "TCP",IDC_CHECK_TCP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,177,7,25,10
+    LISTBOX         IDC_LIST_LOG,2,20,325,92,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Warning",IDC_CHECK_Warning,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,7,42,10
+    CONTROL         "Develop",IDC_CHECK_DEVELOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,282,7,41,10
+    CONTROL         "Notice",IDC_CHECK_NOTICE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,49,7,37,10
+END
+
+IDD_DIALOG_SPEC DIALOGEX 0, 0, 271, 159
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_RESULT_DETAIL DIALOGEX 0, 0, 321, 150
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_RESULT DIALOGEX 0, 0, 321, 150
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_DEBUG_INFO DIALOGEX 0, 0, 108, 117
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_TEXT_RESULT DIALOGEX 0, 0, 330, 117
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "Verdana", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_RICHEDIT22,"RichEdit20W",WS_VSCROLL | WS_HSCROLL | WS_GROUP | 0x10c4,0,0,119,88
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_TEXT_LOG, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_SPEC, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_RESULT_DETAIL, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_RESULT, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_DEBUG_INFO, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG_TEXT_RESULT, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_TEXT_LOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_SPEC AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_RESULT_DETAIL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_RESULT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_DEBUG_INFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG_TEXT_RESULT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\VisionCommonDialog.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
